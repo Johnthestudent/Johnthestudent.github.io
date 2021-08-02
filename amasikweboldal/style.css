@@ -1,0 +1,65 @@
+.welcomingimage
+{
+  display: flex;
+  align-items: center;
+  background-image: url(https://raw.githubusercontent.com/green-fox-academy/myfirstapp-syllabus/master/assets/first-website-header.png);
+  width: 1920px;
+  height: 804px;
+}
+
+li
+{
+  list-style-type: square;
+}
+
+hr
+{
+  height: 3px;
+  width: 1000px;
+  background: black;
+}
+
+.quote
+{
+  background: grey;
+  width: 600px;
+  height: 150px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p
+{
+  font-family: Josefin Sans;
+  width: 900px;
+}
+
+li, h2
+{
+  font-family: Josefin Sans;
+}
+
+h3
+{
+  font-family: Merriweather;
+}
+
+h1
+{
+  font-family: Abril Fatface;
+}
+
+h1::before
+{
+  content: ' \0022';
+}
+
+.vaz
+{
+  width: 1920px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
