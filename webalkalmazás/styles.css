@@ -1,0 +1,145 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(aliceblue, floralwhite);
+}
+
+/*Főcím*/
+h1
+{
+    text-align: center;
+}
+
+/*Üdvözlő szöveg*/
+#segitseg
+{
+    display: flex;
+    margin-top: -30px;
+    align-items: center;
+}
+
+/*Forrás weboldal*/
+#segitseg a:visited
+{
+    color: green;
+}
+
+/*A lapozó gombokat és a fő képet tartalmazó tároló*/
+#foresz
+{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: stretch;
+}
+
+/*A nagy kép*/
+#fokep
+{
+    width: 250px;
+    height: 125px;
+}
+
+/*A nagy kép további módosításai*/
+#nagykep
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/*A nagy képhez tartozó magyarázat*/
+#nagykep p
+{
+    margin-top: -25px;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/*Hátra lapozás stílusa*/
+#vissza
+{
+    height: 125px;
+    width: 30px;
+    border: solid 2px grey;
+    background: url("https://mfanorth.z16.web.core.windows.net/syllabus/week03/assets/arrow.svg") no-repeat;
+    background-position: center;
+}
+
+/*Ha az egérkurzor a lapozó gombon van*/
+#vissza:hover
+{
+    opacity: 50%;
+}
+
+/*Előre lapozás stílusa*/
+#elore
+{
+    height: 125px;
+    width: 30px;
+    border: solid 2px grey;
+    background: url("https://mfanorth.z16.web.core.windows.net/syllabus/week03/assets/arrow.svg") no-repeat;
+    transform: scaleX(-1);
+    background-position: center;
+}
+
+/*Ha az egérkurzor a lapozó gombon van*/
+#elore:hover
+{
+    opacity: 50%;
+}
+
+/*A thumbnail képeket tartalmazó tároló*/
+#thumbnail
+{
+    margin-top: -170px;
+    display: flex;
+    width: 300px;
+    justify-content: center;
+}
+
+/*Thumbnail képek*/
+.kicsi
+{
+    height: 20px;
+    width: 20px;
+    margin: 0.5px;
+}
+
+/*Első thumbnail*/
+#kep01:hover
+{
+    border: 1px solid green;
+}
+
+/*Második thumbnail*/
+#kep02:hover
+{
+    border: 1px solid green;
+}
+
+/*Harmadik thumbnail*/
+#kep03:hover
+{
+    border: 1px solid green;
+}
+
+/*Negyedik thumbnail*/
+#kep04:hover
+{
+    border: 1px solid green;
+}
+
+/*Ötödik thumbnail*/
+#kep05:hover
+{
+    border: 1px solid green;
+}
+
+/*Hatodik thumbnail*/
+#kep06:hover
+{
+    border: 1px solid green;
+}
