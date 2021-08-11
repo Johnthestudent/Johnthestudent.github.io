@@ -30,8 +30,8 @@ h1
 /*A lapozó gombokat és a fő képet tartalmazó tároló*/
 #foresz
 {
-    width: 1300px;
-    height: 1300px;
+    width: auto;
+    height: auto;
     display: flex;
     justify-content: stretch;
 }
@@ -39,7 +39,7 @@ h1
 /*A nagy kép*/
 #fokep
 {
-    width: 250px;
+    width: 1250px;
     height: 125px;
 }
 
