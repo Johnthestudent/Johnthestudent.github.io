@@ -30,8 +30,8 @@ h1
 /*A lapozó gombokat és a fő képet tartalmazó tároló*/
 #foresz
 {
-    width: 300px;
-    height: 300px;
+    width: 1300px;
+    height: 1300px;
     display: flex;
     justify-content: stretch;
 }
