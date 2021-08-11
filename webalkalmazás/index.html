@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webalkalmazásom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Képnézegető webalkalmazás</h1>
+    <div id="segitseg">
+        <p>Képek forrása (free download): </p>
+        <a href="https://www.pexels.com/search/landscape/">Landscape</a> 
+    </div>
+    
+    <!--A nagy képet és a lapozó gombokat tartalmazó rész-->
+    <div id="foresz">
+        <button id="vissza"></button>
+        <div id="nagykep">
+            <img src="images/Double rainbow.jpg" id="fokep">
+            <p></p>
+        </div>
+        <button id="elore"></button>
+    </div>
+
+    <div id="thumbnail">
+        <img src="images/Double rainbow.jpg" class="kicsi" id="kep01">
+        <img src="images/Foggy taiga.jpg" class="kicsi" id="kep02">
+        <img src="images/Lake of the mountain.jpg" class="kicsi" id="kep03">
+        <img src="images/Reaching the starts.jpg" class="kicsi" id="kep04">
+        <img src="images/Snowy forest.jpg" class="kicsi" id="kep05">
+        <img src="images/Storm in the desert.jpg" class="kicsi" id="kep06">
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts.js"></script> 
+</body>
+</html>
