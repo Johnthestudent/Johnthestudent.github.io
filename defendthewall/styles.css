@@ -1,0 +1,75 @@
+		/*Having a big container for all elements of the game is essential, otherwise the animations won't work at all!*/
+		#thegame
+		{
+			overflow: hidden;
+		}
+		
+		/*Properties of the wall.*/
+		#wall	
+		{
+			background:gray; 
+			height: 900px; 
+			width: 100px; 
+			position: absolute; 
+			left: 1500px;	
+		}
+		
+		/*Properties of the regular enemy units.*/
+		#div1, #div2, #div3
+		{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			position: relative;
+			animation: mymove 15s;
+			animation-timing-function: linear;	
+		}
+		
+		/*Properties of the big enemy unit.*/
+		#div4
+		{
+			width: 200px;
+			height: 200px;
+			background-color: orange;
+			position: relative;
+		}
+
+		/*Properties of the batteringram enemy unit.*/
+		#div5
+		{
+			width: 100px;
+			height: 100px;
+			background-color: yellow;
+			position: relative;
+		}
+		
+		/*The way how the regular enemy units move.*/
+		@keyframes mymove 
+		{
+			from {left: 0px;}
+			to {left: 1395px;}
+		}
+
+		/*Properties of the box having the numeric values for the game.*/
+        #statisticvalue
+        {
+            display: flex;
+            flex-direction: column;
+			position: absolute;
+			top: 8px;
+			right: 16px;
+            border: 1px solid greenyellow;
+            width: 300px;
+        }
+		
+		/*Properties of the box having the message of the game.*/
+		#description
+        {
+            display: flex;
+            flex-direction: column;
+			position: absolute;
+			top: 200px;
+			right: 16px;
+            border: 1px solid greenyellow;
+            width: 300px;
+        }
