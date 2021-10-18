@@ -1,0 +1,113 @@
+/*Having a big container for all elements of the game is essential, otherwise the animations won't work at all!*/
+#thegame
+{
+	overflow: hidden;
+}
+		
+/*Properties of the wall.*/
+#wall	
+{
+	background:gray; 
+	height: 900px; 
+	width: 100px; 
+	position: absolute; 
+	left: 1500px;	
+}
+
+/*Properties of the box having the numeric values for the game.*/
+#statisticvalue
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    border: 1px solid greenyellow;
+    width: 300px;
+}
+
+/*Properties of the box having the message of the game.*/
+#description
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 200px;
+    right: 16px;
+    border: 1px solid greenyellow;
+    width: 300px;
+}
+
+/*Properties of the regular enemy units.*/
+#div1, #div2, #div3, #div4
+{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	position: relative;
+	animation: regularmove 15s;
+	animation-timing-function: linear;	
+}
+
+/*The way how the regular enemy units move.*/
+@keyframes regularmove 
+{
+	from {left: 0px;}
+	to {left: 1395px;}
+}
+
+/*Properties of the big enemy unit.*/
+#div5, #div11, #div12, #div13
+{
+	width: 200px;
+	height: 200px;
+	background-color: orange;
+	position: relative;
+}
+
+/*Properties of the batteringram enemy unit.*/
+#div6, #div7, #div8, #div9, #div10
+{
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	position: relative;
+    animation: brmove 10s;
+	animation-timing-function: linear;	
+}
+
+/*The way how the battering ram enemy unit move.*/
+@keyframes brmove 
+{
+	from {left: 0px;}
+	to {left: 1395px;}
+}
+
+/*Properties of the boss unit.*/
+#boss
+{
+	width: 125px;
+	height: 125px;
+	background-color: blue;
+	position: relative;
+	animation: bossmove 30s;
+	animation-timing-function: linear;
+}
+
+/*The way how the boss unit move.*/
+@keyframes bossmove 
+{
+	from {left: 0px;}
+	to {left: 1368px;}
+}
+
+/*Properties of the box showing the health value of the boss.*/
+#bosshealth
+{
+	display: flex;
+	position: absolute;
+   	bottom: 25px;
+    left: 500px;
+	width: 400px;
+	height: 30px;
+}
