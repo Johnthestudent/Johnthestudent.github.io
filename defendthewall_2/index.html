@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defend the Wall 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload ="numbershower()">
+    <div id ="thegame">	        <!--Big container for all game elements.-->
+        <div id="wall"></div>	<!--This is the wall.-->
+        <div id="div1"></div>   <!--We start the game with regular enemy units.-->
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div4"></div>
+        
+        <div id="statisticvalue">   <!--Container of the numeric values.-->
+            <h2>My points: <span id="mypoints"></span></h2>
+            <h2>Current health: <span id="ch"></span></h2>
+        </div>
+        <div id="description">      <!--Container of the messages.-->
+            <p>Click on the moving objects to save the wall!
+                Click on the wall to repair it! (can be done only if you have enough points)
+            </p>
+            <p>
+                This game is just made for educational and entertainment purposes!<br>
+                The game itself is a parody of <b>"Defend your castle"</b>. <br>
+                <b>"Defend your castle"</b> belongs to <i>XGen Studios</i>. <br>
+                <p>Feel free to fork it and modify it! <b>(Defend the wall 2)</b></p>
+            </p>
+        </div>
+        
+        <div id="bosshealth"></div>
+    </div>
+    <!--Javascript and Jquery were used for the animation.-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts.js"></script> 
+</body>
+</html>
