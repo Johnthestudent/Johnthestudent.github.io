@@ -1,0 +1,122 @@
+/*Properties of the background.*/
+#background
+{
+    width: 900px;
+    height: 700px;
+    position: fixed;
+    top: 100px;
+    left: 500px;
+    z-index: -1;
+}
+
+/*Properties of the box having the tools.*/
+#tools
+{
+    width: 400px;
+    height: 700px;
+    position: fixed;
+    top: 100px;
+    left: 1420px;
+    background: gray;
+}
+
+/*Properties of the first button at the starter screen.*/
+#newgame
+{
+    width: 300px;
+    height: 100px;
+    font-size: 50px;
+    top: 500px;
+    left: 800px;
+    position: relative;
+}
+
+/*Properties of the second button at the starter screen.*/
+#info
+{
+    width: 300px;
+    height: 100px;
+    font-size: 50px;
+    top: 610px;
+    left: 496px;
+    position: relative;
+}
+
+/*Properties of the button, which with the player can move left.*/
+#moveleft
+{
+    width: 50px;
+    height: 100px;
+    font-size: 20px;
+    top: 275px;
+    left: 492px;
+    position: relative;
+    opacity: 0%;
+}
+
+/*Properties of the button, which with the player can move right.*/
+#moveright
+{
+    width: 50px;
+    height: 100px;
+    font-size: 20px;
+    top: 275px;
+    left: 1288px;
+    position: relative;
+    opacity: 0%;
+}
+
+/*Properties of the knife tool.*/
+#knife
+{
+    position: fixed;
+    opacity: 0%;
+    top: 150px;
+    left: 1450px;
+    width: 130px;
+    height: 100px;
+}
+
+/*Properties of the wrench tool.*/
+#wrench
+{
+    position: fixed;
+    opacity: 0%;
+    top: 150px;
+    left: 1580px;
+    width: 150px;
+    height: 100px;
+}
+
+/*Properties of the battery gem tool.*/
+#gem
+{
+    position: fixed;
+    opacity: 0%;
+    top: 250px;
+    left: 1450px;
+    width: 150px;
+    height: 120px;
+}
+
+/*Properties of the letter tool.*/
+#letter
+{
+    position: fixed;
+    opacity: 0%;
+    top: 250px;
+    left: 1580px;
+    width: 150px;
+    height: 120px;
+}
+
+/*Properties of the key tool.*/
+#key
+{
+    position: fixed;
+    opacity: 0%;
+    top: 360px;
+    left: 1480px;
+    width: 70px;
+    height: 80px;
+}
