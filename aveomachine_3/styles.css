@@ -1,0 +1,170 @@
+/*Properties for the the base image of the game.*/
+#majorimage
+{
+    width: 800px;
+    height: 600px;
+}
+
+/*Properties of the Start game button.*/
+#gamestarter
+{
+    position: relative;
+    bottom: 500px;
+    right: 700px;
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+}
+
+/*If the player moves the cursor onto the button.*/
+#gamestarter:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the Info button.*/
+#gameinfo
+{
+    position: relative;
+    bottom: 500px;
+    right: 520px;
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+}
+
+/*If the player moves the cursor onto the button.*/
+#gameinfo:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the inventory section.*/
+#inventory
+{
+    width: 800px;
+    height: 250px;
+    background-color: grey;
+    position: relative;
+}
+
+/*Properties of the axe item.*/
+#axeitem
+{
+    width: 150px;
+    height: 75px;
+    position: fixed;
+    left: 30px;
+    bottom: 200px;
+    opacity: 0%;
+}
+
+/*Properties of the bowl item.*/
+#bowlitem
+{
+    width: 200px;
+    height: 75px;
+    position: fixed;
+    left: 210px;
+    bottom: 200px;
+    opacity: 0%;
+}
+
+/*Properties of the first key fragment item.*/
+#fragment1
+{
+    width: 100px;
+    height: 50px;
+    position: fixed;
+    left: 430px;
+    bottom: 200px;
+    opacity: 0%;
+}
+
+/*Properties of the second key fragment item.*/
+#fragment2
+{
+    width: 100px;
+    height: 50px;
+    position: fixed;
+    left: 560px;
+    bottom: 200px;
+    opacity: 0%;
+}
+
+/*Properties of the last key fragment item.*/
+#fragment3
+{
+    width: 100px;
+    height: 50px;
+    position: fixed;
+    left: 690px;
+    bottom: 200px;
+    opacity: 0%;
+}
+
+/*Properties of the full key item.*/
+#keyitem
+{
+    width: 100px;
+    height: 50px;
+    position: fixed;
+    left: 30px;
+    bottom: 100px;
+    opacity: 0%;
+}
+
+/*Properties of the note item.*/
+#noteitem
+{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 150px;
+    bottom: 80px;
+    opacity: 0%;
+}
+
+/*Properties of the screwdriver item.*/
+#screwdriveritem
+{
+    width: 120px;
+    height: 75px;
+    position: fixed;
+    left: 280px;
+    bottom: 80px;
+    opacity: 0%;
+}
+
+/*Properties of the left button.*/
+#leftmove
+{
+    position: relative;
+    bottom: 310px;
+    width: 100px;
+    height: 35px;
+    font-size: 25px;
+}
+
+/*If the player moves the cursor onto the button.*/
+#leftmove:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the right button.*/
+#rightmove
+{
+    position: relative;
+    bottom: 310px;
+    left: 595px;
+    width: 100px;
+    height: 35px;
+    font-size: 25px;
+}
+
+/*If the player moves the cursor onto the button.*/
+#rightmove:hover
+{
+    cursor: pointer;
+}
