@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aveomachine 4 - The Cave</title>
+    <link rel="stylesheet", href="styles.css">
+</head>
+<body>
+    <!--A big container for the entire game-->
+    <div id="game">
+        <!--The starter screen section-->
+        <div id="beginner">
+            <img id="majorimage" src="Image resources/Introimage.png">
+
+            <button id="gamestarter">Start game</button>
+            <button id="gameinfo">Info</button>
+            <button id="walkthrough"><a href="https://github.com/Johnthestudent/Johnthestudent.github.io/blob/main/aveomachine_4/Aveomachine_4_Walkthrough.ppt">?</a></button>
+            <h1>Aveomachine 4 - The Cave</h1>
+
+        </div>
+        <!--Container for the inventory section-->
+        <div id="inventory">
+            <img id="axeitem">
+            <img id="bowlitem">
+            <img id="screwdriveritem">
+            <img id="bigcrystalitem">
+            <img id="firstnote">
+            <img id="secondnote">
+            <img id="thirdnote">
+        </div>
+        <!--The movement buttons-->
+        <button id="leftmove">left</button>
+        <button id="rightmove">right</button>
+        <!--Helper divs for the coordinates-->
+        <div id="caveentrance"></div>
+        <div id="cavelake"></div>
+        <div id="hiddencrystal"></div>
+        <div id="crystalblock"></div>
+        <div id="crystalclear"></div>
+        <div id="otherentrance"></div>
+        <div id="doortolab"></div>
+        <div id="computeron"></div>
+        <div id="drawer01"></div>
+        <div id="engineroom"></div>
+        <div id="portalroom"></div>
+        <img id="finalboss" src="Tools/Cave Cockroach boss.png">
+        <div id="bosshealthbar"></div>
+        <div id="bossfullhealth"></div>
+        <div id="aveoportal"></div>
+    </div>
+    <!--Javascript and JQuery are used-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

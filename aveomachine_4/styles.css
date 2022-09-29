@@ -1,0 +1,467 @@
+/*Properties for the the base image of the game.*/
+#majorimage
+{
+    width: 800px;
+    height: 600px;
+}
+
+/*Properties of the Start game button.*/
+#gamestarter
+{
+    position: relative;
+    bottom: 500px;
+    right: 700px;
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+    z-index: 1;
+}
+
+/*If the player moves the cursor onto the button.*/
+#gamestarter:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the Info button.*/
+#gameinfo
+{
+    position: relative;
+    bottom: 500px;
+    right: 520px;
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+    z-index: 1;
+}
+
+/*If the player moves the cursor onto the button.*/
+#gameinfo:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the Walkthrough button*/
+#walkthrough
+{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+/*If the player moves the cursor onto the button.*/
+#walkthrough:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the left button.*/
+#leftmove
+{
+    position: relative;
+    bottom: 100px;
+    width: 100px;
+    height: 35px;
+    font-size: 25px;
+    z-index: 1;
+}
+
+/*If the player moves the cursor onto the button.*/
+#leftmove:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the right button.*/
+#rightmove
+{
+    position: relative;
+    bottom: 100px;
+    left: 595px;
+    width: 100px;
+    height: 35px;
+    font-size: 25px;
+    z-index: 1;
+}
+
+/*If the player moves the cursor onto the button.*/
+#rightmove:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the title.*/
+h1
+{
+    color: red;
+    position: relative;
+    bottom: 400px;
+    left: 300px;
+}
+
+/*Properties of the inventory section.*/
+#inventory
+{
+    width: 800px;
+    height: 250px;
+    background-color: grey;
+    position: fixed;
+}
+
+/*Properties of the axe item.*/
+#axeitem
+{
+    width: 150px;
+    height: 75px;
+    position: fixed;
+    left: 30px;
+    bottom: 200px;
+    opacity: 0%;
+}
+
+/*If the player moves the cursor to the item.*/
+#axeitem:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the bowl item.*/
+#bowlitem
+{
+    width: 200px;
+    height: 75px;
+    position: fixed;
+    left: 210px;
+    bottom: 200px;
+    opacity: 0%;
+}
+
+/*If the player moves the cursor to the item.*/
+#bowlitem:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the screwdriver item.*/
+#screwdriveritem
+{
+    width: 120px;
+    height: 75px;
+    position: fixed;
+    left: 280px;
+    bottom: 80px;
+    opacity: 0%;
+}
+
+/*If the player moves the cursor to the item.*/
+#screwdriveritem:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the crystal item.*/
+#bigcrystalitem
+{
+    width: 200px;
+    height: 75px;
+    position: fixed;
+    left: 30px;
+    bottom: 100px;
+    opacity: 0%;
+}
+
+/*Properties of the first note.*/
+#firstnote
+{
+    width: 100px;
+    height: 75px;
+    position: fixed;
+    left: 400px;
+    bottom: 200px;
+    opacity: 0%;
+}
+
+/*If the player moves the cursor to the item.*/
+#firstnote:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the second note.*/
+#secondnote
+{
+    width: 100px;
+    height: 75px;
+    position: fixed;
+    left: 540px;
+    bottom: 200px;
+    opacity: 0%;
+}
+
+/*If the player moves the cursor to the item.*/
+#secondnote:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the third note.*/
+#thirdnote
+{
+    width: 100px;
+    height: 75px;
+    position: fixed;
+    left: 680px;
+    bottom: 200px;
+    opacity: 0%;
+}
+
+/*If the player moves the cursor to the item.*/
+#thirdnote:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the cave entrance.*/
+#caveentrance
+{
+    width: 250px;
+    height: 195px;
+    position: relative;
+    bottom: 470px;
+    left: 270px;
+}
+
+/*If the player movers the cursor to the given area.*/
+#caveentrance:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the cave lake.*/
+#cavelake
+{
+    width: 250px;
+    height: 280px;
+    position: relative;
+    bottom: 470px;
+    left: 500px;
+}
+
+/*If the player movers the cursor to the given area.*/
+#cavelake:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the hidden crystal object.*/
+#hiddencrystal
+{
+    width: 100px;
+    height: 20px;
+    background-color: aquamarine;
+    background-image: radial-gradient(aquamarine, lightcyan);
+    position: relative;
+    bottom: 200px;
+    left: 450px;
+    border-radius: 10px;
+    opacity: 0%;
+}
+
+/*If the player movers the cursor to the given area.*/
+#hiddencrystal:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the crystal door.*/
+#crystalblock
+{
+    width: 250px;
+    height: 350px;
+    position: relative;
+    bottom: 500px;
+    left: 80px;
+}
+
+/*If the player movers the cursor to the given area.*/
+#crystalblock:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the cleared way.*/
+#crystalclear
+{
+    width: 250px;
+    height: 350px;
+    position: relative;
+    bottom: 500px;
+    left: 80px;
+}
+
+/*If the player movers the cursor to the given area.*/
+#crystalclear:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the tunnel entrance.*/
+#otherentrance
+{
+    width: 180px;
+    height: 300px;
+    position: relative;
+    bottom: 780px;
+    left: 290px;
+}
+
+/*If the player movers the cursor to the given area.*/
+#otherentrance:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the lab door.*/
+#doortolab
+{
+    width: 220px;
+    height: 200px;
+    position: relative;
+    bottom: 960px;
+    left: 305px;
+}
+
+/*If the player movers the cursor to the given area.*/
+#doortolab:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the computer object.*/
+#computeron
+{
+    width: 220px;
+    height: 200px;
+    position: relative;
+    bottom: 600px;
+    left: 437px;
+}
+
+/*If the player movers the cursor to the given area.*/
+#computeron:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the drawer.*/
+#drawer01
+{
+    width: 210px;
+    height: 100px;
+    position: relative;
+    bottom: 890px;
+    left: 537px;
+}
+
+/*If the player movers the cursor to the given area.*/
+#drawer01:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the door of the engine room.*/
+#engineroom
+{
+    width: 210px;
+    height: 350px;
+    position: relative;
+    bottom: 850px;
+    left: 270px;
+}
+
+/*If the player movers the cursor to the given area.*/
+#engineroom:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the door of the portal room.*/
+#portalroom
+{
+    width: 210px;
+    height: 300px;
+    position: relative;
+    bottom: 1200px;
+    left: 570px;
+}
+
+/*If the player movers the cursor to the given area.*/
+#portalroom:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the boss of the game.*/
+#finalboss
+{
+    width: 100px;
+    height: 200px;
+    position: relative;
+    bottom: 1300px;
+    left: 350px;
+    opacity: 0%;
+}
+
+/*If the player movers the cursor to the given area.*/
+#finalboss:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the object showing the actual health of the boss.*/
+#bosshealthbar
+{
+    background-color: purple;
+    width: 100px;
+    height: 700px;
+    position: fixed;
+    left: 820px;
+    bottom: 220px;
+    opacity: 0%;
+}
+
+/*Properties of the object showing the full health of the boss.*/
+#bossfullhealth
+{
+    background-color: black;
+    width: 100px;
+    height: 700px;
+    position: fixed;
+    left: 820px;
+    bottom: 220px;
+    opacity: 0%;
+    z-index: -1;
+}
+
+/*Properties of the portal.*/
+#aveoportal
+{
+    background-color: cyan;
+    width: 100px;
+    height: 50px;
+    position: fixed;
+    left: 370px;
+    top: 290px;
+    opacity: 0%;
+}
+
+/*If the player movers the cursor to the given area.*/
+#aveoportal:hover
+{
+    cursor: pointer;
+}

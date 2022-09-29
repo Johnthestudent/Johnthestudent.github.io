@@ -1,0 +1,21 @@
+This online game is made for educational and entertainment purposes only!
+
+The educational part is that this is partially for practicing web programming.
+
+The entertainment part is that I just would like to make you happy.
+
+The game itself is a parody of Submachine sci-fi themed logical escaping game series.
+
+Note me if you wish to fork and modify Aveomachine!
+
+Used languages:
+- HTML
+- CSS
+- JavaScript
+- JQuery
+
+Used software:
+- Gimp
+- Visual Studio Code
+- Github Desktop
+- Firefox
