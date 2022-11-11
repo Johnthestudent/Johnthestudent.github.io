@@ -8,7 +8,8 @@ $("#magyar").on('click', function()
 
     $("#schooltitle").html("Iskoláim");
     $(".highschool").html("Vegyipari Szakközépiskola");
-    $(".university").html("Debreceni Egyetem");
+    $("#university01").html("Debreceni Egyetem - Programtervező Informatikus");
+    $("#university02").html("Debreceni Egyetem - Angol-Magyar Informatikai Szakfordító");
 
     $("#hobbi").html("Hobbiaim");
     $("#kapcsolat").html("Kapcsolat");
@@ -30,7 +31,8 @@ $("#angol").on('click', function()
 
     $("#schooltitle").html("Schools that I have attended");
     $(".highschool").html("Vegyipari Technical High School");
-    $(".university").html("University of Debrecen");
+    $("#university01").html("University of Debrecen - Computer Scientist");
+    $("#university02").html("University of Debrecen - English-Hungarian Special Translator in Informatics");
 
     $("#hobbi").html("Hobbies");
     $("#kapcsolat").html("Contact me");
