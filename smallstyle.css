@@ -1,0 +1,68 @@
+body{
+  background-image: url("20210130hogomb-jeg-szappanbuborek.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*A lábléc stílusa*/
+/*A left 0 és a bottom 0 éri el azt, hogy végig alul maradjon*/
+#footer
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background-color: lightslategrey;
+    text-align: center;
+    font-size: 25px;
+}
+
+#gombtarolo
+{
+    position: absolute; /*Ezzel van elérve az, hogy a jobb felső sarokba lehessen tenni*/
+    right: 0px;
+    top: 0px;
+}
+/*A magyar nyelvre váltó gomb stílusa*/
+#magyar
+{
+    width: 50px;
+    height: 30px;
+    background-image: url("Flag_of_Hungary.svg.webp");
+    background-size: cover; /*Ezzel van biztosítva, hogy a kép a gomb mérethez igazodjon*/
+}
+
+#magyar:hover
+{
+  cursor: pointer;
+}
+
+/*Az angol nyelvre váltó gomb stílusa*/
+#angol
+{
+    width: 50px;
+    height: 30px;
+    background-image: url("Flag_of_the_United_Kingdom_(3-5).svg.png");
+    background-size: cover; /*Ezzel van biztosítva, hogy a kép a gomb mérethez igazodjon*/
+}
+
+#angol:hover
+{
+  cursor: pointer;  
+}
+
+a:link
+{
+  color: darkred;
+}
+
+a:hover
+{
+  color: yellow;
+}
+
+a:visited
+{
+  color: greenyellow;
+}

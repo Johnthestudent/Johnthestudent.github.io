@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kapcsolat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="smallstyle.css" />
+  </head>
+  <body>
+    <div id="gombtarolo">
+      <button id="magyar"></button>
+      <button id="angol" onclick="location.href='contact.html';"></button>
+    </div>  
+
+    <h3>Email</h3>
+    <p>cpjanos26@gmail.com</p>
+
+    <form class="" action="mailto:cpjanos26@gmail.com" method="post">
+      <label id="kuldonev">Neve:</label><br>
+      <input type="text" name="" value="" /><br />
+      <label id="kuldoemail">Email címe:</label><br>
+      <input type="email" name="" value="" /><br />
+      <label id="kuldouzenet">Üzenete:</label><br />
+      <textarea name="name" rows="30" cols="80"></textarea><br />
+      <input type="submit" name="" value="Üzenet küldése" id="bekuldo"/>
+    </form>
+
+    <div id="footer">
+      <div id="elerhetoseg">
+      <!--Linkedin elérhetőség-->
+        <div id="linkedin">
+            <a href="https://www.linkedin.com/in/janospogany/">Linkedin</a>
+            <i class="fa fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+    </div>
+
+    <!--A szükséges Javascript (JQuery)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="contactinteraktiv.js"></script>
+  </body>
+</html>

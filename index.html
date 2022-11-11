@@ -3,62 +3,67 @@
 
 <head>
   <meta charset="utf-8">
-  <title>A little website attempt</title>
+  <title>John Pogany's website</title>
+  <!--Az elérhetőség ikonjainak fontawesome-ra van szüksége-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="mystyle.css" />
 </head>
 
 <body>
-  <table cellspacing="20" border="1px,solid,black" style="table-layout:auto">
+  <div id="gombtarolo">
+    <button id="magyar" onclick="location.href='indexmagyar.html';"></button>
+    <button id="angol"></button>
+  </div>
+
+  <!--Első táblázat-->
+  <table cellspacing="20" tyle="table-layout:auto">
     <tr>
       <td>
-        <img src="Profilkep.jpg" style="width:50%;height=50%" />
+        <img src="Profilkep.jpg" style="width:50%;height:50%" />
       </td>
       <td>
-        <h1>John Pogany's website attempt</h1>
-        <p>This is a website attempt made with <b>Atom</b>. There you can find good details.</p>
+        <h1 id="mottotitle">Pogány János's (John Pogany) website</h1>
+        <p id="motto">I can learn <strong>anything</strong>.</p>
       </td>
     </tr>
   </table>
 
   <hr />
-  <h3>Schools that I have attended</h3>
+  <h3 id="schooltitle">Schools that I have attended</h3>
   <ul>
-    <li>Vegyipari Technical High School</li>
-    <li>University of Debrecen</li>
+    <li class="highschool">Vegyipari Technical High School</li>
+    <li class="university">University of Debrecen</li>
   </ul>
   <hr />
-  <a href="hobby.html">Hobbies</a><br />
-  <a href="contact.html">Contact me</a>
+  <a href="hobby.html" id="hobbi">Hobbies</a><br />
+  <a href="contact.html" id="kapcsolat">Contact me</a>
   <hr />
-  <h3>School years</h3>
+  <h3 id="minitablename">School years</h3>
 
-  <table border=1 cellspacing="10">
-    <th>
+  <!--Iskolák nevei-->
+  <table border=0 cellspacing="10">
       <tr>
-        <td><b>Dates</b></td>
-        <td><b>School</b></td>
+        <th id="schooldate">Dates</th>
+        <th id="schoolname">School</th>
       </tr>
-    </th>
-    <tablebody>
       <tr>
         <td>2009-2014</td>
-        <td>Vegyipari Technical High School</td>
+        <td class="highschool">Vegyipari Technical High School</td>
       </tr>
       <tr>
         <td>2014-2020</td>
-        <td>University of Debrecen</td>
+        <td class="university">University of Debrecen</td>
       </tr>
-    </tablebody>
   </table>
 
   <hr />
+  <!--Képesség szint táblázat-->
   <table>
     <tr>
       <td>
         <table>
-
-
           <tr>
-            <td>Web Development</td>
+            <td id="technologia">Web Development</td>
             <td>⭐⭐⭐</td>
           </tr>
           <tr>
@@ -73,8 +78,6 @@
       </td>
       <td>
         <table>
-
-
           <tr>
             <td>HTML</td>
             <td>⭐⭐⭐⭐</td>
@@ -85,12 +88,43 @@
           </tr>
           <tr>
             <td>JQuery</td>
+            <td>⭐⭐⭐⭐</td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table>
+          <tr>
+            <td>PHP</td>
             <td>⭐⭐⭐</td>
+          </tr>
+          <tr>
+            <td>SQL</td>
+            <td>⭐⭐⭐</td>
+          </tr>
+            <tr>
+            <td>Office</td>
+            <td>⭐⭐⭐⭐</td>
           </tr>
         </table>
       </td>
     </tr>
   </table>
+
+  <div id="footer">
+    <div id="elerhetoseg">
+    <!--Linkedin elérhetőség-->
+      <div id="linkedin">
+          <a href="https://www.linkedin.com/in/janospogany/">Linkedin</a>
+          <i class="fa fa-brands fa-linkedin"></i>
+      </div>
+    </div>
+  </div>
+
+  <!--A szükséges Javascript (JQuery)-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="interaktiv.js"></script>
+
 </body>
 
 </html>

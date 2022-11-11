@@ -3,12 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Hobbies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="smallstyle.css" />
   </head>
   <body>
+    <div id="gombtarolo">
+      <button id="magyar" onclick="location.href='hobbymagyar.html';"></button>
+      <button id="angol"></button>
+    </div>
+
     <ol>
-      <li>Drawing</li><a href="https://www.gimp.org/">Gimp</a>
-      <li>Computer games</li><a href="https://www.minetest.net/">My favorite</a>
-      <li>Funny videos</li><a href="https://www.youtube.com/c/FacePapi">Memes and many other funny things</a>
+      <li id="elsohobbi">Drawing</li><a href="https://www.gimp.org/" id="01hobbi">Gimp</a>
+      <li id="masodikhobbi">Computer games</li><a href="https://www.minetest.net/" id="02hobbi">My favorite</a>
+      <li id="harmadikhobbi">Funny videos</li><a href="https://www.youtube.com/c/FacePapi" id="03hobbi">Memes and many other funny things</a>
     </ol>
+
+    <div id="footer">
+      <div id="elerhetoseg">
+      <!--Linkedin elérhetőség-->
+        <div id="linkedin">
+            <a href="https://www.linkedin.com/in/janospogany/">Linkedin</a>
+            <i class="fa fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+    </div>
+    
+    <!--A szükséges Javascript (JQuery)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="hobbiinteraktiv.js"></script>
   </body>
 </html>
