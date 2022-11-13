@@ -66,3 +66,22 @@ a:visited
 {
   color: greenyellow;
 }
+
+/*mobil méret*/
+@media only screen and (max-width: 768px)
+{
+  ol, a
+  {
+    font-size: 30px;
+  }
+
+  #footer
+  {
+    width: 100%;
+  }
+
+  #gombtarolo
+  {
+    width: 30%;
+  }
+}
