@@ -68,7 +68,9 @@ a:visited
 }
 
 /*mobil méret*/
-@media only screen and (max-width: 768px)
+/*first size = 768px*/
+/*second size = 600px*/
+@media only screen and (max-width: 600px)
 {
   ol, a
   {
