@@ -70,7 +70,8 @@ a:visited
 /*mobil méret*/
 /*first size = 768px*/
 /*second size = 600px*/
-@media only screen and (max-width: 600px) and (orientation: portrait)
+/*third size = 200px*/
+@media only screen and (max-width: 200px) and (orientation: portrait)
 {
   ol, a
   {
