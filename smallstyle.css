@@ -8,14 +8,16 @@ body{
 /*A left 0 és a bottom 0 éri el azt, hogy végig alul maradjon*/
 #footer
 {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 150px;
-    background-color: lightslategrey;
-    text-align: center;
-    font-size: 25px;
+  position: relative;
+  display: flex;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: lightslategrey;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
 }
 
 #gombtarolo
@@ -81,7 +83,6 @@ a:visited
   #footer
   {
     width: 100%;
-    position: relative;
   }
 
   #gombtarolo
