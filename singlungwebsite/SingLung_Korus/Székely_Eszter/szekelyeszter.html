@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Székely Eszter</title>
+    <!--Az elérhetőség ikonjainak fontawesome-ra van szüksége-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
+    <link rel="stylesheet" href="szekelyeszterstilus.css">
+</head>
+<body>
+    <!--A nyelvváltó gombok-->
+    <div id="gombtarolo">
+        <button id="magyar"></button>
+        <button id="angol" onclick="location.href='szekelyeszterangol.html';"></button>
+    </div>
+
+    <div id="kezdokepek">
+        <img src="Székely Eszter.png" alt="profilkep" id="profil">
+        <img src="LÉTLOGO.jpg" alt="logohoz" id="logokep">
+    </div>
+    
+    <div id="szoveghez">
+        <p>
+            Több szakterületen szakápoló. 
+        </p>
+        <p>
+            Hiszem, hogy az éneklés gyógyítja a lelket,a testet és minden más betegséget.
+            Az éneklés csodát tesz a légzőszervi betegekkel.
+        </p>
+    </div>
+
+    <!--A menügombok-->
+    <div id="menugombok">
+        <button onclick="location.href='/Bemutatkozashoz/bemutatkozas.html';" id="bemutatkozo">Az Alapítványról</button>
+        <button onclick="location.href='/Esemenyek/esemeny.html';" id="esemenyek">Események</button>
+        <button onclick="location.href='/SingLung_Korus/singlung.html';" id="kepek">A SingLung Kórus</button>
+        <button onclick="location.href='/Modszerhez/modszer.html';" id="methodsing">A SingLung Módszer</button>
+        <button onclick="location.href='/Hireinkhez/hirek.html';" id="hir">Hírek, Újdonság</button>
+        <button onclick="location.href='/Kapcsolathoz/kapcsolat.html';" id="kapcsolattartas">Kapcsolat</button>
+    </div>
+
+    <!--A lábléc-->
+    <div id="footer">
+        <!--A weboldal készítője-->
+        <div id="keszito">
+            <b>Készítette: </b>
+            <p>Pogány János</p>
+            <!--Linkedin elérhetőség-->
+            <a href="https://www.linkedin.com/in/janospogany/">Linkedin</a>
+            <i class="fa fa-brands fa-linkedin"></i>
+        </div>
+    </div>       
+    <!--A szükséges Javascript (JQuery)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="szekelyeszterinteraktivitas.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--A hírek oldal címe-->
+    <title>News</title>    
+    <!--Az elérhetőség ikonjainak fontawesome-ra van szüksége-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--A hírek oldal stílusát meghatározó fájl-->
+    <link rel="stylesheet" href="hirekstilus.css"> 
+</head>
+<body>
+    <!--A nyelvváltó gombok-->
+    <div id="gombtarolo">
+        <button id="magyar" onclick="location.href='hirek.html';"></button>
+        <button id="angol"></button>
+    </div>  
+    
+    <img src="LÉTLOGO.jpg" alt="logo" id="logokep">
+
+    <!--A hírek listája-->
+    <ul>
+        <li>
+            <a href="https://mandiner.hu/cikk/20211215_elet_kult_covid_zeneterapia_singlung?fbclid=IwAR3kWJHviL-40BcVXLi_uacAc1VCr9UKN_Wk2P_Yg995kZx6E0rTZg182Ik">Covid zeneterápia</a>
+        </li>
+        <li>
+            <a href="https://index.hu/kultur/2021/09/22/fischer-ivan-az-eneklest-ajanlja-covid-ellen/?fbclid=IwAR1YqYLJuDC6VTI36ezNLKAN6Yvsujf8hwTOuPYF4SA35sdg1xucKjChexs">Éneklés Covid ellen</a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/legzesselalelekert/">Facebook</a>
+        </li>
+        <li>
+            <a href="https://youtube.com/@legzesselalelekertalapitva6601">YouTube</a>
+        </li>
+        <li>
+            <a>WHO Conference</a>
+        </li>
+        <li>
+            <a></a>
+        </li>
+        <li>
+            <a></a>
+        </li>
+        <li>
+            <a></a>
+        </li>
+    </ul>
+
+    <!--A menügombok-->
+    <div id="menugombok">
+        <button onclick="location.href='/Bemutatkozashoz/bemutatkozasangol.html';" id="bemutatkozo">About us</button>
+        <button onclick="location.href='/Esemenyek/esemenyangol.html';" id="esemenyek">Events</button>
+        <button onclick="location.href='/SingLung_Korus/singlungangol.html';" id="kepek">The SingLung Choir</button>
+        <button onclick="location.href='/Modszerhez/modszerangol.html';" id="methodsing">The SingLung Method</button>
+        <button onclick="location.href='/Hireinkhez/hirekangol.html';" id="hir">News, Novelty</button>
+        <button onclick="location.href='/Kapcsolathoz/kapcsolatangol.html';" id="kapcsolattartas">Contact</button>
+    </div>
+
+    <!--A lábléc-->
+    <div id="footer">
+        <!--A weboldal készítője-->
+        <div id="keszito">
+            <b>Created by: </b>
+            <p>János Pogány</p>
+            <!--Linkedin elérhetőség-->
+            <a href="https://www.linkedin.com/in/janospogany/">Linkedin</a>
+            <i class="fa fa-brands fa-linkedin"></i>
+        </div>
+    </div>
+
+    <!--A szükséges Javascript (JQuery)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="hirekinteraktiv.js"></script>
+</body>
+</html>
