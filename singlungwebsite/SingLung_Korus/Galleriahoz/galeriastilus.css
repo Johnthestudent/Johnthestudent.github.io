@@ -1,0 +1,135 @@
+body
+{
+    /*Az egész oldal háttérszíne*/
+    background-color: aliceblue;
+}
+
+img
+{
+    /*Minden képhez keret jár*/
+    border: 1px solid azure;
+    width: 50%;
+}
+
+#kepek
+{
+    text-align: center;
+}
+
+#logokep
+{
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    width: 20%;
+    border: 1px solid azure;
+}
+
+/*A lábléc stílusa*/
+/*A left 0 és a bottom 0 éri el azt, hogy végig alul maradjon*/
+#footer
+{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: lightsteelblue;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#keszito
+{
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 16px;
+}
+
+#keszito p
+{
+    position: relative;
+    top: 0px;
+}
+
+/*A magyar nyelvre váltó gomb stílusa*/
+#magyar
+{
+    width: 50px;
+    height: 30px;
+    background-image: url("Zaszlok/Flag_of_Hungary.svg.webp");
+    background-size: cover; /*Ezzel van biztosítva, hogy a kép a gomb mérethez igazodjon*/
+}
+
+/*Az angol nyelvre váltó gomb stílusa*/
+#angol
+{
+    width: 50px;
+    height: 30px;
+    background-image: url("Zaszlok/Flag_of_the_United_Kingdom_\(3-5\).svg.png");
+    background-size: cover; /*Ezzel van biztosítva, hogy a kép a gomb mérethez igazodjon*/
+}
+
+#gombtarolo
+{
+    position: absolute; /*Ezzel van elérve az, hogy a jobb felső sarokba lehessen tenni*/
+    right: 0px;
+    top: 0px;
+}
+
+/*Az alap gombok stílusa*/
+button
+{
+    width: 200px;
+    height: 75px;
+    font-size: 25px;
+}
+
+/*A kurzor mutatóvá válik a gombra mozdításkor*/
+button:hover
+{
+    cursor: pointer;
+}
+
+/*A menügombok tárolójának stílusa*/
+#menugombok
+{
+    position: fixed;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;  /*Ezzel van elérve az, hogy a gombok között térköz van*/
+    align-items: center;
+    left: 0px;
+    bottom: 50px;
+    width: 350px;
+    height: 700px;
+    border: 1px solid azure;
+    background-color: lightgrey;
+}
+
+#menugombok button
+{
+    border-radius: 25px;
+}
+
+/*tablet nézet*/
+/*@media only screen and (max-width: 768px) and (max-height: 1024px)
+{
+
+}*/
+
+/*mobil nézet (portré mód)*/
+/*@media only screen and (max-width: 320px) and (max-height: 480px)  and (orientation: portrait)
+{
+
+}*/
+
+/*mobil nézet (tájkép mód)*/
+/*@media only screen and (max-width: 480px) and (max-height: 320px)  and (orientation: landscape)
+{
+
+}*/
