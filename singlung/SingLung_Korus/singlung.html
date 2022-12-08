@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A SingLung Kórus</title>
+    <!--Az elérhetőség ikonjainak fontawesome-ra van szüksége-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="singlungstilus.css">
+</head>
+<body>
+    <!--A nyelvváltó gombok-->
+    <div id="gombtarolo">
+        <button id="magyar"></button>
+        <button id="angol" onclick="location.href='singlungangol.html';"></button>
+    </div>
+    <ul>
+        <li><a href="Philipp_György/philippgyorgy.html">Művészeti vezető - Philipp György</a></li>
+        <li><a href="Várdi_Katalin/alapito.html">Orvos szakmai vezető - Dr. Várdi Katalin</a></li>
+        <li>Együttműködő művészek
+            <ul class="nembetolt">
+                <li><a href="Ambrus_Orsolya/ambrusorsolya.html">Ambrus Orsolya</a></li>
+                <li><a href="Balogh_Eszter/balogheszter.html">Balogh Eszter</a></li>
+                <li><a href="Csereklyei_Andrea/csereklyeiandrea.html">Csereklyei Andrea</a></li>
+                <li><a href="Erdős_Attila/erdosattila.html">Erdős Attila</a></li>
+                <li><a href="Nagy_Csilla/nagycsilla.html">Nagy Csilla</a></li>
+                <li>Najbauer Lórand</li>
+                <li><a href="Puporka_Elemér/puporkaelemer.html">Puporka Elemér</a></li>
+            </ul>
+        </li>
+        <li>Az egészségügyi team
+            <ul class="nembetolt">
+                <li><a href="Duzsik Lili/duzsiklili.html">Duzsik Lili - gyógytornász</a></li>
+                <li><a href="Székely_Eszter/szekelyeszter.html">Székely Eszter - ápoló</a></li>
+                <li><a href="Schneider_Zsolt/schneiderzsolt.html">Schneider Zsolt - ápoló</a></li>
+            </ul>
+        </li>
+        <li>Önkénteseink</li>
+        <li><a href="Galleriahoz/galeria.html">Kórus és betegfotók</a></li>
+        <li><a href="Visszajelzések/visszajelzes.html">Visszajelzések</a></li>
+    </ul>
+    <img src="/LÉTLOGO.jpg" alt="logo" id="logokep">
+
+    <!--A menügombok-->
+    <div id="menugombok">
+        <button onclick="location.href='/Bemutatkozashoz/bemutatkozas.html';" id="bemutatkozo">Az Alapítványról</button>
+        <button onclick="location.href='/Esemenyek/esemeny.html';" id="esemenyek">Események</button>
+        <button onclick="location.href='/SingLung_Korus/singlung.html';" id="kepek">A SingLung Kórus</button>
+        <button onclick="location.href='/Modszerhez/modszer.html';" id="methodsing">A SingLung Módszer</button>
+        <button onclick="location.href='/Hireinkhez/hirek.html';" id="hir">Hírek, Újdonság</button>
+        <button onclick="location.href='/Kapcsolathoz/kapcsolat.html';" id="kapcsolattartas">Kapcsolat</button>
+    </div>
+
+    <!--A lábléc-->
+    <div id="footer">
+        <!--A weboldal készítője-->
+        <div id="keszito">
+            <b>Készítette: </b>
+            <p>Pogány János</p>
+            <!--Linkedin elérhetőség-->
+            <a href="https://www.linkedin.com/in/janospogany/">Linkedin</a>
+            <i class="fa fa-brands fa-linkedin"></i>
+        </div>
+    </div>       
+    <!--A szükséges Javascript (JQuery)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="singlunginteraktivitas.js"></script>
+</body>
+</html>
