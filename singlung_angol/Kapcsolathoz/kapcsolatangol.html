@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--A kapcsolat oldal címe-->
+    <title>Contact</title>
+    <!--Az elérhetőség ikonjainak fontawesome-ra van szüksége-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--A kapcsolat oldal stílusát meghatározó fájl-->
+    <link rel="stylesheet" href="kapcsolatstilus.css"> 
+</head>
+<body>
+
+  <!--A nyelvváltó gombok-->
+  <div id="gombtarolo">
+    <button id="magyar" onclick="location.href='https://johnthestudent.github.io/singlung_magyar/Kapcsolathoz/kapcsolat.html';"></button>
+    <button id="angol"></button>
+  </div>
+
+  <img src="SingLungLogo.png" alt="logo" id="logokep">
+  
+  <!--Az elérhetőségi email címet tartalmazó tároló-->
+  <div id="kommunikacio">
+    <div>
+      <h3>My email address:</h3>
+      <h3><i>legzeslelek@gmail.com</i></h3>
+    </div>
+    <div>
+      <h3 id="mobilhoz">Phone:</h3>
+      <h3><i>+36303992828</i></h3>
+    </div>
+  </div>
+
+    <!--Az üzenetküldési űrlap-->
+    <!--A text/plain segítségével a magyar ékezetes karaktereket is elfogadja-->
+    <form class="" action="mailto:legzeslelek@gmail.com" method="post" enctype="text/plain">
+      <!--Név megadása-->
+      <label><b id="nevkero">Name:</b></label><br>
+      <input type="text" name="" value="" class="egyebadat"/><br /><br>
+      <!--Email cím megadása-->
+      <label><b id="emailkero">Email:</b></label><br>
+      <input type="email" name="" value="" class="egyebadat"/><br /><br>
+      <!--Üzenet megadása a karakterlimiten belül-->
+      <label><b id="uzenetdoboz">Message:</b></label><br />
+      <textarea name="name" rows="30" cols="75" maxlength="1000"></textarea><br />
+      <!--Az üzenetet küldő gomb-->
+      <input type="submit" name="" value="Send message" id="bekuldo" />
+    </form>
+
+    <!--A menügombok-->
+    <div id="menugombok">
+        <button onclick="location.href='https://johnthestudent.github.io/singlung_angol/Bemutatkozashoz/bemutatkozasangol.html';" id="bemutatkozo">About us</button>
+        <button onclick="location.href='https://johnthestudent.github.io/singlung_angol/Esemenyek/esemenyangol.html';" id="esemenyek">Events</button>
+        <button onclick="location.href='https://johnthestudent.github.io/singlung_angol/SingLung_Korus/singlungangol.html';" id="kepek">Choir</button>
+        <button onclick="location.href='https://johnthestudent.github.io/singlung_angol/Modszerhez/modszerangol.html';" id="methodsing">The SingLung Method</button>
+        <button onclick="location.href='https://johnthestudent.github.io/singlung_angol/Hireinkhez/hirekangol.html';" id="hir">News, Novelty</button>
+        <button onclick="location.href='https://johnthestudent.github.io/singlung_angol/Kapcsolathoz/kapcsolatangol.html';" id="kapcsolattartas">Contact</button>
+    </div>
+
+    <!--A lábléc-->
+    <div id="footer">
+      <!--A weboldal készítője-->
+      <div id="keszito">
+          <b>Created by: </b>
+          <p>János Pogány</p>
+          <!--Linkedin elérhetőség-->
+          <a href="https://www.linkedin.com/in/janospogany/">Linkedin</a>
+          <i class="fa fa-brands fa-linkedin"></i>
+      </div>
+    </div>
+
+    <!--A szükséges Javascript (JQuery)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="kapcsolatinteraktivitas.js"></script>
+</body>
+</html>
+
