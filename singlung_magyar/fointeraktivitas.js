@@ -3,10 +3,10 @@ $("#angol").on('click', function()
 {
     $("title").html("SingLung");
     
-    $("#bemutatkozo").html("About us");
+    $("#bemutatkozo").html("Foundation");
     $("#kepek").html("Choir");
-    $("#hir").html("News, Novelty");
-    $("#methodsing").html("The SingLung Method");
+    $("#hir").html("News");
+    $("#methodsing").html("SingLung Method");
     $("#kapcsolattartas").html("Contact");
     $("#keszito b").html("Created by: ");
     $("#keszito p").html("János Pogány");
@@ -17,10 +17,10 @@ $("#magyar").on('click', function()
 {
     $("title").html("SingLung");
     
-    $("#bemutatkozo").html("Az Alapítványról");
+    $("#bemutatkozo").html("Alapítvány");
     $("#kepek").html("Kórus");
-    $("#hir").html("Hírek, Újdonság");
-    $("#methodsing").html("A SingLung Módszer");
+    $("#hir").html("Hírek");
+    $("#methodsing").html("SingLung Módszer");
     $("#kapcsolattartas").html("Kapcsolat");
     $("#keszito b").html("Készítette: ");
     $("#keszito p").html("Pogány János");

@@ -80,21 +80,6 @@ button:hover
     justify-content: center;
 }
 
-#keszito
-{
-    width: 300px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 16px;
-}
-
-#keszito p
-{
-    position: relative;
-    top: 8px;
-}
-
 #elerhetoseg
 {
     display: flex;
