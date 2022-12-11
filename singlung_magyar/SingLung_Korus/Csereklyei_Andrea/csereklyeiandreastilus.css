@@ -101,27 +101,13 @@ button:hover
     justify-content: center;
 }
 
-#keszito
-{
-    width: 300px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 16px;
-}
-
-#keszito p
-{
-    position: relative;
-    top: 0px;
-}
-
 #szoveghez
 {
     font-size: 20px;
     position: relative;
     left: 670px;
     width: 500px;
+    color: black;
 }
 
 /*laptop nézet*/

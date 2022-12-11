@@ -53,6 +53,7 @@ ul
     position: relative;
     left: 500px;
     top: 30px;
+    color: black;
 }
 
 /*A kisebb felsorolás*/
@@ -78,20 +79,6 @@ ul
     text-align: center;
     display: flex;
     justify-content: center;
-}
-
-#keszito
-{
-    width: 300px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 16px;
-}
-
-#keszito p
-{
-    position: relative;
 }
 
 /*Az alap gombok stílusa*/

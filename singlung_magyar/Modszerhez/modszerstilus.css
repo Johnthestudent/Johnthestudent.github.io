@@ -17,6 +17,7 @@ body
 .nagyobb
 {
     font-size: 20px;
+    color: black;
 }
 
 h1
@@ -79,21 +80,6 @@ button:hover
     text-align: center;
     display: flex;
     justify-content: center;
-}
-
-#keszito
-{
-    width: 300px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 16px;
-}
-
-#keszito p
-{
-    position: relative;
-    top: 0px;
 }
 
 /*Az alap gombok stílusa*/
