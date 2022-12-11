@@ -9,8 +9,6 @@ $("#angol").on('click', function()
     $("#emailkero").html("Email:");
     $("#uzenetdoboz").html("Message:");
     $("#bekuldo").prop("value", "Send message");
-    $("#keszito b").html("Created by: ");
-    $("#keszito p").html("János Pogány");
 })
 
 //Ha a felhasználó a magyar nyelv gombra kattint
@@ -24,6 +22,4 @@ $("#magyar").on('click', function()
     $("#emailkero").html("Email:");
     $("#uzenetdoboz").html("Üzenet:");
     $("#bekuldo").prop("value", "Üzenet küldése");
-    $("#keszito b").html("Készítette: ");
-    $("#keszito p").html("Pogány János");
 })
