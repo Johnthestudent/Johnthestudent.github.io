@@ -122,6 +122,7 @@ button:hover
     position: relative;
     left: 700px;
     width: 500px;
+    color: black;
 }
 
 /*laptop nézet*/

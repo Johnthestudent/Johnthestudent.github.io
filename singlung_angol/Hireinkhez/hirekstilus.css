@@ -109,6 +109,7 @@ button
     position: relative;
     left: 500px;
     top: 50px;
+    color: black;
 }
 
 /*A kurzor mutatóvá válik a gombra mozdításkor*/
