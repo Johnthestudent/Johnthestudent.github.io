@@ -24,6 +24,7 @@ h1
 {
     background-color: lightsteelblue;
     width: 1000px;
+    color: black;
 }
 
 #logokep
@@ -123,12 +124,12 @@ button:hover
 }
 
 /*laptop nézet*/
-@media only screen and (max-width: 1280px)
+@media only screen and (max-width: 992px)
 {
     h1
     {
         background-color: lightsteelblue;
-        width: 550px;
+        width: 350px;
     }
 
     #otlet, #technika
@@ -139,12 +140,13 @@ button:hover
 
     #otlet p, #technika p
     {
-        width: 550px;
+        width: 350px;
     }
 
     .nagyobb
     {
         font-size: 16px;
+        width: 350px;
     }
 
     /*A menügombok tárolójának stílusa*/

@@ -121,11 +121,11 @@ button:hover
 /*mobile resolution: 320 x 480 */
 
 /*laptop nézet*/
-@media only screen and (max-width: 1280px)
+@media only screen and (max-width: 992px)
 {
     h1
     {
-        width: 1100px;
+        width: 800px;
     }
 
     /*A főoldal képének stílusa*/
@@ -156,8 +156,8 @@ button:hover
         align-items: center;
         left: 0px;
         bottom: 57px;
-        width: 350px;
-        height: 700px;
+        width: 280px;
+        height: 650px;
         border: 1px solid azure;
         background-color: lightgrey;
     }
@@ -178,3 +178,4 @@ button:hover
         justify-content: center;
     }    
 }
+

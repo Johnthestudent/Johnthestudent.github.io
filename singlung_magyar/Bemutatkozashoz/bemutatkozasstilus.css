@@ -31,6 +31,7 @@ h1
 {
     width: 1000px;
     background-color: lightsteelblue;
+    color: black;
 }
 
 /*A magyar nyelvre váltó gomb stílusa*/
@@ -140,7 +141,7 @@ button:hover
         justify-content: space-around;  /*Ezzel van elérve az, hogy a gombok között térköz van*/
         align-items: center;
         left: 0px;
-        bottom: 65px;
+        bottom: 45px;
         width: 350px;
         height: 700px;
         border: 1px solid azure;

@@ -111,14 +111,14 @@ button:hover
 }
 
 /*laptop nézet*/
-@media only screen and (max-width: 1280px)
+@media only screen and (max-width: 992px)
 {
     #szoveghez
     {
         font-size: 16px;
         position: relative;
-        left: 450px;
-        width: 500px;
+        left: 370px;
+        width: 400px;
         bottom: 10px;
     }
 
@@ -126,7 +126,8 @@ button:hover
     {
         border: 1px solid azure;
         position: relative;
-        left: 450px;
+        left: 370px;
+        width: 40%;
     }
 
     /*A menügombok tárolójának stílusa*/
