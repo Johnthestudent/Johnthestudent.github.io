@@ -109,7 +109,7 @@ button:hover
 }
 
 /*laptop nézet*/
-@media only screen and (max-width: 1280px)
+@media only screen and (max-width: 992px)
 {
     .container
     {
@@ -121,9 +121,11 @@ button:hover
 
     .card
     {
-        width: 500px;
+        width: 400px;
         text-align: center;
         border: 1px solid black;
+        position: relative;
+        left: 70px;
     }
     
     .card p

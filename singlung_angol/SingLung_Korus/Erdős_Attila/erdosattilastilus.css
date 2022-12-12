@@ -111,21 +111,22 @@ button:hover
 }
 
 /*laptop nézet*/
-@media only screen and (max-width: 1280px)
+@media only screen and (max-width: 992px)
 {
     #szoveghez
     {
         font-size: 16px;
         position: relative;
-        left: 440px;
-        width: 500px;
+        left: 370px;
+        width: 400px;
     }
 
     #profil
     {
         border: 1px solid azure;
         position: relative;
-        left: 440px;
+        left: 370px;
+        width: 40%;
     }
     
     /*A menügombok tárolójának stílusa*/
@@ -137,7 +138,7 @@ button:hover
         justify-content: space-around;  /*Ezzel van elérve az, hogy a gombok között térköz van*/
         align-items: center;
         left: 0px;
-        bottom: 80px;
+        bottom: 50px;
         width: 350px;
         height: 700px;
         border: 1px solid azure;

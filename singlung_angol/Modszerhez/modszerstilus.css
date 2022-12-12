@@ -123,12 +123,12 @@ button:hover
 }
 
 /*laptop nézet*/
-@media only screen and (max-width: 1280px)
+@media only screen and (max-width: 992px)
 {
     h1
     {
         background-color: lightsteelblue;
-        width: 550px;
+        width: 350px;
     }
 
     #otlet, #technika
@@ -139,12 +139,13 @@ button:hover
 
     #otlet p, #technika p
     {
-        width: 550px;
+        width: 350px;
     }
 
     .nagyobb
     {
         font-size: 16px;
+        width: 350px;
     }
 
     /*A menügombok tárolójának stílusa*/
@@ -156,7 +157,7 @@ button:hover
         justify-content: space-around;  /*Ezzel van elérve az, hogy a gombok között térköz van*/
         align-items: center;
         left: 0px;
-        bottom: 60px;
+        bottom: -20px;
         width: 350px;
         height: 700px;
         border: 1px solid azure;

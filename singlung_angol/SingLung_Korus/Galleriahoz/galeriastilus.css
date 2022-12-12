@@ -102,12 +102,12 @@ button:hover
 }
 
 /*laptop nézet*/
-@media only screen and (max-width: 1280px)
+@media only screen and (max-width: 992px)
 {
     #kepek img
     {
         position: relative;
-        left: 50px;
+        left: 45px;
     }
 
     /*A menügombok tárolójának stílusa*/
@@ -120,7 +120,7 @@ button:hover
         align-items: center;
         left: 0px;
         bottom: 60px;
-        width: 350px;
+        width: 280px;
         height: 700px;
         border: 1px solid azure;
         background-color: lightgrey;
