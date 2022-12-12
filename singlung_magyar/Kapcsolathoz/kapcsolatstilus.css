@@ -51,18 +51,6 @@ input
     width: 200px;
 }
 
-/*Ha a felhasználó a kurzort a bemenet mezőre viszi*/
-.egyebadat:hover
-{
-    background: yellowgreen;
-}
-
-/*Ha a felhasználó belekattint a bemenet mezőbe*/
-.egyebadat:focus
-{
-    background: yellow;
-}
-
 /*Az elérhetőségi email címet tartalmazó tároló stílusa*/
 #kommunikacio
 {
@@ -172,7 +160,7 @@ button:hover
         justify-content: space-around;  /*Ezzel van elérve az, hogy a gombok között térköz van*/
         align-items: center;
         left: 0px;
-        bottom: 75px;
+        bottom: 50px;
         width: 350px;
         height: 700px;
         border: 1px solid azure;
