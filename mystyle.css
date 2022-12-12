@@ -54,21 +54,6 @@ body{
   cursor: pointer;  
 }
 
-/*a:link
-{
-  color: orangered;
-}
-
-a:hover
-{
-  color: yellow;
-}
-
-a:visited
-{
-  color: greenyellow;
-}*/
-
 .mottocell
 {
   display: flex;
