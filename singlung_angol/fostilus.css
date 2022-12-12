@@ -10,7 +10,7 @@ h1
     text-align: center;
     background-color: lightsteelblue;
     width: 1750px;
-    height: 82px;
+    height: 60px;
 }
 
 /*A főoldal képének stílusa*/
@@ -121,11 +121,11 @@ button:hover
 /*mobile resolution: 320 x 480 */
 
 /*laptop nézet*/
-@media only screen and (max-width: 1280px)
+@media only screen and (max-width: 992px)
 {
     h1
     {
-        width: 1100px;
+        width: 800px;
     }
 
     /*A főoldal képének stílusa*/
@@ -155,9 +155,9 @@ button:hover
         justify-content: space-around;  /*Ezzel van elérve az, hogy a gombok között térköz van*/
         align-items: center;
         left: 0px;
-        bottom: 57px;
-        width: 350px;
-        height: 700px;
+        bottom: 10px;
+        width: 280px;
+        height: 650px;
         border: 1px solid azure;
         background-color: lightgrey;
     }
@@ -166,7 +166,7 @@ button:hover
     /*A left 0 és a bottom 0 éri el azt, hogy végig alul maradjon*/
     #footer
     {
-        position: fixed;
+        position: absolute;
         left: 0;
         bottom: 0;
         width: 100%;

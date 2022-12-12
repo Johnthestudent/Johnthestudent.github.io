@@ -161,7 +161,7 @@ button:hover
 }
 
 /*laptop nézet*/
-@media only screen and (max-width: 1280px)
+@media only screen and (max-width: 992px)
 {
     /*A menügombok tárolójának stílusa*/
     #menugombok
@@ -172,7 +172,7 @@ button:hover
         justify-content: space-around;  /*Ezzel van elérve az, hogy a gombok között térköz van*/
         align-items: center;
         left: 0px;
-        bottom: 75px;
+        bottom: 20px;
         width: 350px;
         height: 700px;
         border: 1px solid azure;
@@ -194,7 +194,7 @@ button:hover
     form
     {
         background-color: lightgrey;
-        width: 650px;
+        width: 400px;
         height: 687px;
         position: relative;
         left: 350px;
