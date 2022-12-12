@@ -151,7 +151,7 @@ button:hover
         justify-content: space-around;  /*Ezzel van elérve az, hogy a gombok között térköz van*/
         align-items: center;
         left: 0px;
-        bottom: 40px;
+        bottom: 10px;
         width: 300px;
         height: 700px;
         border: 1px solid azure;
@@ -164,7 +164,7 @@ button:hover
         width: 455px;
         height: 700px;
         position: relative;
-        left: 170px;
+        left: 290px;
         font-size: 16px;
     }
 

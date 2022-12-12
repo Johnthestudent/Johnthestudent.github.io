@@ -139,10 +139,26 @@ button:hover
         justify-content: space-around;  /*Ezzel van elérve az, hogy a gombok között térköz van*/
         align-items: center;
         left: 0px;
-        bottom: 70px;
+        bottom: 40px;
         width: 350px;
         height: 700px;
         border: 1px solid azure;
         background-color: lightgrey;
+    }
+
+    /*A lábléc stílusa*/
+    /*A left 0 és a bottom 0 éri el azt, hogy végig alul maradjon*/
+    #footer
+    {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        background-color: lightsteelblue;
+        font-size: 25px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
     }
 }
