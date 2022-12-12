@@ -1,7 +1,7 @@
 //Ha a felhasználó az angol nyelv gombra kattint
 $("#angol").on('click', function()
 {
-    $("title").html("About us");
+    $("title").html("Foundation");
 
     $("#alapitvanycel h1").html("About the Breathing for the Soul Foundation ");
     $("#alapitvanycel p:first-child").html("The main aim of the foundation is to improve the quality of life of patients with respiratory and other chronic diseases affecting the quality of life through cultural, artistic and other recreational activities and to promote their recovery by these activities. The aim of the foundation is also to enable patients to be cared for at a higher level, as well as to improve the working conditions of healers.");
@@ -17,7 +17,7 @@ $("#angol").on('click', function()
 //Ha a felhasználó a magyar nyelv gombra kattint
 $("#magyar").on('click', function()
 {
-    $("title").html("Az Alapítványról");
+    $("title").html("Alapítvány");
 
     ("#alapitvanycel h1").html("A Légzéssel a Lélekért Alapítványról");
     $("#alapitvanycel p:first-child").html("Az alapítvány legfőbb célja, hogy kulturális, művészeti és egyéb rekreációs tevékenységeken keresztül javítsa a légzési betegségben és egyéb, az életminőséget befolyásoló krónikus betegségben szenvedő páciensek életminőségét, és ezen tevékenységekkel lehetőség szerint elősegítse gyógyulásukat. Az alapítvány célja továbbá a betegek magasabb színvonalon történő ellátásának lehetővé tétele, valamint a gyógyítók munkakörülményeinek javítása.");

@@ -112,21 +112,21 @@ button:hover
 }
 
 /*laptop nézet*/
-@media only screen and (max-width: 1280px)
+@media only screen and (max-width: 992px)
 {
     #szoveghez
     {
         font-size: 16px;
         position: relative;
-        left: 500px;
-        width: 400px;
+        left: 420px;
+        width: 320px;
     }
 
     #profil
     {
         border: 1px solid azure;
         position: relative;
-        left: 500px;
+        left: 420px;
         width: 30%;
     }
 
