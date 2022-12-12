@@ -1,13 +1,11 @@
 //Ha a felhasználó az angol nyelv gombra kattint
 $("#angol").on('click', function()
 {
-    $("#keszito b").html("Created by: ");
-    $("#keszito p").html("János Pogány");
+    $("title").html("Dr. Katalin Várdi");
 })
 
 //Ha a felhasználó a magyar nyelv gombra kattint
 $("#magyar").on('click', function()
 {
-    $("#keszito b").html("Készítette: ");
-    $("#keszito p").html("Pogány János");
+    $("title").html("Dr. Várdi Katalin");
 })
