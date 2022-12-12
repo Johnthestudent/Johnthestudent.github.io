@@ -54,7 +54,7 @@ body{
   cursor: pointer;  
 }
 
-a:link
+/*a:link
 {
   color: darkred;
 }
@@ -67,7 +67,7 @@ a:hover
 a:visited
 {
   color: greenyellow;
-}
+}*/
 
 /*mobil méret*/
 /*first size = 768px*/

@@ -54,7 +54,7 @@ body{
   cursor: pointer;  
 }
 
-a:link
+/*a:link
 {
   color: orangered;
 }
@@ -67,7 +67,7 @@ a:hover
 a:visited
 {
   color: greenyellow;
-}
+}*/
 
 .mottocell
 {
