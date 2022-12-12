@@ -117,7 +117,7 @@ button:hover
     {
         font-size: 16px;
         position: relative;
-        left: 370px;
+        left: 420px;
         width: 400px;
         bottom: 10px;
     }
@@ -126,8 +126,8 @@ button:hover
     {
         border: 1px solid azure;
         position: relative;
-        left: 370px;
-        width: 40%;
+        left: 420px;
+        width: 30%;
     }
 
     /*A menügombok tárolójának stílusa*/

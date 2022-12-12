@@ -14,6 +14,7 @@ ul
     position: relative;
     left: 500px;
     top: 50px;
+    color: black;
 }
 
 #logokep
@@ -94,6 +95,7 @@ button
     position: relative;
     left: 500px;
     top: 50px;
+    color: black;
 }
 
 /*A kurzor mutatóvá válik a gombra mozdításkor*/
@@ -148,7 +150,7 @@ button:hover
         justify-content: space-around;  /*Ezzel van elérve az, hogy a gombok között térköz van*/
         align-items: center;
         left: 0px;
-        bottom: 50px;
+        bottom: 20px;
         width: 350px;
         height: 700px;
         border: 1px solid azure;
