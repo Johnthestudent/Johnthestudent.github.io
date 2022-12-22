@@ -148,3 +148,72 @@ button:hover
         background-color: lightgrey;
     }
 }
+
+/*mobil nézet*/
+@media only screen and (max-width: 200px) and (orientation: portrait) 
+{
+    h1 
+    {
+        width: 170px;
+    }
+
+    /*A menügombok tárolójának stílusa*/
+    #menugombok 
+    {
+        position: fixed;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /*Ezzel van elérve az, hogy a gombok között térköz van*/
+        align-items: center;
+        left: 0px;
+        bottom: 200px;
+        width: 100px;
+        height: 400px;
+        border: 1px solid azure;
+        background-color: lightgrey;
+    }
+
+    /*Az alap gombok stílusa*/
+    button 
+    {
+        width: 88px;
+        height: 55px;
+        font-size: 16px;
+    }
+
+    /*A magyar nyelvre váltó gomb stílusa*/
+    #magyar 
+    {
+        width: 15px;
+        height: 30px;
+        background-image: url("Zaszlok/Flag_of_Hungary.svg.webp");
+        background-size: cover;
+        /*Ezzel van biztosítva, hogy a kép a gomb mérethez igazodjon*/
+    }
+
+    /*Az angol nyelvre váltó gomb stílusa*/
+    #angol 
+    {
+        width: 15px;
+        height: 30px;
+        background-image: url("Zaszlok/Flag_of_the_United_Kingdom_\(3-5\).svg.png");
+        background-size: cover;
+        /*Ezzel van biztosítva, hogy a kép a gomb mérethez igazodjon*/
+    }
+
+    #alapitvanycel,
+    #alapito,
+    #alapitvanyadat 
+    {
+        width: 150px;
+        position: relative;
+        left: 80px;
+    }
+
+    .nagyobb 
+    {
+        font-size: 16px;
+        width: 140px;
+    }
+}
