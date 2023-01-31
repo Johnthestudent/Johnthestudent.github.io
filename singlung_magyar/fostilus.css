@@ -184,7 +184,7 @@ button:hover {
     justify-content: space-around; /*Ezzel van elérve az, hogy a gombok között térköz van*/
     align-items: center;
     left: 0px;
-    bottom: 200px;
+    bottom: 230px;
     width: 100px;
     height: 300px;
     border: 1px solid azure;
