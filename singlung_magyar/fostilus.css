@@ -163,7 +163,7 @@ button:hover {
 /*mobil nézet*/
 @media only screen and (min-width: 200px) and (orientation: portrait) {
   h1 {
-    width: 130px;
+    width: 170px;
     font-size: 30px;
   }
 
@@ -172,7 +172,7 @@ button:hover {
     position: fixed;
     top: 140px;
     right: 15px;
-    width: 50%;
+    width: 70%;
     border: 1px solid azure;
   }
 
@@ -184,7 +184,7 @@ button:hover {
     justify-content: space-around; /*Ezzel van elérve az, hogy a gombok között térköz van*/
     align-items: center;
     left: 0px;
-    bottom: 350px;
+    bottom: 250px;
     width: 100px;
     height: 300px;
     border: 1px solid azure;
@@ -200,7 +200,7 @@ button:hover {
 
   /*A magyar nyelvre váltó gomb stílusa*/
   #magyar {
-    width: 30px;
+    width: 50px;
     height: 30px;
     background-image: url("Zaszlok/Flag_of_Hungary.svg.webp");
     background-size: cover; /*Ezzel van biztosítva, hogy a kép a gomb mérethez igazodjon*/
@@ -208,7 +208,7 @@ button:hover {
 
   /*Az angol nyelvre váltó gomb stílusa*/
   #angol {
-    width: 30px;
+    width: 50px;
     height: 30px;
     background-image: url("Zaszlok/Flag_of_the_United_Kingdom_\(3-5\).svg.png");
     background-size: cover; /*Ezzel van biztosítva, hogy a kép a gomb mérethez igazodjon*/
