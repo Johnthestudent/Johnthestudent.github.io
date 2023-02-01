@@ -211,17 +211,21 @@ button:hover {
     width: 100px;
     background-color: lightsteelblue;
     position: relative;
-    left: 57px;
+    left: 0px;
     font-size: 12px;
   }
 
   form {
     background-color: lightgrey;
-    width: 220px;
+    width: 180px;
     height: 680px;
     position: relative;
     left: 100px;
     font-size: 16px;
+  }
+
+  .egyebadat {
+    width: 165px;
   }
 
   /*Az email küldése gomb stílusa*/
