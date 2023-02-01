@@ -136,6 +136,12 @@ button:hover {
     font-size: 12px;
   }
 
+  img {
+    /*Minden képhez keret jár*/
+    border: 1px solid azure;
+    width: 45%;
+  }
+
   #kepek img {
     position: relative;
     left: 0px;
