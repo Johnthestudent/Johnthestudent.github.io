@@ -180,17 +180,17 @@ button:hover {
 
   #otlet p,
   #technika p {
-    width: 200px;
+    width: 150px;
   }
 
   .nagyobb {
     font-size: 14px;
-    width: 200px;
+    width: 150px;
   }
 
   h1 {
     background-color: lightsteelblue;
-    width: 180px;
+    width: 140px;
     font-size: 20px;
   }
 }
