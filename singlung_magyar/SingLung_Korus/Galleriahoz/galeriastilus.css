@@ -139,11 +139,11 @@ button:hover {
   img {
     /*Minden képhez keret jár*/
     border: 1px solid azure;
-    width: 45%;
+    width: 50%;
   }
 
   #kepek img {
     position: relative;
-    left: 0px;
+    left: 10px;
   }
 }
