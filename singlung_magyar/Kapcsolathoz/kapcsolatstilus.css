@@ -212,12 +212,12 @@ button:hover {
     background-color: lightsteelblue;
     position: relative;
     left: 0px;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   form {
     background-color: lightgrey;
-    width: 180px;
+    width: 170px;
     height: 680px;
     position: relative;
     left: 100px;
@@ -225,7 +225,7 @@ button:hover {
   }
 
   .egyebadat {
-    width: 165px;
+    width: 150px;
   }
 
   /*Az email küldése gomb stílusa*/
