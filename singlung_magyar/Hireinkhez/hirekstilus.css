@@ -176,7 +176,7 @@ button:hover {
 
   /*A felsorolás stílusa*/
   ul {
-    width: 200px;
+    width: 170px;
     font-size: 14px;
     border: 1px solid azure;
     background-color: lightsteelblue;
@@ -196,7 +196,7 @@ button:hover {
   }
 
   #konferenciagomb {
-    width: 140px;
+    width: 120px;
     height: 25px;
     font-size: 14px;
   }
