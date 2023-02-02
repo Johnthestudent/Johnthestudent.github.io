@@ -145,5 +145,6 @@ button:hover {
   #kepek img {
     position: relative;
     left: 10px;
+    top: 50px;
   }
 }
