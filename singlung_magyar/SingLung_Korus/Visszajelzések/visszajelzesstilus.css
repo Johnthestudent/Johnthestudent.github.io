@@ -232,4 +232,13 @@ button:hover {
   #footer {
     display: none;
   }
+
+  /*A főoldal képének stílusa*/
+  #logokep {
+    position: fixed;
+    top: 200px;
+    right: 0px;
+    width: 15%;
+    border: 1px solid azure;
+  }
 }
