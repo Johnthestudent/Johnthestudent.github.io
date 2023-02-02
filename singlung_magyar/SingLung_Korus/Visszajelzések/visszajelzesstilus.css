@@ -209,10 +209,11 @@ button:hover {
   #myCarousel {
     background-color: lightgray;
     width: 200px;
-    height: 700px;
+    height: 580px;
     position: relative;
-    left: 90px;
+    left: 85px;
     font-size: 10px;
+    z-index: 1;
   }
 
   .carousel-control-prev,
@@ -220,6 +221,15 @@ button:hover {
     width: 50px;
     height: 50px;
     position: absolute;
-    top: 600px;
+    top: 530px;
+  }
+
+  .carousel-indicators {
+    width: 100px;
+    left: 20px;
+  }
+
+  #footer {
+    display: none;
   }
 }
