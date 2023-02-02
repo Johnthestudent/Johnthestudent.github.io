@@ -158,14 +158,14 @@ button:hover {
     position: relative;
     left: 100px;
     width: 200px;
-    top: 80px;
+    top: 70px;
   }
 
   #profil {
     border: 1px solid azure;
     position: relative;
     left: 100px;
-    top: 80px;
+    top: 70px;
     width: 40%;
   }
 
