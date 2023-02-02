@@ -158,12 +158,18 @@ button:hover {
     position: relative;
     left: 100px;
     width: 200px;
+    top: 200px;
   }
 
   #profil {
     border: 1px solid azure;
     position: relative;
     left: 100px;
+    top: 200px;
     width: 40%;
+  }
+
+  #footer {
+    display: none;
   }
 }
