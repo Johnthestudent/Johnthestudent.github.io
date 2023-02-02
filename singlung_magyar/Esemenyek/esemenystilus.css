@@ -148,11 +148,11 @@ button:hover {
   }
 
   .card {
-    width: 300px;
+    width: 250px;
     text-align: center;
     border: 1px solid black;
     position: relative;
-    left: 40px;
+    left: 30px;
   }
 
   #gombtarolo {
