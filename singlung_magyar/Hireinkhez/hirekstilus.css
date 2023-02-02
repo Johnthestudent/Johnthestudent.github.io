@@ -200,4 +200,8 @@ button:hover {
     height: 25px;
     font-size: 12px;
   }
+
+  #footer {
+    display: none;
+  }
 }
