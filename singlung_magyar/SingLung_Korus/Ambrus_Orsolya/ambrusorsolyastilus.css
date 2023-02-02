@@ -157,6 +157,7 @@ button:hover {
     position: relative;
     left: 100px;
     width: 180px;
+    top: 80px;
     z-index: 1;
   }
 
@@ -164,6 +165,11 @@ button:hover {
     border: 1px solid azure;
     position: relative;
     left: 100px;
+    top: 80px;
     width: 30%;
+  }
+
+  #footer {
+    display: none;
   }
 }
