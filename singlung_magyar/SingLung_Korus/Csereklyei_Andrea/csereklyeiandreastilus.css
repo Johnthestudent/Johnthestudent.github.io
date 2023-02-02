@@ -172,6 +172,7 @@ button:hover {
     font-size: 16px;
     position: relative;
     left: 100px;
+    top: 70px;
     width: 200px;
   }
 
@@ -179,6 +180,11 @@ button:hover {
     border: 1px solid azure;
     position: relative;
     left: 100px;
+    top: 70px;
     width: 40%;
+  }
+
+  #footer {
+    display: none;
   }
 }
