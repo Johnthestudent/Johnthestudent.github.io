@@ -147,4 +147,8 @@ button:hover {
     left: 10px;
     top: 50px;
   }
+
+  #footer {
+    display: none;
+  }
 }

@@ -238,4 +238,8 @@ button:hover {
     bottom: 0px;
     left: 0px;
   }
+
+  textarea {
+    width: 280px;
+  }
 }
