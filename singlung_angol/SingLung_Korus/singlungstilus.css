@@ -162,12 +162,12 @@ button:hover {
   ul,
   ul a,
   li {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   ul {
     position: relative;
-    left: 100px;
+    left: 80px;
     top: 30px;
     color: black;
   }
