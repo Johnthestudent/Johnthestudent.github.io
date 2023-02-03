@@ -151,4 +151,12 @@ button:hover {
   #footer {
     display: none;
   }
+
+  #logokep {
+    position: absolute;
+    top: 550px;
+    left: 0px;
+    width: 20%;
+    border: 1px solid azure;
+  }
 }

@@ -236,8 +236,8 @@ button:hover {
   /*A főoldal képének stílusa*/
   #logokep {
     position: fixed;
-    top: 200px;
-    right: 0px;
+    top: 550px;
+    left: 0px;
     width: 15%;
     border: 1px solid azure;
   }
