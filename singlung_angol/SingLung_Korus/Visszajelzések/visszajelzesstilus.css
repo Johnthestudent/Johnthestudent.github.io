@@ -1,76 +1,169 @@
-body
-{
-    /*Az egész oldal háttérszíne*/
-    background-color: aliceblue;
+body {
+  /*Az egész oldal háttérszíne*/
+  background-color: aliceblue;
 }
 
-h1
-{
-    background-color: lightsteelblue;
-    width: 1750px;
-    color: black;
-    text-align: center;
+h1 {
+  background-color: lightsteelblue;
+  width: 1750px;
+  color: black;
+  text-align: center;
 }
 
-#myCarousel
-{
-    background-color: lightgray;
-    width: 1000px;
-    height: 700px;
-    position: relative;
-    left: 50px;
-    font-size: 20px;
+#myCarousel {
+  background-color: lightgray;
+  width: 1000px;
+  height: 700px;
+  position: relative;
+  left: 50px;
+  font-size: 20px;
 }
 
-.carousel-control-prev, .carousel-control-next, .carousel-indicators
-{
-    background-color: lightsteelblue;
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-indicators {
+  background-color: lightsteelblue;
 }
 
-.carousel-control-prev, .carousel-control-next
-{
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 650px;
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 650px;
 }
 
-.carousel-inner
-{
-    display: flex;
-    position: relative;
-    top: 0px;
+.carousel-inner {
+  display: flex;
+  position: relative;
+  top: 0px;
 }
 
 /*A főoldal képének stílusa*/
-#logokep
-{
-    position: fixed;
-    top: 200px;
-    right: 0px;
-    width: 20%;
-    border: 1px solid azure;
+#logokep {
+  position: fixed;
+  top: 200px;
+  right: 0px;
+  width: 20%;
+  border: 1px solid azure;
 }
 
 /*Az alap gombok stílusa*/
-button
-{
-    width: 200px;
-    height: 75px;
-    font-size: 20px;
+button {
+  width: 200px;
+  height: 75px;
+  font-size: 20px;
 }
 
 /*A kurzor mutatóvá válik a gombra mozdításkor*/
-button:hover
-{
-    cursor: pointer;
+button:hover {
+  cursor: pointer;
 }
 
 /*A lábléc stílusa*/
 /*A left 0 és a bottom 0 éri el azt, hogy végig alul maradjon*/
-#footer
-{
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: lightsteelblue;
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#elerhetoseg {
+  display: flex;
+  justify-content: space-evenly; /*Ezzel van középen és szabályosan elrendezve az összes elem a láblécben*/
+}
+
+/*A magyar nyelvre váltó gomb stílusa*/
+#magyar {
+  width: 50px;
+  height: 30px;
+  background-image: url("Zaszlok/Flag_of_Hungary.svg.webp");
+  background-size: cover; /*Ezzel van biztosítva, hogy a kép a gomb mérethez igazodjon*/
+}
+
+/*Az angol nyelvre váltó gomb stílusa*/
+#angol {
+  width: 50px;
+  height: 30px;
+  background-image: url("Zaszlok/Flag_of_the_United_Kingdom_\(3-5\).svg.png");
+  background-size: cover; /*Ezzel van biztosítva, hogy a kép a gomb mérethez igazodjon*/
+}
+
+#gombtarolo {
+  position: absolute; /*Ezzel van elérve az, hogy a jobb felső sarokba lehessen tenni*/
+  right: 0px;
+  top: 0px;
+}
+
+/*A menügombok tárolójának stílusa*/
+#menugombok {
+  position: fixed;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around; /*Ezzel van elérve az, hogy a gombok között térköz van*/
+  align-items: center;
+  left: 0px;
+  bottom: 165px;
+  width: 350px;
+  height: 700px;
+  border: 1px solid azure;
+  background-color: lightgrey;
+}
+
+#menugombok button {
+  border-radius: 25px;
+}
+
+/*laptop nézet*/
+@media only screen and (max-width: 992px) {
+  h1 {
+    background-color: lightsteelblue;
+    width: 800px;
+  }
+
+  /*A menügombok tárolójának stílusa*/
+  #menugombok {
     position: fixed;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around; /*Ezzel van elérve az, hogy a gombok között térköz van*/
+    align-items: center;
+    left: 0px;
+    bottom: 0px;
+    width: 300px;
+    height: 700px;
+    border: 1px solid azure;
+    background-color: lightgrey;
+  }
+
+  #myCarousel {
+    background-color: lightgray;
+    width: 455px;
+    height: 700px;
+    position: relative;
+    left: 290px;
+    font-size: 16px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 650px;
+  }
+
+  /*A lábléc stílusa*/
+  /*A left 0 és a bottom 0 éri el azt, hogy végig alul maradjon*/
+  #footer {
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -80,116 +173,72 @@ button:hover
     text-align: center;
     display: flex;
     justify-content: center;
+  }
 }
 
-#elerhetoseg
-{
-    display: flex;
-    justify-content: space-evenly;  /*Ezzel van középen és szabályosan elrendezve az összes elem a láblécben*/
-}
-
-/*A magyar nyelvre váltó gomb stílusa*/
-#magyar
-{
-    width: 50px;
-    height: 30px;
-    background-image: url("Zaszlok/Flag_of_Hungary.svg.webp");
-    background-size: cover; /*Ezzel van biztosítva, hogy a kép a gomb mérethez igazodjon*/
-}
-
-/*Az angol nyelvre váltó gomb stílusa*/
-#angol
-{
-    width: 50px;
-    height: 30px;
-    background-image: url("Zaszlok/Flag_of_the_United_Kingdom_\(3-5\).svg.png");
-    background-size: cover; /*Ezzel van biztosítva, hogy a kép a gomb mérethez igazodjon*/
-}
-
-#gombtarolo
-{
-    position: absolute; /*Ezzel van elérve az, hogy a jobb felső sarokba lehessen tenni*/
-    right: 0px;
-    top: 0px;
-}
-
-/*A menügombok tárolójának stílusa*/
-#menugombok
-{
+/*mobil nézet*/
+@media only screen and (min-width: 200px) and (orientation: portrait) {
+  /*A menügombok tárolójának stílusa*/
+  #menugombok {
     position: fixed;
     display: inline-flex;
     flex-direction: column;
-    justify-content: space-around;  /*Ezzel van elérve az, hogy a gombok között térköz van*/
+    justify-content: space-around; /*Ezzel van elérve az, hogy a gombok között térköz van*/
     align-items: center;
     left: 0px;
-    bottom: 165px;
-    width: 350px;
-    height: 700px;
+    bottom: 250px;
+    width: 100px;
+    height: 300px;
     border: 1px solid azure;
     background-color: lightgrey;
-}
+  }
 
-#menugombok button
-{
-    border-radius: 25px;
-}
+  /*Az alap gombok stílusa*/
+  button {
+    width: 80px;
+    height: 40px;
+    font-size: 12px;
+  }
 
-/*laptop nézet*/
-@media only screen and (max-width: 992px)
-{
-    h1
-    {
-        background-color: lightsteelblue;
-        width: 800px;
-    }
+  h1 {
+    background-color: lightsteelblue;
+    width: 200px;
+    font-size: 20px;
+  }
 
-    /*A menügombok tárolójának stílusa*/
-    #menugombok
-    {
-        position: fixed;
-        display: inline-flex;
-        flex-direction: column;
-        justify-content: space-around;  /*Ezzel van elérve az, hogy a gombok között térköz van*/
-        align-items: center;
-        left: 0px;
-        bottom: 0px;
-        width: 300px;
-        height: 700px;
-        border: 1px solid azure;
-        background-color: lightgrey;
-    }
+  #myCarousel {
+    background-color: lightgray;
+    width: 200px;
+    height: 590px;
+    position: relative;
+    left: 85px;
+    font-size: 10px;
+    z-index: 1;
+  }
 
-    #myCarousel
-    {
-        background-color: lightgray;
-        width: 455px;
-        height: 700px;
-        position: relative;
-        left: 290px;
-        font-size: 16px;
-    }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 540px;
+  }
 
-    .carousel-control-prev, .carousel-control-next
-    {
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        top: 650px;
-    }
+  .carousel-indicators {
+    width: 100px;
+    left: 20px;
+  }
 
-    /*A lábléc stílusa*/
-    /*A left 0 és a bottom 0 éri el azt, hogy végig alul maradjon*/
-    #footer
-    {
-        position: relative;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 50px;
-        background-color: lightsteelblue;
-        font-size: 25px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-    }
+  #footer {
+    display: none;
+  }
+
+  /*A főoldal képének stílusa*/
+  #logokep {
+    position: fixed;
+    top: 550px;
+    left: 0px;
+    width: 15%;
+    border: 1px solid azure;
+  }
 }

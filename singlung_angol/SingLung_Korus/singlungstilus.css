@@ -1,151 +1,174 @@
-body
-{
-    background-color: aliceblue;
+body {
+  background-color: aliceblue;
 }
 
-#logokep
-{
-    position: absolute;
-    top: 80px;
-    right: 0px;
-    width: 20%;
-    border: 1px solid azure;
+#logokep {
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  width: 20%;
+  border: 1px solid azure;
 }
 
 /*A magyar nyelvre váltó gomb stílusa*/
-#magyar
-{
-    width: 50px;
-    height: 30px;
-    background-image: url("Zaszlok/Flag_of_Hungary.svg.webp");
-    background-size: cover; /*Ezzel van biztosítva, hogy a kép a gomb mérethez igazodjon*/
+#magyar {
+  width: 50px;
+  height: 30px;
+  background-image: url("Zaszlok/Flag_of_Hungary.svg.webp");
+  background-size: cover; /*Ezzel van biztosítva, hogy a kép a gomb mérethez igazodjon*/
 }
 
 /*Az angol nyelvre váltó gomb stílusa*/
-#angol
-{
-    width: 50px;
-    height: 30px;
-    background-image: url("Zaszlok/Flag_of_the_United_Kingdom_\(3-5\).svg.png");
-    background-size: cover; /*Ezzel van biztosítva, hogy a kép a gomb mérethez igazodjon*/
+#angol {
+  width: 50px;
+  height: 30px;
+  background-image: url("Zaszlok/Flag_of_the_United_Kingdom_\(3-5\).svg.png");
+  background-size: cover; /*Ezzel van biztosítva, hogy a kép a gomb mérethez igazodjon*/
 }
 
-#gombtarolo
-{
-    position: absolute; /*Ezzel van elérve az, hogy a jobb felső sarokba lehessen tenni*/
-    right: 0px;
-    top: 0px;
+#gombtarolo {
+  position: absolute; /*Ezzel van elérve az, hogy a jobb felső sarokba lehessen tenni*/
+  right: 0px;
+  top: 0px;
 }
 
 /*A kurzor mutatóvá válik a gombra mozdításkor*/
-button:hover
-{
-    cursor: pointer;
+button:hover {
+  cursor: pointer;
 }
 
-ul, ul a, li
-{
-    font-size: 20px;
+ul,
+ul a,
+li {
+  font-size: 20px;
 }
 
-ul
-{
-    position: relative;
-    left: 500px;
-    top: 30px;
-    color: black;
+ul {
+  position: relative;
+  left: 500px;
+  top: 30px;
+  color: black;
 }
 
 /*A kisebb felsorolás*/
-.nembetolt
-{
-    position: relative;
-    left: 0px;
-    top: 0px;
-    font-size: 25px;
+.nembetolt {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  font-size: 25px;
 }
 
 /*A lábléc stílusa*/
 /*A left 0 és a bottom 0 éri el azt, hogy végig alul maradjon*/
-#footer
-{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    background-color: lightsteelblue;
-    font-size: 25px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: lightsteelblue;
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 /*Az alap gombok stílusa*/
-button
-{
-    width: 200px;
-    height: 75px;
-    font-size: 20px;
+button {
+  width: 200px;
+  height: 75px;
+  font-size: 20px;
 }
 
 /*A kurzor mutatóvá válik a gombra mozdításkor*/
-button:hover
-{
-    cursor: pointer;
+button:hover {
+  cursor: pointer;
 }
 
 /*A menügombok tárolójának stílusa*/
-#menugombok
-{
+#menugombok {
+  position: fixed;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around; /*Ezzel van elérve az, hogy a gombok között térköz van*/
+  align-items: center;
+  left: 0px;
+  bottom: 150px;
+  width: 350px;
+  height: 700px;
+  border: 1px solid azure;
+  background-color: lightgrey;
+}
+
+#menugombok button {
+  border-radius: 25px;
+}
+
+/*laptop nézet*/
+@media only screen and (max-width: 992px) {
+  /*A menügombok tárolójának stílusa*/
+  #menugombok {
     position: fixed;
     display: inline-flex;
     flex-direction: column;
-    justify-content: space-around;  /*Ezzel van elérve az, hogy a gombok között térköz van*/
+    justify-content: space-around; /*Ezzel van elérve az, hogy a gombok között térköz van*/
     align-items: center;
     left: 0px;
-    bottom: 150px;
+    bottom: 10px;
     width: 350px;
     height: 700px;
     border: 1px solid azure;
     background-color: lightgrey;
+  }
+
+  ul,
+  ul a,
+  li {
+    font-size: 16px;
+  }
+
+  ul {
+    position: relative;
+    left: 400px;
+    top: 30px;
+    color: black;
+  }
 }
 
-#menugombok button
-{
-    border-radius: 25px;
-}
+/*mobil nézet*/
+@media only screen and (min-width: 200px) and (orientation: portrait) {
+  /*A menügombok tárolójának stílusa*/
+  #menugombok {
+    position: fixed;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around; /*Ezzel van elérve az, hogy a gombok között térköz van*/
+    align-items: center;
+    left: 0px;
+    bottom: 420px;
+    width: 100px;
+    height: 300px;
+    border: 1px solid azure;
+    background-color: lightgrey;
+  }
 
-/*laptop nézet*/
-@media only screen and (max-width: 992px)
-{
+  /*Az alap gombok stílusa*/
+  button {
+    width: 80px;
+    height: 40px;
+    font-size: 12px;
+  }
 
-    /*A menügombok tárolójának stílusa*/
-    #menugombok
-    {
-        position: fixed;
-        display: inline-flex;
-        flex-direction: column;
-        justify-content: space-around;  /*Ezzel van elérve az, hogy a gombok között térköz van*/
-        align-items: center;
-        left: 0px;
-        bottom: 10px;
-        width: 350px;
-        height: 700px;
-        border: 1px solid azure;
-        background-color: lightgrey;
-    }
+  ul,
+  ul a,
+  li {
+    font-size: 12px;
+  }
 
-    ul, ul a, li
-    {
-        font-size: 16px;
-    }
-
-    ul
-    {
-        position: relative;
-        left: 400px;
-        top: 30px;
-        color: black;
-    }
+  ul {
+    position: relative;
+    left: 100px;
+    top: 30px;
+    color: black;
+  }
 }
