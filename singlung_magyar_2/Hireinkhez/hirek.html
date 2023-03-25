@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--A hírek oldal címe-->
+    <title>Híreink</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <!--Az elérhetőség ikonjainak fontawesome-ra van szüksége-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--A hírek oldal stílusát meghatározó fájl-->
+    <link rel="stylesheet" href="hirekstilus.css" />
+  </head>
+  <body>
+    <!--A nyelvváltó gombok-->
+    <div id="gombtarolo">
+      <button id="magyar"></button>
+      <button
+        id="angol"
+        onclick="location.href='https://johnthestudent.github.io/singlung_angol_2/Hireinkhez/hirekangol.html';"
+      ></button>
+    </div>
+
+    <img src="LÉTLOGO.jpg" alt="logo" id="ballogo" />
+    <img src="LÉTLOGO.jpg" alt="logo" id="jobblogo" />
+
+    <!--A hírek listája-->
+    <ul>
+      <li>
+        <a
+          href="https://mandiner.hu/cikk/20211215_elet_kult_covid_zeneterapia_singlung?fbclid=IwAR3kWJHviL-40BcVXLi_uacAc1VCr9UKN_Wk2P_Yg995kZx6E0rTZg182Ik"
+          >Covid zeneterápia</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://index.hu/kultur/2021/09/22/fischer-ivan-az-eneklest-ajanlja-covid-ellen/?fbclid=IwAR1YqYLJuDC6VTI36ezNLKAN6Yvsujf8hwTOuPYF4SA35sdg1xucKjChexs"
+          >Éneklés Covid ellen</a
+        >
+      </li>
+      <li>
+        <a href="https://tenyek.hu/video/korusban-gyogyulnak-a-tudobetegek"
+          >Kórusban gyógyulnak a tüdőbetegek</a
+        >
+      </li>
+      <li>
+        <a href="https://www.facebook.com/legzesselalelekert/">Facebook</a>
+      </li>
+      <li>
+        <a href="https://youtube.com/@legzesselalelekertalapitva6601"
+          >YouTube</a
+        >
+      </li>
+      <li>
+        <button id="konferenciagomb">WHO Konferencia</button>
+      </li>
+      <li>
+        <a></a>
+      </li>
+      <li>
+        <a></a>
+      </li>
+    </ul>
+
+    <p id="konferenciaszoveg" style="display: none">
+      WHO szakmai konferencia,, amely “Művészet és Egészség” témakörében kerül
+      megrendezésre 2022 december 15-én és 16-án az Állami Operház egyik
+      dísztermében. A "Légzéssel a Lélekért" Kórus történetét és tevékenységét
+      ismertető prezentáció: SingLung módszerrel történő kóruséneklés eredményei
+      krónikus légzőszervi betegeknél a légzés- és a közösségi rehabilitációban.
+      <br />Dr Várdi Katalin és Philipp György
+    </p>
+
+    <!--A menügombok-->
+    <div id="menugombok">
+      <button
+        onclick="location.href='https://johnthestudent.github.io/singlung_magyar_2/Bemutatkozashoz/bemutatkozas.html';"
+        id="bemutatkozo"
+      >
+        Alapítvány
+      </button>
+      <button
+        onclick="location.href='https://johnthestudent.github.io/singlung_magyar_2/Esemenyek/esemeny.html';"
+        id="esemenyek"
+      >
+        Események
+      </button>
+      <button
+        onclick="location.href='https://johnthestudent.github.io/singlung_magyar_2/SingLung_Korus/singlung.html';"
+        id="kepek"
+      >
+        Kórus
+      </button>
+      <button
+        onclick="location.href='https://johnthestudent.github.io/singlung_magyar_2/Modszerhez/modszer.html';"
+        id="methodsing"
+      >
+        SingLung Módszer
+      </button>
+      <button
+        onclick="location.href='https://johnthestudent.github.io/singlung_magyar_2/Hireinkhez/hirek.html';"
+        id="hir"
+      >
+        Hírek
+      </button>
+      <button
+        onclick="location.href='https://johnthestudent.github.io/singlung_magyar_2/Kapcsolathoz/kapcsolat.html';"
+        id="kapcsolattartas"
+      >
+        Kapcsolat
+      </button>
+    </div>
+
+    <!--A lábléc-->
+    <div id="footer"></div>
+
+    <!--A szükséges Javascript (JQuery)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="hirekinteraktiv.js"></script>
+  </body>
+</html>
