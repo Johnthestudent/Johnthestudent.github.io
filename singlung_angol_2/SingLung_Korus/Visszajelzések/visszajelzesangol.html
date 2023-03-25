@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback</title>
+    <!--Az elérhetőség ikonjainak fontawesome-ra van szüksége-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="visszajelzesstilus.css" />
+  </head>
+  <body>
+    <h1>Feedback</h1>
+
+    <!--A nyelvváltó gombok-->
+    <div id="gombtarolo">
+      <button
+        id="magyar"
+        onclick="location.href='https://johnthestudent.github.io/singlung_magyar_2/SingLung_Korus/Visszajelzések/visszajelzes.html';"
+      ></button>
+      <button id="angol"></button>
+    </div>
+
+    <img src="LÉTLOGO.jpg" alt="logohoz" id="ballogo" />
+    <img src="LÉTLOGO.jpg" alt="logohoz" id="jobblogo" />
+
+    <div class="container mt-3">
+      <div
+        id="myCarousel"
+        class="carousel slide"
+        data-ride="carousel"
+        data-interval="10000"
+      >
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p>
+              The two concerts were really an uplifting feeling. Not only the
+              audience of the concert, but also the members of the BFZ gave
+              heartily bravo during our parade on Saturday, but the Sunday's
+              concert turned out much better!
+              <br />What's more, after the Saturday night concert, at the
+              backstage several people came with tears in their eyes and told
+              that we shamed them. Our will to live gives them strength. Iván
+              Fisher asked our choir for our presentation before the BFZ concert
+              because he supports the SingLung vocal physiotherapy developed by
+              pulmonologist, Dr. Katalin Várdi and our conductor, György
+              Philipp. <br />This therapy improves the quality of lung patients’
+              life with a wide variety of recreational opportunities. The
+              dedication of musicians - György Philipp, Orsolya Ambrus, Eszter
+              Balogh, Lóránt Najbauer - as music therapists is fantastic! The
+              Buddhist Mr. Sipos not only prepared and transformed everyone not
+              for the concert but also for their future life by helping to find
+              the buzz and inner voice! <br />It is a special pleasure that on
+              Saturday the master sent our performance to his guru in India who
+              enjoyed the Constructive Meeting of East and West! The two
+              concerts were much more and deeper than healing and breathing
+              improvement. Improving the quality of life and healing have gained
+              a new meaning in the area of spiritual deepening. Everyone started
+              a spontaneous transformation or arrived there after the one-week
+              course.
+            </p>
+          </div>
+          <div class="carousel-item">
+            <p>
+              Today, my mother performed with the choir as a guest for the
+              invitation of conductor, Iván Fischer of the Festival orchestra at
+              Müpa.
+              <br />This is such a sentence that is a miracle to describe, since
+              my mother, with her heavily damaged and sick lungs, is good if she
+              doesn't get sick during a long walk. <br />But my mom and many
+              other patients sang on stage today in such a way that everyone
+              burst into tears and applauded. I can't tell you how proud we are
+              of her and how grateful we are to those who helped them!
+            </p>
+          </div>
+          <div class="carousel-item">
+            <p>
+              After the performance, my singer roommates and me were so excited
+              that we couldn't fall asleep until 12:15 a.m. Thank you very much.
+              <br />Thank you very much for everything, we had a great time and
+              we are glad that we could be a part of this beautiful event.
+            </p>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+
+    <!--A menügombok-->
+    <div id="menugombok">
+      <button
+        onclick="location.href='https://johnthestudent.github.io/singlung_angol_2/Bemutatkozashoz/bemutatkozasangol.html';"
+        id="bemutatkozo"
+      >
+        Foundation
+      </button>
+      <button
+        onclick="location.href='https://johnthestudent.github.io/singlung_angol_2/Esemenyek/esemenyangol.html';"
+        id="esemenyek"
+      >
+        Events
+      </button>
+      <button
+        onclick="location.href='https://johnthestudent.github.io/singlung_angol_2/SingLung_Korus/singlungangol.html';"
+        id="kepek"
+      >
+        Choir
+      </button>
+      <button
+        onclick="location.href='https://johnthestudent.github.io/singlung_angol_2/Modszerhez/modszerangol.html';"
+        id="methodsing"
+      >
+        SingLung Method
+      </button>
+      <button
+        onclick="location.href='https://johnthestudent.github.io/singlung_angol_2/Hireinkhez/hirekangol.html';"
+        id="hir"
+      >
+        News
+      </button>
+      <button
+        onclick="location.href='https://johnthestudent.github.io/singlung_angol_2/Kapcsolathoz/kapcsolatangol.html';"
+        id="kapcsolattartas"
+      >
+        Contact
+      </button>
+    </div>
+
+    <!--A lábléc-->
+    <div id="footer"></div>
+
+    <!--A szükséges Javascript (JQuery)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="visszajelzesinteraktivitas.js"></script>
+  </body>
+</html>
