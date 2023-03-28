@@ -3,6 +3,7 @@ body {
   background-image: url("Gimpsky.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 /*A magyar nyelvre váltó gomb stílusa*/
@@ -126,7 +127,7 @@ button:hover {
   #profil {
     border: 1px solid azure;
     position: relative;
-    left: 380px;
+    left: 285px;
     width: 40%;
   }
 
@@ -134,23 +135,23 @@ button:hover {
     font-size: 16px;
     position: relative;
     bottom: 18px;
-    left: 380px;
+    left: 285px;
     width: 500px;
   }
 
   /*A menügombok tárolójának stílusa*/
   #menugombok {
-    position: fixed;
+    position: absolute;
     display: inline-flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around; /*Ezzel van elérve az, hogy a gombok között térköz van*/
     align-items: center;
-    left: 0px;
-    bottom: 50px;
-    width: 350px;
-    height: 700px;
-    border: 1px solid azure;
-    background-color: lightgrey;
+    left: 40px;
+    top: 20px;
+    width: 900px;
+    height: 120px;
+    /*border: 1px solid azure;
+  background-color: lightgrey;*/
   }
 
   /*A lábléc stílusa*/
