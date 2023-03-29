@@ -151,7 +151,7 @@ button:hover {
   /*A főoldal képének stílusa*/
   #fokep {
     position: fixed;
-    top: 200px;
+    top: 180px;
     right: 155px;
     width: 69%;
     border: 1px solid azure;

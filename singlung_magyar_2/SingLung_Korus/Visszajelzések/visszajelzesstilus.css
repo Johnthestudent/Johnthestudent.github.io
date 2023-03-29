@@ -15,7 +15,7 @@ h1 {
 }
 
 #myCarousel {
-  background-color: lightgray;
+  background-color: #e7e7e7;
   width: 1000px;
   height: 700px;
   position: relative;
@@ -167,7 +167,7 @@ button:hover {
   }
 
   #myCarousel {
-    background-color: lightgray;
+    background-color: #e7e7e7;
     width: 540px;
     height: 580px;
     position: relative;
