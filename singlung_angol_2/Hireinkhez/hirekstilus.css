@@ -3,6 +3,7 @@ body {
   /*background-color: aliceblue;*/
   background-image: url("Gimpsky.png");
   background-size: cover;
+  background-attachment: fixed;
 }
 
 /*A felsorolás stílusa*/
@@ -143,34 +144,41 @@ button:hover {
     width: 300px;
     font-size: 16px;
     border: 1px solid azure;
-    background-color: lightsteelblue;
+    background-color: lightskyblue;
     position: relative;
-    left: 390px;
-    top: 50px;
+    left: 340px;
+    top: 170px;
     color: black;
   }
 
   /*A menügombok tárolójának stílusa*/
   #menugombok {
-    position: fixed;
+    position: absolute;
     display: inline-flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around; /*Ezzel van elérve az, hogy a gombok között térköz van*/
     align-items: center;
-    left: 0px;
-    bottom: 20px;
-    width: 350px;
-    height: 700px;
-    border: 1px solid azure;
-    background-color: lightgrey;
+    left: 40px;
+    top: 30px;
+    width: 900px;
+    height: 120px;
+    /* border: 1px solid azure;
+    background-color: lightgrey;*/
+  }
+
+  /*Az alap gombok stílusa*/
+  button {
+    width: 170px;
+    height: 75px;
+    font-size: 20px;
   }
 
   #konferenciaszoveg {
     font-size: 16px;
     width: 300px;
     position: relative;
-    left: 390px;
-    top: 50px;
+    left: 340px;
+    top: 170px;
     color: black;
   }
 }
