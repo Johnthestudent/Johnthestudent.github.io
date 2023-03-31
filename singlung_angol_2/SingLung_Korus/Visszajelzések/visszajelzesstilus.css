@@ -4,6 +4,7 @@ body {
   background-image: url("Gimpsky.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -14,7 +15,7 @@ h1 {
 }
 
 #myCarousel {
-  background-color: lightgray;
+  background-color: #e7e7e7;
   width: 1000px;
   height: 700px;
   position: relative;
@@ -146,31 +147,31 @@ button:hover {
 /*laptop nézet*/
 @media only screen and (max-width: 992px) {
   h1 {
-    background-color: lightsteelblue;
+    background-color: lightskyblue;
     width: 800px;
   }
 
   /*A menügombok tárolójának stílusa*/
   #menugombok {
-    position: fixed;
+    position: absolute;
     display: inline-flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around; /*Ezzel van elérve az, hogy a gombok között térköz van*/
     align-items: center;
-    left: 0px;
-    bottom: 0px;
-    width: 300px;
-    height: 700px;
-    border: 1px solid azure;
-    background-color: lightgrey;
+    left: 40px;
+    top: 40px;
+    width: 900px;
+    height: 120px;
+    /*border: 1px solid azure;
+  background-color: lightgrey;*/
   }
 
   #myCarousel {
-    background-color: lightgray;
-    width: 455px;
-    height: 700px;
+    background-color: #e7e7e7;
+    width: 540px;
+    height: 580px;
     position: relative;
-    left: 290px;
+    left: 75px;
     font-size: 16px;
   }
 
@@ -179,18 +180,36 @@ button:hover {
     width: 50px;
     height: 50px;
     position: absolute;
-    top: 650px;
+    top: 530px;
+  }
+
+  /*bal logókép*/
+  #ballogo {
+    position: fixed;
+    top: 175px;
+    right: 0px;
+    width: 20%;
+    border: 1px solid azure;
+  }
+
+  /*jobb logókép*/
+  #jobblogo {
+    position: fixed;
+    top: 175px;
+    left: 0px;
+    width: 20%;
+    border: 1px solid azure;
   }
 
   /*A lábléc stílusa*/
   /*A left 0 és a bottom 0 éri el azt, hogy végig alul maradjon*/
   #footer {
-    position: relative;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 50px;
-    background-color: lightsteelblue;
+    background-color: lightskyblue;
     font-size: 25px;
     text-align: center;
     display: flex;
