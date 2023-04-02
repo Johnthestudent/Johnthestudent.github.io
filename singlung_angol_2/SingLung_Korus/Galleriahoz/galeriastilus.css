@@ -34,6 +34,7 @@ img {
   right: 0px;
   width: 20%;
   border: 1px solid azure;
+  border-radius: 25px;
 }
 
 /*jobb logókép*/
@@ -43,6 +44,7 @@ img {
   left: 0px;
   width: 20%;
   border: 1px solid azure;
+  border-radius: 25px;
 }
 
 /*A lábléc stílusa*/

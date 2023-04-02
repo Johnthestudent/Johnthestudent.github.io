@@ -74,6 +74,7 @@ button:hover {
   right: 0px;
   width: 20%;
   border: 1px solid azure;
+  border-radius: 25px;
 }
 
 /*jobb logókép*/
@@ -83,6 +84,7 @@ button:hover {
   left: 0px;
   width: 20%;
   border: 1px solid azure;
+  border-radius: 25px;
 }
 
 #profil {

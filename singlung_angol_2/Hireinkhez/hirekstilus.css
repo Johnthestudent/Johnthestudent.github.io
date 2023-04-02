@@ -37,6 +37,7 @@ ul a {
   right: 0px;
   width: 20%;
   border: 1px solid azure;
+  border-radius: 25px;
 }
 
 /*jobb logókép*/
@@ -46,6 +47,7 @@ ul a {
   left: 0px;
   width: 20%;
   border: 1px solid azure;
+  border-radius: 25px;
 }
 
 /*A lábléc stílusa*/
