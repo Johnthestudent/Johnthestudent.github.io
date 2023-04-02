@@ -40,6 +40,7 @@ h1 {
   right: 0px;
   width: 20%;
   border: 1px solid azure;
+  border-radius: 25px;
 }
 
 /*jobb logókép*/
@@ -49,6 +50,7 @@ h1 {
   left: 0px;
   width: 20%;
   border: 1px solid azure;
+  border-radius: 25px;
 }
 
 /*Az alap gombok stílusa*/

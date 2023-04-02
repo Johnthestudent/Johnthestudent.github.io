@@ -24,6 +24,21 @@ body {
   color: black;
 }
 
+#tech {
+  position: relative;
+  top: 120px;
+  left: 445px;
+  width: 980px;
+  text-align: center;
+}
+
+.modszertan p {
+  width: 400px;
+  position: relative;
+  left: 280px;
+  text-align: center;
+}
+
 h1 {
   background-color: lightskyblue;
   width: 1000px;
@@ -45,6 +60,7 @@ h1 {
   right: 0px;
   width: 20%;
   border: 1px solid azure;
+  border-radius: 25px;
 }
 
 /*jobb logókép*/
@@ -54,6 +70,7 @@ h1 {
   left: 0px;
   width: 20%;
   border: 1px solid azure;
+  border-radius: 25px;
 }
 
 /*A kurzor mutatóvá válik a gombra mozdításkor*/
@@ -154,6 +171,21 @@ button:hover {
   .nagyobb {
     font-size: 16px;
     width: 350px;
+  }
+
+  #tech {
+    position: relative;
+    top: 120px;
+    left: 300px;
+    width: 350px;
+    text-align: center;
+  }
+
+  .modszertan p {
+    width: 250px;
+    position: relative;
+    left: 50px;
+    text-align: center;
   }
 
   /*A menügombok tárolójának stílusa*/
