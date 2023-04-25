@@ -1,0 +1,37 @@
+body {
+  background-image: url("Gimpsky.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 120px;
+}
+
+.card {
+  width: 800px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.card p {
+  font-size: 20px;
+}
+
+/*Az alap gombok stílusa*/
+button {
+  width: 200px;
+  height: 75px;
+  font-size: 20px;
+}
+
+/*A kurzor mutatóvá válik a gombra mozdításkor*/
+button:hover {
+  cursor: pointer;
+}
