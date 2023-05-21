@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secret Server Coding Task</title>
+    <link rel="stylesheet" href="style.css?v=3" />
+  </head>
+  <body>
+    <div class="majorcontent">
+      <h1>Task for implementing a secret server API</h1>
+      <h3>Enter a numeric value between 1 and 10 to get the n-th secret</h3>
+      <h4>
+        The given numeric value will be part of the URL, which will present the
+        n-th secret
+      </h4>
+      <form action="formhandler.php" method="get" id="firstform">
+        <!--In this form, a number between 1 and 10 can be typed in, in order to get the value of the n-th secret.-->
+        <label for="quantity">Quantity <i>n</i> (between 1 and 10):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" />
+        <input
+          type="submit"
+          name="jsonfile"
+          value="Download JSON"
+          class="buttons"
+        />
+        <input
+          type="submit"
+          name="xmlfile"
+          value="Download XML"
+          class="buttons"
+        />
+        <input
+          type="submit"
+          name="showthesecret"
+          value="Submit"
+          class="buttons"
+        />
+        <p>
+          In case the given n-th secret cannot be found, try creating a new one
+          with the other form below
+        </p>
+      </form>
+      <br />
+      <hr />
+      <br />
+      <!--The following form stands for adding secret. Use it only in the case you get the message secret cannot be found for submitting the first form.-->
+      <h4>Form for adding secret</h4>
+      <form action="formhandler.php" method="get" id="secondform">
+        Text for the secret: <input type="text" name="name" size="100" /><br />
+        <input
+          type="submit"
+          value="Add new secret"
+          name="addsecret"
+          class="buttons"
+        />
+      </form>
+    </div>
+  </body>
+</html>

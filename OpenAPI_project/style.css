@@ -1,0 +1,88 @@
+/*Style for the base of the page.*/
+body {
+  background-color: azure;
+}
+
+/*Style for the container of the forms.*/
+.majorcontent {
+  background-color: ivory;
+  width: 1200px;
+  height: 500px;
+}
+
+/*Style of the helper time-bar (TTL, presenting how long the secret can be seen, which is presently 60 seconds).*/
+h2 {
+  background: lime;
+  width: 100%;
+  height: 50px;
+  animation-name: availability-level;
+  animation-duration: 60s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+/*Animation for the helper time-bar (TTL).*/
+@keyframes availability-level {
+  0% {
+    background-color: lime;
+    width: 100%;
+  }
+  10% {
+    background-color: limegreen;
+    width: 90%;
+  }
+  20% {
+    background-color: green;
+    width: 80%;
+  }
+  30% {
+    background-color: mediumseagreen;
+    width: 70%;
+  }
+  40% {
+    background-color: olive;
+    width: 60%;
+  }
+  50% {
+    background-color: yellowgreen;
+    width: 50%;
+  }
+  60% {
+    background-color: yellow;
+    width: 40%;
+  }
+  70% {
+    background-color: lightcoral;
+    width: 30%;
+  }
+  80% {
+    background-color: indianred;
+    width: 20%;
+  }
+  90% {
+    background-color: red;
+    width: 10%;
+  }
+  100% {
+    background-color: darkred;
+    width: 0%;
+  }
+}
+
+/*Style for the forms. */
+#firstform,
+#secondform {
+  border: 1px solid black;
+  width: 1080px;
+}
+
+/*Style for the buttons.*/
+.buttons {
+  width: 100px;
+  height: 30px;
+}
+
+/*If the user moves the cursor to the button.*/
+.buttons:hover {
+  cursor: pointer;
+}
