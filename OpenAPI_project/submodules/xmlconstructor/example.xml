@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<secrets>
+  <secret>
+    <id>1</id>
+    <name>Secret1</name>
+  </secret>
+  <secret>
+    <id>2</id>
+    <name>Secret2</name>
+  </secret>
+  <secret>
+    <id>3</id>
+    <name>Secret3</name>
+  </secret>
+</secrets>

@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <xml><?xml version="1.0"?>
+<secrets>
+  <secret>
+    <id>1</id>
+    <name>data1</name>
+  </secret>
+  <secret>
+    <id>2</id>
+    <name>data2</name>
+  </secret>
+  <secret>
+    <id>3</id>
+    <name>data3</name>
+  </secret>
+</secrets>
+</xml>    </body>
+</html>

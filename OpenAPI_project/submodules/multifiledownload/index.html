@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download either XML or JSON</title>
+  </head>
+  <body>
+    <!--In this form, a simple data for filling the downloadable xml or json file can be typed in.-->
+    <form action="filehandler.php" method="get">
+      Name: <input type="text" name="name" /><br />
+      <input type="submit" name="jsonfile" value="Download JSON" />
+      <input type="submit" name="xmlfile" value="Download XML" />
+      <input type="submit" name="printjson" value="Show the value" />
+    </form>
+  </body>
+</html>

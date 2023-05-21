@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL acceptor form</title>
+  </head>
+  <body>
+    <!--In this form, a body for a custom url can be typed in.-->
+    <form action="validator.php" method="get">
+      <label for="url">Enter an https:// URL:</label>
+
+      <input
+        type="url"
+        name="url"
+        id="url"
+        placeholder="https://www.secret1.com"
+        pattern="https://www.secret[0-9].com"
+        size="30"
+        required
+      />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
