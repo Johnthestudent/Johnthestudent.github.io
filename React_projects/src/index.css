@@ -1,0 +1,13 @@
+body {
+  background-color: ghostwhite;
+}
+
+ol {
+  border: 1px solid black;
+  width: 50%;
+}
+
+p {
+  width: 50%;
+  background-color: orange;
+}
