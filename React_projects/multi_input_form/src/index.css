@@ -1,0 +1,12 @@
+form {
+  border: 1px solid black;
+  width: 50%;
+}
+
+input:hover {
+  background-color: yellow;
+}
+
+#Submit:hover {
+  cursor: pointer;
+}
