@@ -1,170 +1,176 @@
 /*Properties of the background.*/
-#background
-{
-    width: 800px;
-    height: 600px;
-    position: fixed;
-    z-index: -1;
+#background {
+  width: 800px;
+  height: 600px;
+  position: fixed;
+  z-index: -1;
 }
 
 /*Properties of the box having the tools.*/
-#tools
-{
-    width: 800px;
-    height: 400px;
-    position: fixed;
-    top: 605px;
-    background: gray;
+#tools {
+  width: 800px;
+  height: 400px;
+  position: fixed;
+  top: 605px;
+  background: gray;
 }
 
 /*Properties of the first button at the starter screen.*/
-#newgame
-{
-    width: 300px;
-    height: 100px;
-    font-size: 50px;
-    top: 375px;
-    left: 250px;
-    position: relative;
+#newgame {
+  width: 300px;
+  height: 100px;
+  font-size: 50px;
+  top: 375px;
+  left: 250px;
+  position: relative;
 }
 
 /*Properties of the second button at the starter screen.*/
-#info
-{
-    width: 300px;
-    height: 100px;
-    font-size: 50px;
-    top: 480px;
-    right: 54px;
-    position: relative;
+#info {
+  width: 300px;
+  height: 100px;
+  font-size: 50px;
+  top: 480px;
+  right: 54px;
+  position: relative;
 }
 
 /*Properties of the Intro button at the starter screen.*/
-#intro
-{
-    width: 200px;
-    height: 50px;
-    font-size: 25px;
-    bottom: 25px;
-    right: 20px;
-    position: relative;
+#intro {
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+  bottom: 25px;
+  right: 20px;
+  position: relative;
+}
+
+/*Properties of the Walkthrough button*/
+#walkthrough {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: 35px;
+  font-size: 20px;
+  border-radius: 20px;
+  z-index: 1;
 }
 
 /*Properties of the button, which with the player can move left.*/
-#moveleft
-{
-    width: 50px;
-    height: 100px;
-    font-size: 20px;
-    top: 487px;
-    right: 0px;
-    position: relative;
-    opacity: 0%;
+#moveleft {
+  width: 50px;
+  height: 100px;
+  font-size: 20px;
+  top: 487px;
+  right: 0px;
+  position: relative;
+  opacity: 0%;
 }
 
 /*Properties of the button, which with the player can move right.*/
-#moveright
-{
-    width: 50px;
-    height: 100px;
-    font-size: 20px;
-    top: 487px;
-    left: 696px;
-    position: relative;
-    opacity: 0%;
+#moveright {
+  width: 50px;
+  height: 100px;
+  font-size: 20px;
+  top: 487px;
+  left: 696px;
+  position: relative;
+  opacity: 0%;
 }
 
 /*Additional property of the left and right movement buttons.*/
 /*This stands for the tools too.*/
-#moveright:hover, #moveleft:hover, #gem, #letter, #littlenote, #ironbar, #newgame, #info, #mainmenu, #intro
-{
-    cursor: pointer;
+#moveright:hover,
+#moveleft:hover,
+#gem,
+#letter,
+#littlenote,
+#ironbar,
+#newgame,
+#info,
+#mainmenu,
+#intro,
+#walkthrough {
+  cursor: pointer;
 }
 
 /*Properties of the battery gem tool.*/
-#gem
-{
-    position: fixed;
-    bottom: 150px;
-    left: 50px;
-    width: 150px;
-    height: 120px;
-    opacity: 0%;
+#gem {
+  position: fixed;
+  bottom: 150px;
+  left: 50px;
+  width: 150px;
+  height: 120px;
+  opacity: 0%;
 }
 
 /*Properties of the letter tool.*/
-#letter
-{
-    position: fixed;
-    opacity: 0%;
-    bottom: 150px;
-    left: 150px;
-    width: 150px;
-    height: 120px;
+#letter {
+  position: fixed;
+  opacity: 0%;
+  bottom: 150px;
+  left: 150px;
+  width: 150px;
+  height: 120px;
 }
 
 /*Properties of the red fuse tool.*/
-#redfuse
-{
-    position: fixed;
-    opacity: 0%;
-    bottom: 150px;
-    left: 300px;
-    width: 150px;
-    height: 120px;
+#redfuse {
+  position: fixed;
+  opacity: 0%;
+  bottom: 150px;
+  left: 300px;
+  width: 150px;
+  height: 120px;
 }
 
 /*Properties of the little note tool.*/
-#littlenote
-{
-    position: fixed;
-    opacity: 0%;
-    bottom: 150px;
-    left: 450px;
-    width: 150px;
-    height: 120px;
+#littlenote {
+  position: fixed;
+  opacity: 0%;
+  bottom: 150px;
+  left: 450px;
+  width: 150px;
+  height: 120px;
 }
 
 /*Properties of the crowbar tool.*/
-#ironbar
-{
-    position: fixed;
-    opacity: 0%;
-    bottom: 25px;
-    left: 50px;
-    width: 200px;
-    height: 150px;
+#ironbar {
+  position: fixed;
+  opacity: 0%;
+  bottom: 25px;
+  left: 50px;
+  width: 200px;
+  height: 150px;
 }
 
 /*Properties of the fan tool.*/
-#bigfan
-{
-    position: fixed;
-    opacity: 0%;
-    bottom: 10px;
-    left: 550px;
-    width: 200px;
-    height: 175px;
+#bigfan {
+  position: fixed;
+  opacity: 0%;
+  bottom: 10px;
+  left: 550px;
+  width: 200px;
+  height: 175px;
 }
 
 /*Properties of the green fuse tool.*/
-#greenfuse
-{
-    position: fixed;
-    opacity: 0%;
-    bottom: 40px;
-    left: 260px;
-    width: 150px;
-    height: 120px;
+#greenfuse {
+  position: fixed;
+  opacity: 0%;
+  bottom: 40px;
+  left: 260px;
+  width: 150px;
+  height: 120px;
 }
 
 /*Properties of the blue fuse tool.*/
-#bluefuse
-{
-    position: fixed;
-    opacity: 0%;
-    bottom: 40px;
-    left: 400px;
-    width: 150px;
-    height: 120px;
+#bluefuse {
+  position: fixed;
+  opacity: 0%;
+  bottom: 40px;
+  left: 400px;
+  width: 150px;
+  height: 120px;
 }
