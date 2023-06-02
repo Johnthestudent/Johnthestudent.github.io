@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aveomachine 3 - The Weekend House</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <!--A big container for the entire game-->
     <div id="game">
-        <!--The starter screen section-->
-        <div id="beginner">
-            <img id="majorimage" src="Image resources/Introimage.png">
-            <button id="gamestarter">Start game</button>
-            <button id="gameinfo">Info</button>
-        </div>
-        <!--Container for the inventory section-->
-        <div id="inventory">
-            <img id="axeitem">
-            <img id="bowlitem">
-            <img id="keyitem">
-            <img id="fragment1">
-            <img id="fragment2">
-            <img id="fragment3">
-            <img id="noteitem">
-            <img id="screwdriveritem">
-        </div>
-        <!--The movement buttons-->
-        <button id="leftmove">left</button>
-        <button id="rightmove">right</button>
+      <!--The starter screen section-->
+      <div id="beginner">
+        <img id="majorimage" src="Image resources/Introimage.png" />
+        <button id="gamestarter">Start game</button>
+        <button id="gameinfo">Info</button>
+        <button id="walkthrough">
+          <a
+            href="https://github.com/Johnthestudent/Johnthestudent.github.io/blob/main/aveomachine_3/Aveomachine_3_Walkthrough.pptx"
+            >?</a
+          >
+        </button>
+      </div>
+      <!--Container for the inventory section-->
+      <div id="inventory">
+        <img id="axeitem" />
+        <img id="bowlitem" />
+        <img id="keyitem" />
+        <img id="fragment1" />
+        <img id="fragment2" />
+        <img id="fragment3" />
+        <img id="noteitem" />
+        <img id="screwdriveritem" />
+      </div>
+      <!--The movement buttons-->
+      <button id="leftmove">left</button>
+      <button id="rightmove">right</button>
     </div>
     <!--Javascript and JQuery are used-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts.js"></script>
-</body>
+  </body>
 </html>
