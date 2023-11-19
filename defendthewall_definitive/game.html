@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defend the Wall - Definitive Edition</title>
+    <link rel="stylesheet" href="gamestyle.css">
+</head>
+<body>
+    <div id="game">
+        <div id="wall"></div>
+        <div id="gamestats">
+            <h2>Points: </h2>
+            <h3><span id="maxpoints"></span></h3>
+            <h2>Health points: </h2>
+            <h3><span id="maxhealth"></span></h3>
+            <h2>Buildings: </h2>
+            <h3 id="temple">Temple</h3>
+            <h3 id="workshop">Work shop</h3>
+            <h3 id="barrack">Barrack</h3>
+            <h2>Player's units:</h2>
+            <h3 id="playersunits"></h3>
+            <div id="clickmode">
+                <button class="modebutton" id="key1">Regular</button>
+                <button class="modebutton" id="key2">Temple</button>
+                <button class="modebutton" id="key3">Workshop</button>
+                <button class="modebutton" id="key4">Barrack</button>
+            </div>
+            <div id="bosshealth"></div>
+            <div id="finalhealth"></div>
+            <div id="bossmaxhealth"></div>
+        </div>
+        <div id="wave1">
+            <div class="red" id="wave1-1"></div>
+            <div class="red" id="wave1-2"></div>
+            <div class="red" id="wave1-3"></div>
+            <div class="red" id="wave1-4"></div>
+            <div class="red" id="wave1-5"></div>
+            <div class="red" id="wave1-6"></div>
+            <div class="red" id="wave1-7"></div>
+            <div class="red" id="wave1-8"></div>
+            <div class="red" id="wave1-9"></div>
+        </div>
+    </div>
+
+    <!--Javascript and Jquery were used for the animation.-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="gamescript.js"></script>
+</body>
+</html>
