@@ -1,0 +1,299 @@
+/*Properties of the wall.*/
+#wall	
+{
+	background:gray; 
+	height: 900px; 
+	width: 100px; 
+	position: absolute; 
+	left: 70%;	
+}
+
+/*Properties of the game stats folder.*/
+#gamestats
+{
+    border: 1px solid black;
+    position: fixed;
+    left: 81%;
+    width: 15%;
+    height: 70%;
+}
+
+/*Properties of the game mode buttons.*/
+.modebutton
+{
+	border-radius: 15px;
+	width: 150px;
+}
+
+.modebutton:hover
+{
+	cursor: pointer;
+}
+
+#temple:hover, #workshop:hover, #barrack:hover
+{
+    cursor: pointer;
+}
+
+
+/*Properties of the regular opponent units.*/
+#wave1 .red, #wave3-1
+{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+}
+
+#wave1 .red:hover, #wave3-1
+{
+	cursor: pointer;
+}
+
+#wave3-1
+{
+	animation: regularmove1 10s;
+	animation-timing-function: linear;	
+}
+
+/*Properties of the big opponent units.*/
+#bigunit01, #bigunit02, #bigunit03, #bigunit04, #bigunit05, #bigunit06, #bigunit07, #bigunit08, #bigunit09, #bigunit10, .orange
+{
+	width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: orange;
+	animation: bigmove 15s;
+	animation-timing-function: linear;
+}
+
+.orange:hover
+{
+	cursor: pointer;
+}
+
+/*Properties of the battering ram opponent units.*/
+.yellow
+{
+	width: 100px;
+	height: 100px;
+	position: relative;
+	background-color: yellow;
+	animation: rammove 7.5s;
+	animation-timing-function: linear;
+}
+
+.yellow:hover
+{
+	cursor: pointer;
+}
+
+/*Properties of the work shop units*/
+.worker
+{
+	background-color: #00ff2a;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	left: 75.4%;
+}
+
+/*Properties of the barrack units*/
+.sallyforth
+{
+	background-color: #05831a;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	left: 75.4%;
+}
+
+/*Properties of the boss unit of the game.*/
+#boss1
+{
+	width: 125px;
+	height: 125px;
+	background-color: blue;
+	position: relative;
+	animation: bossmove1 30s;
+	animation-timing-function: linear;	
+}
+
+#boss1:hover
+{
+	cursor: pointer;
+}
+
+/*Properties of the final boss unit of the game.*/
+#finalboss
+{
+	width: 125px;
+	height: 125px;
+	background-color: blue;
+	position: relative;
+	animation: finalbossmove 20s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;	
+	animation-direction: alternate;
+}
+
+#finalboss:hover
+{
+	cursor: pointer;
+}
+
+/*Wave 1 unit 1*/
+#wave1 div[id="wave1-1"]
+{
+    animation: regularmove1 15s;
+	animation-timing-function: linear;	
+}
+
+/*Wave 1 unit 2*/
+#wave1 div[id="wave1-2"]
+{
+    animation: regularmove1 15s;
+	animation-timing-function: linear;	
+}
+
+/*Wave 1 unit 3*/
+#wave1 div[id="wave1-3"]
+{
+    animation: regularmove1 15s;
+	animation-timing-function: linear;	
+}
+
+/*Wave 1 unit 4*/
+#wave1 div[id="wave1-4"]
+{
+    animation: regularmove3 15s;
+	animation-timing-function: linear;	
+}
+
+/*Wave 1 unit 5*/
+#wave1 div[id="wave1-5"]
+{
+    animation: regularmove3 15s;
+	animation-timing-function: linear;	
+}
+
+/*Wave 1 unit 6*/
+#wave1 div[id="wave1-6"]
+{
+    animation: regularmove3 15s;
+	animation-timing-function: linear;	
+}
+
+/*Wave 1 unit 7*/
+#wave1 div[id="wave1-7"]
+{
+    animation: regularmove2 15s;
+	animation-timing-function: linear;	
+}
+
+/*Wave 1 unit 8*/
+#wave1 div[id="wave1-8"]
+{
+    animation: regularmove2 15s;
+	animation-timing-function: linear;	
+}
+
+/*Wave 1 unit 9*/
+#wave1 div[id="wave1-9"]
+{
+    animation: regularmove2 15s;
+	animation-timing-function: linear;	
+}
+
+/*Wave 2 unit 1*/
+#wave1 div[id="wave2-1"]
+{
+    animation: regularmove2 15s;
+	animation-timing-function: linear;	
+}
+
+/*The way how the regular enemy units move. (number 1)*/
+@keyframes regularmove1 
+{
+	from {left: 0%;}
+	to {left: 65%;}
+}
+
+/*The way how the regular enemy units move. (number 2)*/
+@keyframes regularmove2
+{
+	from {left: 10%;}
+	to {left: 65%;}
+}
+
+/*The way how the regular enemy units move. (number 3)*/
+@keyframes regularmove3
+{
+	from {left: 5%;}
+	to {left: 65%;}
+}
+
+/*The way how the regular enemy units move. (number 1)*/
+@keyframes bigmove 
+{
+	from {left: 0%;}
+	to {left: 59.6%;}
+}
+
+/*The way how the battering ram enemy units move.*/
+@keyframes rammove 
+{
+	from {left: 0%;}
+	to {left: 65%;}
+}
+
+/*The way how the wave 1 boss unit moves.*/
+@keyframes bossmove1
+{
+	from {left: 0%;}
+	to {left: 63.6%;}
+}
+
+/*The way how the final wave boss unit moves.*/
+@keyframes finalbossmove
+{
+	from {top: 0%;}
+	to {top: 300%;}
+}
+
+/*Properties of the box showing the health value of the boss.*/
+#bosshealth
+{
+	position: absolute;
+   	top: 110%;
+    left: -4%;
+	width: 300px;
+	height: 30px;
+	background-color: purple;
+	opacity: 0.0;
+}
+
+/*Properties of the box showing the health value of the final boss.*/
+#finalhealth
+{
+	position: absolute;
+   	top: 110%;
+    left: -4%;
+	width: 300px;
+	height: 30px;
+	background-color: purple;
+	opacity: 0.0;
+}
+
+/*Properties of the box showing the max health value of the boss.*/
+#bossmaxhealth
+{
+	position: absolute;
+   	top: 110%;
+    right: 0%;
+	width: 300px;
+	height: 30px;
+	background-color: black;
+	opacity: 0.0;
+	z-index: -1;
+}

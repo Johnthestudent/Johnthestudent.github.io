@@ -1,0 +1,76 @@
+/*Propertires of the menu buttons.*/
+#startgame, #howtoplay, #gameoptions, #gameinfo
+{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+}
+
+/*If the player moves the cursor to the menu buttons.*/
+#startgame:hover, #howtoplay:hover, #gameoptions:hover, #gameinfo:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the container having the menu buttons.*/
+.buttonsofthemenu
+{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 300px;
+    align-items: center;
+    left: 40%;
+    top: 20%;
+    border: 1px solid black;
+}
+
+/*Properties of the regular opponent units.*/
+.red
+{
+    width: 100px;
+	height: 100px;
+	background-color: red;
+	position: relative;
+	animation: regularmove 15s;
+	animation-timing-function: linear;	
+    animation-iteration-count: infinite;
+}
+
+/*The way how the regular enemy units move.*/
+@keyframes regularmove 
+{
+	0% {left: 0% ; top: 0%}
+	100% {left: 94% ; top: 0%}
+}
+
+/*Properties of the player's wall repairer (work shop) units.*/
+.greenlight
+{
+    width: 100px;
+	height: 100px;
+	background-color: #00ff2a;
+	position: relative;
+	animation: oppositemove 15s;
+	animation-timing-function: linear;	
+    animation-iteration-count: infinite;
+}
+
+/*The way how the regular enemy units move.*/
+@keyframes oppositemove 
+{
+	0% {left: 94% ; top: 200%}
+	100% {left: 0% ; top: 200%}
+}
+
+/*Properties of the wall.*/
+.grey
+{
+    background:gray; 
+	height: 900px; 
+	width: 100px; 
+	position: absolute; 
+	left: 94%;
+    top: 0%;
+}

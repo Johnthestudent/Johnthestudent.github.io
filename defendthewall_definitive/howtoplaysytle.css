@@ -1,0 +1,74 @@
+/*Properties of the regular opponent units.*/
+.red
+{
+    width: 100px;
+	height: 100px;
+	background-color: red;
+	position: relative;
+}
+
+/*Properties of the big opponent units.*/
+.orange
+{
+    width: 200px;
+	height: 200px;
+	background-color: orange;
+	position: relative;
+}
+
+/*Properties of the battering ram opponent units.*/
+.yellow
+{
+    width: 100px;
+	height: 100px;
+	background-color: yellow;
+	position: relative;
+}
+
+/*Properties of the boss opponent unit.*/
+.blue
+{
+    width: 125px;
+	height: 125px;
+	background-color: blue;
+	position: relative;
+}
+
+/*Properties of the wall.*/
+.grey
+{
+    width: 100px;
+	height: 300px;
+	background-color: grey;
+	position: relative;
+}
+
+/*Properties of the wall repairer (work shop) unit.*/
+.greenlight
+{
+    width: 100px;
+	height: 100px;
+	background-color: #00ff2a;
+	position: relative;
+}
+
+/*Properties of the sally forth (barrack) unit.*/
+.greendark
+{
+    width: 100px;
+	height: 100px;
+	background-color: #05831a;
+	position: relative;
+}
+
+/*Properties of the tutorial segments.*/
+#tutorial
+{
+    width: 75%;
+}
+
+/*Properties of the tutorial segments.*/
+.tutorialsegments, .opponentdescription, .playerdescription
+{
+    border: 1px solid black;
+}
