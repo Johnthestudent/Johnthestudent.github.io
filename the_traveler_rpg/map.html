@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Traveler RPG</title>
+    <link rel="stylesheet" href="mapstyle.css">
+</head>
+<body>
+    <div id="windowofmap">
+        <img id="mapimage" src="Background sources/Mapimage.png" alt="Paper_background">
+        <img id="adventuremap" src="Background sources/Mapsection01.png" alt="Map_section">
+        <button class="goback" onclick="location.href='majorwindow.html'">Back to main menu</button>
+        <button id="charactermessage">Story</button>
+        <button id="questmessage">Quests</button>
+        <div id="levelupsituation">
+            <h3>Your current xp level: <span id="heroxp"></span></h3> 
+            <h3>Reach above this level: <span id="pointlimit"></span></h3> 
+        </div>
+        <div id="questdescription" style="display:none">
+            <h2 id="missionname">Mission name</h2>
+            <h3 id="missiondescription">Mission description</h3>
+            <b id="victoryconditions">Victory conditions</b>
+            <p id="conditionslist">Conditions</p>
+        </div>
+        <div id="storydescription" style="display:none">
+            <img id="storyteller" src="Character sources/Millitunian_Centurion.png" alt="character_of_the_story">
+            <b id="storymessage">Storymessage</b>
+        </div>
+        <div id="situationmessage">
+            <h2>Message</h2>
+        </div>
+        <div id="levelhelper">
+            <h2>Level up possible: <span id="leveluppossibility">No</h2>
+        </div>
+        <button id="backwardbutton">Backward</button>
+        <button id="forwardbutton">Forward</button>
+        <button id="majorplace">The stronghold</button>
+        <button id="random01">Gather resources</button>
+        <button id="random02">Gather resources</button>
+        <button id="random03">Gather resources</button>
+        <button id="forbattle">Battle</button>
+        <div id="addresourcesforquests">
+            <button id="addingwood">Add wood</button>
+            <button id="addingstone">Add stone</button>
+            <button id="addingmedicalliquid">Add medical liquid</button>
+            <button id="addingsail">Add sail</button>
+            <button id="addingiron">Add iron</button>
+            <button id="addingbread">Add bread</button>
+            <button id="addingcoal">Add coal</button>
+            <button id="addingcopper">Add copper</button>
+            <button id="addingfruitbasket">Add fruitbasket</button>
+            <button id="addingmeat">Add meat</button>
+            <button id="addingice">Add ice</button>
+            <button id="addingspear">Add spear</button>
+            <button id="addingmoonballista">Add moonballista</button>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="optionsscript.js"></script>
+    <script src="inventoryscript.js"></script>
+    <script src="mapscript.js"></script>
+    <script src="heroscript.js"></script>
+</body>
+</html>

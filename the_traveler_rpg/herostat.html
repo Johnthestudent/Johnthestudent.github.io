@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Traveler RPG</title>
+    <link rel="stylesheet" href="herostyle.css" />
+  </head>
+  <body>
+    <div id="herowindow">
+      <img
+        id="heroimage"
+        src="Background sources/Herostatimage.png"
+        alt="Wooden_background"
+      />
+      <div id="firststripe">
+        <h1>Experience: <span id="experiencevalue"></span> / <span id="leveluper">10</span></h1>
+        <h1>Level: <span id="herolevel"></span></h1>
+        <button id="levelupforpoints">Level up</button>
+        <div id="moneyamount">
+          <h1>Coins:
+            <h2>Gold: </h2><h2 id="golddenar"></h2>
+            <h2>Silver: </h2><h2 id="silverdenar"></h2>
+            <h2>Copper: </h2><h2 id="copperdenar"></h2>
+          </h1>
+        </div>
+        
+      </div>
+      <div id="secondstripe">
+        <img id="characterimage" src="" alt="Character_chosen" />
+        <div id="herovalues">
+          <h1><b>Name: </b><span id="heroname"></span></h1>
+          <h1><b>Health: </b><span id="herohealth"></span><button class="statincreaser" onclick="leveluphealth()">+</button></h1>
+          <h1><b>Attack: </b><span id="heroattack"></span><button class="statincreaser" onclick="levelupattack()">+</button></h1>
+          <h1><b>Defense: </b><span id="herodefense"></span><button class="statincreaser" onclick="levelupdefense()">+</button></h1>
+          <h1><b>Speed: </b><span id="herospeed"></span><button class="statincreaser" onclick="levelupspeed()">+</button></h1>
+          <h1><b>Intelligence: </b><span id="herointelligence"></span><button class="statincreaser" onclick="levelupintelligence()">+</button></h1>
+          <h2><b>Points: </b><span id="mypoints"></span></h2>
+          <button class="goback" onclick="location.href='majorwindow.html'">Back to main menu</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="characterchooserscript.js"></script>
+    <script src="heroscript.js"></script>
+    <script src="mapscript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Traveler RPG</title>
+    <link rel="stylesheet" href="majorstyle.css">
+</head>
+<body>
+    <div id="windowofgame">
+        <img id="woodenimage" src="Background sources/Majorimage.png" alt="Wooden_background">
+        <img id="minimap" src="Background sources/Minimapicon.png" alt="Map_based_image" onclick="location.href='map.html'">
+        
+        <div id="majorchoices">
+            <div id="firstmajor">
+                <img id="characterstat" src="Background sources/Miniherostatsicon.png" alt="Hero_values" onclick="location.href='herostat.html'">
+                <h1 class="icondescribe">Hero</h1>
+            </div>
+            <div id="secondmajor">
+                <img id="researcher" src="Background sources/Miniresearchicon.png" alt="Research_section" onclick="location.href='researchwindow.html'">
+                <h1 class="icondescribe">Research</h1>
+            </div>    
+            <div id="thirdmajor">
+                <img id="playerinventory" src="Background sources/Miniinventoryicon.png" alt="Inventory_section" onclick="location.href='inventory.html'">
+                <h1 class="icondescribe">Inventory</h1>
+            </div>          
+        </div>
+
+        <img id="exitthegame" src="Background sources/Miniexiticon.png" alt="Chance_of_exiting_the_game" onclick="alert('Does not work the way I expected. Click on the X close button of the browser instead!')">
+
+        <div id="minorbuttons">
+            <button id="savestate">Save</button>
+            <button id="optionstate" onclick="location.href='options.html'">Options</button>
+            <button class="goback" onclick="location.href='characterchoose.html'">Back to character chooser</button>
+            <h1 id="encourage">Check out hero stats, level the hero up, research skills, and manage tools in the inventory!</h1>
+        </div>
+        <div id="othermessage">
+            <h1>Take quests by entering the map section, or just exit the game! (Don't forget to save!)</h1>
+        </div>
+        <button id="howtousethegame">?</button>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="optionsscript.js"></script>
+    <script src="inventoryscript.js"></script>
+    <script>
+        //testing only
+        console.log(localStorage.getItem("helper_enabled"));
+
+        //additional info
+        $("#savestate").on("click", function()
+        {
+            alert("Will come in a later version of this game! 1 up 1,5 hours of gameplay is not too surprising, right?");
+        })
+        
+        //helper section
+        if(localStorage.getItem("helper_enabled") == "true")
+        {
+            $("#howtousethegame").css("opacity", "1.0");
+        }
+
+        $("#howtousethegame").on("click", function()
+        {
+            location.href='howtouse.html';
+        });
+    </script>
+</body>
+</html>

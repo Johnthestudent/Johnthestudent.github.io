@@ -1,0 +1,255 @@
+/*Stlye of the major image*/
+#woodbackground
+{
+    width: 1000px;
+    height: 800px;
+}
+
+/*Stlye of the coins holding section*/
+#coinsmenu
+{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 700px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.5);
+    bottom: 800px;
+    left: 150px;
+}
+
+#coinsmenu img
+{
+    border: 1px solid black;
+    height: 200px;
+}
+
+#coinamount, #cointype
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*Stlye of the goback button*/
+.goback
+{
+    width: 200px;
+    height: 50px;
+    position: relative;
+    left: 800px;
+    bottom: 900px;
+    font-size: 20px;
+}
+
+.goback:hover
+{
+    background-color: midnightblue;
+    color: white;
+    cursor: pointer;
+}
+
+.silverconvert
+{
+    position: relative;
+    bottom: 815px;
+    left: 150px;
+}
+
+#silver_convert
+{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    background: rgba(255, 255, 255, 0.5);
+    align-items: center;
+}
+
+/*Style of the converter button*/
+#silver_convert button
+{
+    width: 40px;
+    height: 25px;
+}
+
+#silver_convert button:hover
+{
+    background-color: midnightblue;
+    color: white;
+    cursor: pointer;
+}
+
+.goldconvert
+{
+    position: relative;
+    bottom: 830px;
+    
+    left: 150px;
+}
+
+#gold_convert
+{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    align-items: center;
+}
+
+/*Style of the converter button*/
+#gold_convert button
+{
+    width: 40px;
+    height: 25px;
+}
+
+#gold_convert button:hover
+{
+    background-color: midnightblue;
+    color: white;
+    cursor: pointer;
+}
+
+/*Style of the items holder*/
+#itemcreaters
+{
+    display: flex;
+    position: relative;
+    bottom: 800px;
+    left: 150px;
+    width: 700px;
+    background: rgba(255, 255, 255, 0.5);
+    justify-content: space-around;
+}
+
+#itemcreaters button
+{
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+}
+
+#itemcreaters button:hover
+{
+    cursor: pointer;
+    background-color: midnightblue;
+    color: white;
+}
+
+#myCarousel { 
+  background: rgba(255, 255, 255, 0.5);
+  width: 700px;
+  height: 300px;
+  position: relative;
+  left: 150px;
+  bottom: 800px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-indicators {
+  background-color: lightgray;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 250px;
+}
+
+.carousel-control-next
+{
+    left: 650px;
+}
+
+.carousel-control-prev
+{
+    left: 0px;
+}
+
+.carousel-inner {
+    display: flex;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    top: 0px;
+    width: 700px;
+}
+
+.carousel-inner img
+{
+    border: 1px solid black;
+}
+
+.carousel-inner img:hover
+{
+    cursor: pointer;
+}
+
+.carousel-inner div[class="item active"]
+{
+    width: 700px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.carousel-inner div[class="item"]
+{
+    height: 250px;
+    width: 700px;
+}
+
+#item-name
+{
+    position: relative;
+    bottom: 50px;
+}
+
+#amount01, #amount02, #amount03, #amount04, #amount05, #amount06, #amount07, #amount08, #amount09, #amount10, #amount11, #amount12, #amount13, #amount14, #amount15,
+#amount16, #amount17, #amount18, #amount19, #amount20, #amount21, #amount22, #amount23, #amount24, #amount25, #amount26, #amount27, #amount28, #amount29, #amount30
+{
+    position: relative;
+    bottom: 55px;
+    left: 5px;
+}
+
+/*Style of the itembuyer button*/
+#buyer
+{
+    position: fixed;
+    display: flex;
+    top: 530px;
+    left: 210px;
+    align-items: center;
+}
+
+/*Style of the itemseller button*/
+#seller
+{
+    position: fixed;
+    display: flex;
+    top: 530px;
+    left: 520px;
+    align-items: center;
+}
+
+#buyer button, #seller button
+{
+    width: 50px;
+    height: 30px;
+}
+
+#buyer button:hover, #seller button:hover
+{
+    cursor: pointer;
+    background-color: midnightblue;
+    color: white;
+}

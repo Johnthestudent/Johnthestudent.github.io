@@ -1,0 +1,16 @@
+/*style of the entire section*/
+#rulesforgameplay
+{
+    width: 70%;   
+}
+
+/*styles of the list*/
+li
+{
+    margin: 10px;
+}
+
+p, li
+{
+    font-size: 20px;
+}

@@ -1,0 +1,90 @@
+#heroimage
+{
+    width: 1000px;
+    height: 800px;
+}
+
+#firststripe
+{
+    width: 900px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.5);
+    position: relative;
+    bottom: 800px;
+    left: 50px;
+}
+
+#moneyamount
+{
+   width: 800px;
+   height: 100px;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+#moneyamount h2
+{
+    position: relative;
+    top: 10px;
+}
+
+#secondstripe
+{
+    width: 900px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.5);
+    position: relative;
+    bottom: 800px;
+    left: 50px;
+}
+
+#characterimage
+{
+    width: 250px;
+    height: 550px;
+    position: relative;
+    left: 20px;
+}
+
+#herovalues
+{
+    position: relative;
+    bottom: 580px;
+    left: 300px;
+}
+
+.statincreaser
+{
+    width: 40px;
+    height: 25px;
+    position: relative;
+    top: -5px;
+}
+
+.statincreaser:hover
+{
+    background-color: midnightblue;
+    color: white;
+    cursor: pointer;
+}
+
+.goback
+{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.goback:hover
+{
+    background-color: midnightblue;
+    color: white;
+    cursor: pointer;
+}
+
+#levelupforpoints:hover
+{
+    background-color: midnightblue;
+    color: white;
+    cursor: pointer;
+}

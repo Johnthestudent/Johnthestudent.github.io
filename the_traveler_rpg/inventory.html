@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Traveler RPG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="inventorystyle.css">
+</head>
+<body>
+    <div id="windowofinventory">
+        <img id="woodbackground" src="Background sources/Inventoryimage.png" alt="Wooden_background">
+        <div id="coinsmenu">
+            <div id="cointype">
+                <img id="gold_denar" src="Tools sources/Gold denar.png" alt="golden_coin">
+                <img id="silver_denar" src="Tools sources/Silver denar.png" alt="silver_coin">
+                <img id="copper_denar" src="Tools sources/Copper denar.png" alt="copper_coin">
+            </div>
+            <div id="coinamount">
+                <h2>Gold: </h2><h2 id="golddenar"></h2>
+                <h2>Silver: </h2><h2 id="silverdenar"></h2>
+                <h2>Copper: </h2><h2 id="copperdenar"></h2>
+            </div>
+        </div>
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <!--1st row-->
+                <div class="item active">
+                    <div>
+                        <img src="Tools sources/Axe.png" alt="Item_Axe" id="inventoryitem01">
+                        <h2 id="amount01"></h2>
+                    </div>
+                    <div>
+                        <img src="Tools sources/Bag of arrows.png" alt="Item_Bag_of_arrows" id="inventoryitem02">
+                        <h2 id="amount02"></h2>
+                    </div>
+                    <div>
+                        <img src="Tools sources/Bow.png" alt="Item_Bow" id="inventoryitem03">
+                        <h2 id="amount03"></h2>
+                    </div>
+                </div>
+                <!--2nd row-->
+                <div class="item">
+                    <div>
+                        <img src="Tools sources/Bread.png" alt="Item_Bread" id="inventoryitem04">
+                        <h2 id="amount04"></h2>
+                    </div>
+                    <div>
+                        <img src="Tools sources/Coal.png" alt="Item_Coal" id="inventoryitem05">
+                        <h2 id="amount05"></h2>
+                    </div>
+                    <div>
+                        <img src="Tools sources/Copper ingot.png" alt="Item_Copper_ingot" id="inventoryitem06">
+                        <h2 id="amount06"></h2>
+                    </div>
+                </div>
+                <!--3rd row-->
+                <div class="item">
+                    <div>
+                        <img src="Tools sources/Crossbow.png" alt="Item_Crossbow" id="inventoryitem07">
+                        <h2 id="amount07"></h2>
+                    </div>
+                    <div>
+                        <img src="Tools sources/Fruit basket.png" alt="Item_Fruit_basket" id="inventoryitem08">
+                        <h2 id="amount08"></h2>
+                    </div>
+                    <div>
+                        <img src="Tools sources/Glass.png" alt="Item_Glass" id="inventoryitem09">
+                        <h2 id="amount09"></h2>
+                    </div>
+                </div>
+                <!--4th row-->
+                <div class="item">
+                    <div>
+                        <img src="Tools sources/Gold ingot.png" alt="Item_Gold_ingot" id="inventoryitem10">
+                        <h2 id="amount10"></h2>
+                    </div>
+                    <div>
+                        <img src="Tools sources/Herbal flower.png" alt="Item_Herbal_flower" id="inventoryitem11">
+                        <h2 id="amount11"></h2>
+                    </div>
+                    <div>
+                        <img src="Tools sources/Herbs.png" alt="Item_Herbs" id="inventoryitem12">
+                        <h2 id="amount12"></h2>
+                    </div>
+                </div>
+                <!--5th row-->
+                <div class="item">
+                    <div>
+                        <img src="Tools sources/Ice cube.png" alt="Item_Ice_cube" id="inventoryitem13">
+                        <h2 id="amount13"></h2>
+                    </div>               
+                    <div >
+                        <img src="Tools sources/Iron bucket with oil.png" alt="Item_Iron_bucket_with_oil" id="inventoryitem14">
+                        <h2 id="amount14"></h2>
+                    </div>
+                    <div>
+                        <img src="Tools sources/Iron bucket.png" alt="Item_Iron_bucket" id="inventoryitem15">
+                        <h2 id="amount15"></h2>
+                    </div>
+                </div>
+                <!--6th row-->
+                <div class="item">
+                    <div>
+                        <img src="Tools sources/Iron ingot.png" alt="Item_Iron_ingot" id="inventoryitem16">
+                        <h2 id="amount16"></h2>
+                    </div>
+                    <div>
+                        <img src="Tools sources/Mace.png" alt="Item_Mace" id="inventoryitem17">
+                        <h2 id="amount17"></h2>
+                    </div>
+                    <div>
+                        <img src="Tools sources/Maul.png" alt="Item_Maul" id="inventoryitem18">
+                        <h2 id="amount18"></h2>
+                    </div>
+                </div>
+                <!--7th row-->
+                <div class="item">
+                    <div>
+                        <img src="Tools sources/Medical liquid.png" alt="Item_Medical_liquid" id="inventoryitem19">
+                        <h2 id="amount19"></h2>
+                    </div>
+                    <div>
+                        <img src="Tools sources/Moon stone.png" alt="Item_Moon_stone" id="inventoryitem20">
+                        <h2 id="amount20"></h2>
+                    </div>
+                    <div>
+                        <img src="Tools sources/Moonballista.png" alt="Item_Moonballista" id="inventoryitem21">
+                        <h2 id="amount21"></h2>
+                    </div>
+                </div>
+                <!--8th row-->
+                <div class="item">
+                    <div>
+                        <img src="Tools sources/Raw meat.png" alt="Item_Raw_meat" id="inventoryitem22">
+                        <h2 id="amount22"></h2>
+                    </div>
+                    <div>
+                        <img src="Tools sources/Sail.png" alt="Item_Sail" id="inventoryitem23">
+                        <h2 id="amount23"></h2>
+                    </div>
+                    <div>
+                        <img src="Tools sources/Sand.png" alt="Item_Sand" id="inventoryitem24">
+                        <h2 id="amount24"></h2>
+                    </div>
+                </div>
+                <!--9th row-->
+                <div class="item">
+                    <div>
+                        <img src="Tools sources/Shield.png" alt="Item_Shield" id="inventoryitem25">
+                        <h2 id="amount25"></h2>
+                    </div>
+                    <div>
+                        <img src="Tools sources/Silver ingot.png" alt="Item_Silver_ingot" id="inventoryitem26">
+                        <h2 id="amount26"></h2>
+                    </div>
+                    <div>
+                        <img src="Tools sources/Spear.png" alt="Item_Spear" id="inventoryitem27">
+                        <h2 id="amount27"></h2>
+                    </div>
+                </div>
+                <!--10th row-->
+                <div class="item">
+                    <div>
+                        <img src="Tools sources/Stone.png" alt="Item_Stone" id="inventoryitem28">
+                        <h2 id="amount28"></h2>
+                    </div>
+                    <div>
+                        <img src="Tools sources/Sword.png" alt="Item_Sword" id="inventoryitem29">
+                        <h2 id="amount29"></h2>
+                    </div>
+                    <div>
+                        <img src="Tools sources/Wooden logs.png" alt="Item_Wooden_logs" id="inventoryitem30">
+                        <h2 id="amount30"></h2>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            <h2 id="item-name">Itemname</h2>
+        </div>
+
+        <div id="silver_convert">
+            <h2 class="silverconvert">Convert copper denars to silver denar (10 for 1):</h2>
+            <button class="silverconvert" id="coppertosilver">+</button>
+            <button class="silverconvert" id="silvertocopper">-</button>
+        </div>
+        <div id="gold_convert">
+            <h2 class="goldconvert">Convert silver denars to gold denar (2 for 1):</h2>
+            <button class="goldconvert" id="silvertogold">+</button>
+            <button class="goldconvert" id="goldtosilver">-</button>
+        </div>
+        <div id="itemcreaters">
+            <button id="glasscreater">Create glass</button>
+            <button id="medicalcreater">Create medical liquid</button>
+            <button id="bucketcreater">Create iron bucket</button>
+            <button id="ballistacreater">Create moonballista</button>
+        </div>
+        <div id="buyer">
+            <h2>Buy</h2>
+            <button id="buy-price">+</button>
+            <h3 id="buyprice">Buyprice</h3>
+        </div>
+        <div id="seller">
+            <h2>Sell</h2>
+            <button id="sell-price">-</button>
+            <h3 id="sellprice">Sellprice</h3>
+        </div>
+    </div>
+    <button class="goback" onclick="location.href='majorwindow.html'">Back to main menu</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="inventoryscript.js"></script>
+</body>
+</html>
