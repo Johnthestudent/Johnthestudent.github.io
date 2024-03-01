@@ -1,0 +1,64 @@
+/*style of the body*/
+body
+{
+    background: mintcream;
+}
+
+/*style of the intro image*/
+img
+{
+    width: 1000px;
+    height: 800px;
+    z-index: -1;
+}
+
+/*style of the title*/
+h1
+{
+    color: orange;
+    position: relative;
+    top: -500px;
+    left: 175px;
+    font-size: 500%;
+}
+
+h2
+{
+    position: relative;
+    color: darkred;
+    bottom: 550px;
+    left: 500px;
+    font-size: 250%;
+}
+
+/*style of the buttons*/
+#buttons
+{
+    display: flex;
+    position: relative;
+    top: -450px;
+    left: 350px;
+    align-items: center;
+}
+
+#startgame, #gameinfo
+{
+    width: 150px;
+    height: 50px;
+    background: oldlace;
+    color: darkblue;
+}
+
+#startgame:hover
+{
+    color: white;
+    background: darkblue;
+    cursor: pointer;
+}
+
+#gameinfo:hover
+{
+    color: white;
+    background: darkblue;
+    cursor: pointer;
+}

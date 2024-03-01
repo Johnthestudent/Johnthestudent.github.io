@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Traveler RPG</title>
+    <link rel="stylesheet" href="optionsstyle.css">
+</head>
+<body>
+    <div id="optionssection">
+        <img id="woodbackground" src="Background sources/Optionsimage.png">
+        <div id="switchable">
+            <form>
+                <input type="checkbox" id="difficultymode" name="difficultymode" value="Mode">
+                <label for="difficultymode">Enable <b>Mommy dearest mode</b></label><br>
+                <button type="button" onClick="savedifficultymode()" class="mommymodesaver">Save Mommy dearest mode</button>
+                <br>
+                <input type="checkbox" id="helperwindow" name="helperwindow" value="Help">
+                <label for="helperwindow">Enable <b>Helper</b></label><br>
+                <button type="button" onClick="savehelperwindow()" class="helpersaver">Save Helper window</button>
+            </form>
+            <button id="creditsbutton">Credits</button>
+            <button id="stylebutton">Style</button>
+            <div id="optionhelper">
+                <p id="mommy" style="display:none">This mode enables a bonus map section with an insanely difficult boss. Play at your own risk!</p>
+                <p id="sugo" style="display:none">This opens up a small window with brief description about parts of the game.</p>
+                <p id="stab"><b>John Pogany: </b> implementation, coding, design, characters, story 
+                    <br><br> <b>thetraveler91: </b> Mary, Nate, Ian, Emilia, Olav, Bo, Ryuzen, Daisuke choosable characters, Order of Crimson Sword 
+                    <br><br> <b>MarnicSteve: </b> Midna choosable character 
+                    <br><br> <b>Ultrakirby1999:</b> Erin choosable character
+                </p>
+                <p id="stilus">No styling!</p>
+            </div>
+            <button class="goback" onclick="location.href='majorwindow.html'">Back to main menu</button>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="optionsscript.js"></script>
+</body>
+</html>

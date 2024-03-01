@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Traveler RPG</title>
+    <link rel="stylesheet" href="researchwindowstyle.css">
+</head>
+<body>
+    <div id="windowofresearch">
+        <img id="woodenbackground" src="Background sources/Researchimage.png" alt="Wooden_background">
+        <h2><b>Points: </b><span id="researchpoints"></span></h2>
+        <div id="branches">
+            <div id="medicbranch">
+                <img class="medic01" src="Background sources/Medicresearchlevel01.png" alt="medic_background" onclick="level01medic()">
+                <img class="medic02" src="Background sources/Medicresearchlevel02.png" alt="medic_background" onclick="level02medic()">
+                <img class="medic03" src="Background sources/Medicresearchlevel03.png" alt="medic_background" onclick="level03medic()">
+                <img class="medic04" src="Background sources/Medicresearchlevel04.png" alt="medic_background" onclick="level04medic()">
+            </div>
+            <div id="minerbranch">
+                <img class="miner01" src="Background sources/Minerresearchlevel01.png" alt="miner_background" onclick="level01miner()">
+                <img class="miner02" src="Background sources/Minerresearchlevel02.png" alt="miner_background" onclick="level02miner()">
+                <img class="miner03" src="Background sources/Minerresearchlevel03.png" alt="miner_background" onclick="level03miner()">
+                <img class="miner04" src="Background sources/Minerresearchlevel04.png" alt="miner_background" onclick="level04miner()">
+            </div>
+            <div id="builderbranch">
+                <img class="builder01" src="Background sources/Builderresearchlevel01.png" alt="builder_background" onclick="level01builder()">
+                <img class="builder02" src="Background sources/Builderresearchlevel02.png" alt="builder_background" onclick="level02builder()">
+                <img class="builder03" src="Background sources/Builderresearchlevel03.png" alt="builder_background" onclick="level03builder()">
+                <img class="builder04" src="Background sources/Builderresearchlevel04.png" alt="builder_background" onclick="level04builder()">
+            </div>
+            <div id="pointsneeded">
+                <h3>1 point needed</h3>
+                <h3>2 points needed</h3>
+                <h3>4 points needed</h3>
+                <h3>8 points needed</h3>
+            </div>
+            <button class="goback" onclick="location.href='majorwindow.html'">Back to main menu</button>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="researchwindowscript.js"></script>
+</body>
+</html>

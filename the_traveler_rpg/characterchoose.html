@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Traveler RPG</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="characterchooserstyle.css" />
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+  </head>
+  <body>
+    <div id="characterchoice">
+      <img src="Background sources/Choserimage.png" id="chosebackground" />
+      <div id="characterimage">
+        <img
+          src="Character sources/Hero_Mary.png"
+          alt="random_hero_choosen"
+          id="thehero"
+        />
+      </div>
+      <div id="characterchooser">
+        <button id="leftway"><i class="fa fa-reply"></i></button>
+        <button id="rightway"><i class="fa fa-share"></i></button>
+      </div>
+      <h1>Choose a character to start the game! Only Mary in version 1.0!</h1>
+      <div id="characterdescription">
+        <p id="aboutthecharacter"></p>
+        <div id="characterstatistics">
+          <p><b>Name:</b><span id="namevalue"></span></p>
+          <p><b>Health:</b><span id="healthvalue"></span></p>
+          <p><b>Attack:</b><span id="attackvalue"></span></p>
+          <p><b>Defense:</b><span id="defensevalue"></span></p>
+          <p><b>Speed:</b><span id="speedvalue"></span></p>
+          <p><b>Intelligence:</b><span id="intelligencevalue"></span></p>
+        </div>
+        <div id="majorbuttons">
+          <button id="gamestarter" onclick="location.href='majorwindow.html'">
+            New game
+          </button>
+          <button id="loadsave">Load game</button>
+          <button id="options" onclick="location.href='options.html'">
+            Options
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="characterchooserscript.js"></script>
+    <script src="heroscript.js"></script>
+    <script src="majorscript.js"></script>
+  </body>
+</html>

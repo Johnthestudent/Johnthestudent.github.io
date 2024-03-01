@@ -1,0 +1,305 @@
+/*Style of the menu image*/
+#mapimage
+{
+    width: 1000px;
+    height: 800px;
+}
+
+/*Style of the map section image*/
+#adventuremap
+{
+    position: fixed;
+    left: 150px;
+    top: 150px;
+    border: 1px solid black;
+}
+
+/*Style of the button, which with the player can go back to the main menu*/
+.goback
+{
+    position: fixed;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    left: 150px;
+    top: 30px;
+    background: oldlace;
+}
+
+.goback:hover
+{
+    color: white;
+    background: darkblue;
+    cursor: pointer;
+}
+
+/*Style of the backward button, which with the player can go back to the previous map section*/
+#backwardbutton
+{
+    position: fixed;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    left: 50px;
+    top: 350px;
+    background: oldlace;
+}
+
+#backwardbutton:hover
+{
+    color: white;
+    background: darkblue;
+    cursor: pointer;
+}
+
+/*Style of the backward button, which with the player can go to the next map section*/
+#forwardbutton
+{
+    position: fixed;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    left: 855px;
+    top: 350px;
+    background: oldlace;
+}
+
+#forwardbutton:hover
+{
+    color: white;
+    background: darkblue;
+    cursor: pointer;
+}
+
+/*Style of the majorplace button, through which the player can check out the conditions of the quests*/
+#majorplace
+{
+    position: fixed;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    left: 600px;
+    bottom: 600px;
+    background: oldlace;
+    border-radius: 20px;
+}
+
+#majorplace:hover
+{
+    color: white;
+    background: darkblue;
+    cursor: pointer;
+}
+
+/*Style of a resource gatherer button, through which the player can gather resources for the quests*/
+#random01
+{
+    position: fixed;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    left: 600px;
+    bottom: 500px;
+    background: oldlace;
+    border-radius: 20px;
+}
+
+#random01:hover
+{
+    color: white;
+    background: darkblue;
+    cursor: pointer;
+}
+
+/*Style of a resource gatherer button, through which the player can gather resources for the quests*/
+#random02
+{
+    position: fixed;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    left: 450px;
+    bottom: 400px;
+    background: oldlace;
+    border-radius: 20px;
+}
+
+#random02:hover
+{
+    color: white;
+    background: darkblue;
+    cursor: pointer;
+}
+
+/*Style of a resource gatherer button, through which the player can gather resources for the quests*/
+#random03
+{
+    position: fixed;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    left: 200px;
+    bottom: 400px;
+    background: oldlace;
+    border-radius: 20px;
+}
+
+#random03:hover
+{
+    color: white;
+    background: darkblue;
+    cursor: pointer;
+}
+
+/*Style of the rpg battle button, through which the player can start rpg battles*/
+#forbattle
+{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    left: 300px;
+    bottom: 600px;
+    background: oldlace;
+    border-radius: 20px;
+}
+
+#forbattle:hover
+{
+    color: white;
+    background: darkblue;
+    cursor: pointer;
+}
+
+/*Style of the story button, through which the player can read the story related to the quest*/
+#charactermessage
+{
+    position: fixed;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    left: 400px;
+    top: 30px;
+    background: oldlace;
+}
+
+#charactermessage:hover
+{
+    color: white;
+    background: darkblue;
+    cursor: pointer;
+}
+
+/*Style of the story section of the quest*/
+#storydescription
+{
+    position: fixed;
+    width: 700px;
+    height: 600px;
+    background: white;
+    position: fixed;
+    left: 150px;
+    top: 150px;
+    border: 1px solid black;
+}
+
+/*Style of the story image section of the quest*/
+#storydescription img
+{
+    border: 1px solid, black;
+}
+
+/*Style of the quests button, through which the player can check out the conditions of the quest*/
+#questmessage
+{
+    position: fixed;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    left: 650px;
+    top: 30px;
+    background: oldlace;
+}
+
+/*Style of the quest description section*/
+#questdescription
+{
+    position: fixed;
+    width: 700px;
+    height: 600px;
+    background: white;
+    position: fixed;
+    left: 150px;
+    top: 150px;
+    border: 1px solid black;
+}
+
+#questmessage:hover
+{
+    color: white;
+    background: darkblue;
+    cursor: pointer;
+}
+
+/*Style of the message section, which one's text changes for an event*/
+#situationmessage
+{
+    width: 800px;
+    height: 130px;
+    background-color: white;
+    position: fixed;
+    left: 100px;
+    top: 670px;
+}
+
+#situationmessage h2
+{
+    position: fixed;
+    top: 650px;
+}
+
+/*Style of the message section, which one's text changes if it is possible for the hero to level up*/
+#levelhelper
+{
+    position: fixed;
+    left: 100px;
+    top: 690px;
+}
+
+/*Style of the message section, which one's text changes if it is possible for the hero to level up*/
+#levelupsituation
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 700px;
+    border: 1px solid black;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 85px;
+    left: 150px;
+    background-color: oldlace;
+}
+
+/*Style of buttons container, each button functions as a resource handler*/
+#addresourcesforquests
+{
+    position: fixed;
+    top: 760px;
+    left: 120px;
+    display: flex;
+    width: 750px;
+    border: 1px solid black;
+}
+
+#addresourcesforquests button
+{
+    position: relative;
+}
+
+#addresourcesforquests button:hover
+{
+    color: white;
+    background: darkblue;
+    cursor: pointer;
+}

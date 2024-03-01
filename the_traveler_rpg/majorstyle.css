@@ -1,0 +1,215 @@
+/*Major background properties*/
+#woodenimage
+{
+    width: 1000px;
+    height: 800px;
+}
+
+/*Properties of the map section button*/
+#minimap
+{
+    position: absolute;
+    left: 8px;
+    border: 1px solid black;
+}
+
+#minimap:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the exit button*/
+#exitthegame
+{
+    position: absolute;
+    left: 806px;
+    bottom: 717px;
+    border: 1px solid black;
+}
+
+#exitthegame:hover
+{
+    cursor: pointer;
+}
+
+/*Properties of the buttons in the major section*/
+#majorchoices
+{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.5);
+    bottom: 550px;
+    left: 150px;
+}
+
+/*style of the characterstat section image*/
+#characterstat
+{
+    opacity: 1.0;
+    border: 1px solid black;
+}
+
+#characterstat:hover
+{
+    cursor: pointer;
+}
+
+/*stlye of the research section image*/
+#researcher
+{
+    opacity: 1.0;
+    border: 1px solid black;
+    left: 50px;
+}
+
+#researcher:hover
+{
+    cursor: pointer;
+}
+
+/*style of the inventory section image*/
+#playerinventory
+{
+    opacity: 1.0;
+    border: 1px solid black;
+    left: 87px;
+}
+
+#playerinventory:hover
+{
+    cursor: pointer;
+}
+
+/*The text under the buttons are center positioned.*/
+.icondescribe
+{
+    text-align: center;
+}
+
+/*Properties of the buttons in the minor section*/
+#minorbuttons
+{
+    position: relative;
+    width: 700px;
+    height: 150px;
+    bottom: 500px;
+    left: 150px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/*style of the save button*/
+#savestate
+{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    left: 25px;
+    top: 10px;
+    background: oldlace;
+}
+
+#savestate:hover
+{
+    color: white;
+    background: darkblue;
+    cursor: pointer;
+}
+
+/*style of the options button*/
+#optionstate
+{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    left: 50px;
+    top: 10px;
+    background: oldlace;
+}
+
+#optionstate:hover
+{
+    color: white;
+    background: darkblue;
+    cursor: pointer;
+}
+
+/*Properties of the messages*/
+#encourage
+{
+    text-align: center;
+    position: relative;
+    bottom: 13px;
+}
+
+#othermessage
+{
+    position: relative;
+    bottom: 1280px;
+    left: 202px;
+    width: 596px;
+    height: 206px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/*Properties of the goback button*/
+.goback
+{
+    width: 200px;
+    height: 50px;
+    position: relative;
+    left: 70px;
+    top: 23px;
+    font-size: 20px;
+}
+
+.goback:hover
+{
+    background-color: midnightblue;
+    color: white;
+    cursor: pointer;
+}
+
+/*Properties of the how to use button*/
+#howtousethegame
+{
+    position: absolute;
+    bottom: 150px;
+    left: 950px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 20px;
+    opacity: 0;
+}
+
+#howtousethegame:hover
+{
+    background-color: midnightblue;
+    color: white;
+    cursor: pointer;
+}
+
+/*laptop view*/
+@media only screen and (max-width: 1280px)
+{
+    #minimap
+    {
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        border: 1px solid black;
+    }
+
+    #exitthegame
+    {
+        position: absolute;
+        left: 806px;
+        bottom: 686px;
+        border: 1px solid black;
+    }
+}

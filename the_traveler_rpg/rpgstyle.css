@@ -1,0 +1,100 @@
+#rpgscenecontainer
+{
+    width: 1000px;
+    height: 800px;
+    border: 1px solid black;
+}
+
+/*Style of the player character*/
+#playercharacter
+{
+    height: 50%;
+    position: absolute;
+    top: 20px;
+    left: 150px;
+}
+
+/*Style of the enemy character*/
+#enemycharacter
+{
+    position: absolute;
+    top: 30px;
+    left: 400px;
+}
+
+/*Stlye of the hero's weapon image*/
+#aboutplayerweapon
+{
+    position: relative;
+    left: 770px;
+    bottom: 100px;
+}
+
+#characterweapon
+{
+    border: 1px solid black
+}
+
+/*Stlyes for the stats and buttons for implementing attacks*/
+#herostats
+{
+    position: absolute;
+    bottom: 115px;
+    width: 100%;
+}
+
+#baseattack1, #baseattack2, #baseattack3, #specialattack1, #specialattack2, #specialattack3, #specialattack4, #cardattack, #recovermove
+{
+    position: relative;
+    width: 150px;
+    height: 50px;
+    font-size: 14px;
+    background: oldlace;
+}
+
+#baseattack1:hover, #baseattack2:hover, #baseattack3:hover, #specialattack1:hover, #specialattack2:hover, #specialattack3:hover, #specialattack4:hover, #cardattack:hover, #recovermove:hover
+{
+    color: white;
+    background: darkblue;
+    cursor: pointer;
+}
+
+#buttonsforattacks
+{
+    border: 1px solid black;
+    width: 650px;
+}
+
+#opponentstats
+{
+    position: absolute;
+    bottom: 115px;
+    left: 450px;
+}
+
+#opponentmove
+{
+    position: absolute;
+    bottom: 90px;
+    left: 300px;
+    border: 1px solid black;
+    width: 100px;
+
+}
+
+/*laptop view*/
+@media only screen and (max-width: 1280px)
+{
+    #herostats, #opponentstats
+    {
+        position: absolute;
+        bottom: 85px;
+    }
+
+    /*experimental*/
+    #enemycharacter
+    {
+        height: 55%;
+        min-width: 13%;
+    }
+}

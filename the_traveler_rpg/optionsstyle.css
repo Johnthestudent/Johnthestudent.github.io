@@ -1,0 +1,119 @@
+/*Major background properties*/
+#woodbackground
+{
+    width: 1000px;
+    height: 800px;
+}
+
+#switchable
+{
+    position: relative;
+    display: block;
+    width: 800px;
+    height: 680px;
+    background: rgba(255, 255, 255, 0.5);
+    bottom: 710px;
+    left: 100px;
+}
+
+#difficultymode:hover
+{
+    cursor:pointer
+}
+
+#helperwindow:hover
+{
+    cursor:pointer
+}
+
+.mommymodesaver, .helpersaver
+{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    position: relative;
+}
+
+.mommymodesaver:hover
+{
+    cursor:pointer;
+    background-color: midnightblue;
+    color: white;
+}
+
+.helpersaver:hover
+{
+    cursor:pointer;
+    background-color: midnightblue;
+    color: white;    
+}
+
+/*style of the credits button*/
+#creditsbutton
+{
+    width: 100px;
+    height: 50px;
+    position: relative;
+    bottom: 0px;
+    font-size: 20px;
+}
+
+#creditsbutton:hover
+{
+    cursor:pointer;
+    background-color: midnightblue;
+    color: white;
+}
+
+/*stlye of the style button*/
+#stylebutton
+{
+    width: 100px;
+    height: 50px;
+    position: relative;
+    top: 50px;
+    right: 104px;
+    font-size: 20px;
+}
+
+#stylebutton:hover
+{
+    background-color: midnightblue;
+    color: white;
+    cursor:pointer;
+}
+
+/*style of the button, that enables helper section*/
+#optionhelper
+{
+    position: relative;
+    display: block;
+    width: 600px;
+    height: 350px;
+    background: rgba(255, 255, 255, 1.0);
+    top: 100px;
+    left: 100px;
+}
+
+#stab, #stilus
+{
+    opacity: 0.0;
+}
+
+/*stlye of the goback button*/
+.goback
+{
+    width: 200px;
+    height: 50px;
+    position: relative;
+    left: 0px;
+    bottom: 315px;
+    font-size: 20px;
+}
+
+.goback:hover
+{
+    background-color: midnightblue;
+    color: white;
+    cursor: pointer;
+}
