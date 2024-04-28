@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Traveler RPG</title>
+    <link rel="stylesheet" href="rpgstyle.css">
+</head>
+<body>
+    <div id="rpgscenecontainer">
+        <img id="rpgscenario" src="Background sources/RPGscene01.png" alt="scenario_for_the_rp">
+        <img id="playercharacter" src="" alt="Character_chosen" />
+        <img id="enemycharacter" src="" alt="Enemy_character" />
+        <div id="character_stats_for_rpg">
+            <div id="buttonsforattacks">
+                <div>
+                    <button id="baseattack1" onclick="baseattack1()">Base attack #1</button>
+                    <button id="baseattack2" onclick="baseattack2()">Base attack #2</button>
+                    <button id="baseattack3" onclick="baseattack3()">Base attack #3</button>
+                </div>
+                <div>
+                    <button id="specialattack1" onclick="specialattack1()">Special attack #1</button>
+                    <button id="specialattack2" onclick="specialattack2()">Special attack #2</button>
+                    <button id="specialattack3" onclick="specialattack3()">Special attack #3</button>
+                    <button id="specialattack4" onclick="specialattack4()">Special attack #4</button>
+                </div>
+                <div>
+                    <button id="cardattack" onclick="cardattack()">Card attack</button>
+                    <button id="recovermove" onclick="recovercharacter()">Recover</button>
+                </div>
+            </div>
+            <div id="aboutplayerweapon">
+                <img id="characterweapon" src="" alt="the_weapon_of_the_character">
+                <h4>Stats: <span id="weaponstat"></span></h4>
+            </div>
+            <h4 id="opponentmove">Opponent move</h4>
+            <div id="herostats">
+                <h4 style="margin-bottom: -10px;">Hero health: <span id="rpghealth"></span> / <span id="basehealth"></span></h4>
+                <h4 style="margin-bottom: -10px;">Hero attack: <span id="rpgattack"></span> / <span id="baseattack"></span></h4>
+                <h4 style="margin-bottom: -10px;">Hero defense: <span id="rpgdefense"></span> / <span id="basedefense"></span></h4>
+                <h4 style="margin-bottom: -10px;">Hero speed: <span id="rpgspeed"></span> / <span id="basespeed"></span></h4>
+                <h4 style="margin-bottom: -10px;">Hero intelligence: <span id="rpgintelligence"></span> / <span id="baseintelligence"></span></h4>
+            </div>
+            <div id="opponentstats">
+                <h4 style="margin-bottom: -10px;">Opponent health: <span id="opponenthealth"></span> / <span id="opponentmaxhealth"></span></h4>
+                <h4 style="margin-bottom: -10px;">Opponent attack: <span id="opponentattack"></span> / <span id="opponentmaxattack"></span></h4>
+                <h4 style="margin-bottom: -10px;">Opponent defense: <span id="opponentdefense"></span> / <span id="opponentmaxdefense"></span></h4>
+                <h4 style="margin-bottom: -10px;">Opponent speed: <span id="opponentspeed"></span> / <span id="opponentmaxspeed"></span></h4>
+                <h4 style="margin-bottom: -10px;">Opponent intelligence: <span id="opponentintelligence"></span> / <span id="opponnentmaxintelligence"></span></h4>
+            </div>
+        </div>
+
+    </div>
+    <!--rpgscript.js stands for Mary, while the others are for the rest of the heroes, if they are chosen-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="rpgscriptIan.js"></script>
+    <script src="mapscript.js"></script>
+    <script src="heroscript.js"></script>
+</body>
+</html>

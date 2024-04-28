@@ -16,4 +16,11 @@ Version log:
 3. several pages like inventory, research, herostat, map, characterchooser, options
 4. how to use helper section
 
-- Version 1.0.1 (will come in the future)
+- Version 1.0.1:
+1. the other 9 characters are working
+2. the rest of the missions are ready
+3. updated Info section
+4. update How to use Helper window
+5. updated Character chooser section
+6. added background music
+7. added more lore to the story
