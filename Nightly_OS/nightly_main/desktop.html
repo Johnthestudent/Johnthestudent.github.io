@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="desktop_style.css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body onload="updateHour()">
+    <div class="icons">
+        <div class="program_icon" id="icon1">
+            <i class="fas fa-desktop"></i>
+            <h3 contenteditable="true">Computer</h3>
+        </div>
+
+        <div class="program_icon" id="icon2">
+            <i class="fas fa-file-word"></i>
+            <h3 contenteditable="true">Text-editor</h3>
+        </div>
+
+        <div class="program_icon" id="icon3">
+            <i class="fas fa-table"></i>
+            <h3 contenteditable="true">Table-editor</h3>
+        </div> 
+
+        <div class="program_icon" id="icon4">
+            <i class='fas fa-film'></i>
+            <h3 contenteditable="true">Presentation-editor</h3>
+        </div>
+        
+        <div class="program_icon" id="icon5">
+            <i class='fas fa-gamepad'></i>
+            <h3 contenteditable="true">Aveomachine collection</h3>
+        </div>
+    </div>
+
+    <div class="program_windows">
+        <div id="base_file_system">
+            <div class="header_of_window">
+                <h1>File manager</h1>
+                <div>
+                    <button id="header_button1"><i class='fas fa-window-minimize'></i></button>
+                    <button id="header_button2"><i class='far fa-window-restore'></i></button>
+                    <button id="header_button3"><i class="fas fa-window-close"></i></button>
+                </div>
+            </div>
+            <div class="body_of_window">
+                <div class="icon_section">
+                    <div class="system_icons" id="documents_icon">
+                        <i class='fas fa-file'></i>
+                        <h2>Documents</h2>
+                    </div>
+
+                    <div class="system_icons" id="downloads_icon">
+                        <i class='fas fa-arrow-down'></i>
+                        <h2>Downloads</h2>
+                    </div>
+
+                    <div class="system_icons" id="images_icon">
+                        <i class='fas fa-file-image'></i>
+                        <h2>Images</h2>
+                    </div>
+
+                    <div class="system_icons" id="videos_icon">
+                        <i class='fas fa-file-video'></i>
+                        <h2>Videos</h2>
+                    </div>
+                </div>
+                <div class="storage_section">
+                    <div id="storage_holder">
+                        <h2>Local Disk (?)</h2>
+                        <div id="storage_line">
+                            <div id="max_size">
+                                <div id="actual size"></div>
+                            </div>
+                        </div>
+                        <h2><span>? </span>free, size <spa> ?</spa></h2>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="file_shower_of_body">
+                <div class="folder_content">
+                    <div class="folder_icon">
+                        <i class='fas fa-folder-open'></i>
+                        <h2>=></h2>
+                        <h2>music</h2>
+                    </div>
+                    <br>
+                    <div class="file_icon">
+                        <i class='fas fa-file'></i>
+                        <h2>=></h2>
+                        <h2>Sms_Bells.mp3</h2>
+                    </div>
+                </div>
+                <div class="folder_content_2">
+                    <div class="folder_icon">
+                        <i class='fas fa-folder-open'></i>
+                        <h2>=></h2>
+                        <h2>img</h2>
+                    </div>
+                    <br>
+                    <div class="file_icon">
+                        <i class='fas fa-file'></i>
+                        <h2>=></h2>
+                        <h2>Dawn_forest.jpg</h2>
+                    </div>
+                    <br>
+                    <div class="file_icon">
+                        <i class='fas fa-file'></i>
+                        <h2>=></h2>
+                        <h2>main_background.png</h2>
+                    </div>
+                    <br>
+                    <div class="file_icon">
+                        <i class='fas fa-file'></i>
+                        <h2>=></h2>
+                        <h2>Night_forest.jpg</h2>
+                    </div>
+                    <br>
+                    <div class="file_icon">
+                        <i class='fas fa-file'></i>
+                        <h2>=></h2>
+                        <h2>Night_sky.jpg</h2>
+                    </div>
+                    <br>
+                </div>
+                <div class="error_message">
+                    <h1>Sorry, but there is no file to show from this folder or permission is not granted to show the files!</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="base_settings">
+            <div class="header_of_window">
+                <h1>Settings</h1>
+                <div>
+                    <button id="header_button4"><i class='fas fa-window-minimize'></i></button>
+                    <button id="header_button5"><i class='far fa-window-restore'></i></button>
+                    <button id="header_button6"><i class="fas fa-window-close"></i></button>
+                </div>
+            </div>
+            <div class="body_of_window_settings">
+                <div class="base_info">
+                    <h1>Language: <span id="base_language"></span></h1>
+                    <h1>CPU Core numbers: <span id="base_core_numbers"></span></h1>
+                    <h1>About the user agent: <span id="base_user_agent"></span></h1>
+                </div>
+                <div class="background_changer">
+                    <div class="image_settings">
+                        <img src="Images/img/Night_sky.jpg">
+                        <button id="background1">Night sky</button>
+                    </div>
+                    <div class="image_settings">
+                        <img src="Images/img/Night_forest.jpg">
+                        <button id="background2">Night forest</button>
+                    </div>
+                    <div class="image_settings">
+                        <img src="Images/img/Dawn_forest.jpg">
+                        <button id="background3">Dawn forest</button>
+                    </div>
+                    <div class="image_settings">
+                        <img src="Images/img/main_background.png">
+                        <button id="background4">Default</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="aveomachine_games">
+            <div class="header_of_window">
+                <h1>Aveomachine games</h1>
+                <div>
+                    <button id="header_button7"><i class='fas fa-window-minimize'></i></button>
+                    <button id="header_button8"><i class='far fa-window-restore'></i></button>
+                    <button id="header_button9"><i class="fas fa-window-close"></i></button>
+                </div>
+            </div>
+            <div class="body_of_aveomachine_games">
+                <div class="game_introduction">
+                    <img class="game_images" src="Downloads/Pantry.jpg">
+                    <button class="game_buttons" id="game1">Aveomachine 1</button>
+                </div>
+                <div class="game_introduction">
+                    <img class="game_images" src="Downloads/Ship.jpg">
+                    <button class="game_buttons" id="game2">Aveomachine 2</button>
+                </div>
+                <div class="game_introduction">
+                    <img class="game_images" src="Downloads/House.jpg">
+                    <button class="game_buttons" id="game3">Aveomachine 3</button>
+                </div>
+                <div class="game_introduction">
+                    <img class="game_images" src="Downloads/Cave.jpg">
+                    <button class="game_buttons" id="game4">Aveomachine 4</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="desktop_settings">
+        <button>X</button>
+        <ul>
+            <li id="desktop_option_settings">Settings</li>
+            <li id="desktop_option_text_file">New text file</li>
+            <li id="desktop_option_table_file">New table file</li>
+            <li id="desktop_option_presentation_file">New presentation file</li>
+        </ul>
+    </div>
+
+    <div class="start_button_options">
+        <ul>
+            <li id="start_option_settings">Settings</li>
+            <li id="start_option_file_manager">File manager</li>
+            <li id="start_option_shut_down">Shut down</li>
+        </ul>
+    </div>
+
+    <div class="taskbar">
+        <button class="start">Start</button>
+        <a href="nightly_os_help.html">?</a>
+        <div id="left_pipe_border"></div>
+        <div id="right_pipe_border"></div>
+        <div class="taskbar_element" id="file_manager_taskbar">File Manager</div>
+        <div class="taskbar_element" id="settings_taskbar">Settings</div>
+        <div class="taskbar_element" id="aveomachine_taskbar">Aveomachine games</div>
+        <h1 id="actual_date"></h1>
+        <h1 id="actual_hour_and_minute"></h1>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="desktop_script.js"></script>
+</body>
+</html>

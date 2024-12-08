@@ -1,0 +1,507 @@
+/*Style of the body, where it is ensured that the background is not distorted*/
+body
+{
+    background-image: url('Images/img/main_background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+/*Style of the icons wielding div*/
+.icons
+{
+    width: 95%;
+    min-height: 800px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Style of the icons*/
+.program_icon
+{
+    width: 70px;
+    height: 70px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+/*If the user moves the cursor over an icon*/
+.program_icon:hover
+{
+    background: lightblue;
+}
+
+/*Font-awesome style*/
+.fa-desktop
+{
+    font-size: 50px;
+    color: white;
+    background: dodgerblue;
+}
+
+/*Font-awesome style*/
+.fa-file-word
+{
+    font-size: 50px;
+    color: white;
+    background: deepskyblue;
+}
+
+/*Font-awesome style*/
+.fa-table
+{
+    font-size: 50px;
+    color: white;
+    background: darkseagreen;
+}
+
+/*Font-awesome style*/
+.fa-film
+{
+    font-size: 50px;
+    color: white;
+    background: orangered;
+}
+
+/*Font-awesome style*/
+.fa-gamepad
+{
+    font-size: 50px;
+    color: white;
+    background: goldenrod;
+}
+
+/*Font-awesome style*/
+.fa-window-minimize, .fa-window-restore, .fa-window-close
+{
+    font-size: 30px;
+    color: white;
+}
+
+/*If the user moves the cursor over an icon*/
+.fa-window-minimize:hover, .fa-window-restore:hover
+{
+    background: deepskyblue;
+}
+
+/*If the user moves the cursor over an icon*/
+.fa-window-close:hover
+{
+    background: red;
+}
+
+/*Font-awesome style*/
+.fa-file, .fa-arrow-down, .fa-file-image, .fa-file-video, .fa-folder-open
+{
+    font-size: 40px;
+    color: white;
+}
+
+/*Style of the icons related to the File Manager*/
+.system_icons
+{
+    width: 160px;
+    height: 50px;
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*style of the Settings window*/
+#base_settings
+{
+    color: white;
+    width: 50%;
+    height: 80%;
+    border: 1px solid #CCCCCC;
+    position: fixed;
+    top: 10%;
+    left: 40%;
+    background: rgb(32,32,32);
+    display: none;
+    z-index: 0;
+}
+
+/*style of the background options folder*/
+.background_changer
+{
+    display: flex;
+    width: 90%;
+    height: 60%;
+    justify-content: space-around;
+}
+
+/*style of a folder, which has the option image and button inside*/
+.image_settings
+{
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/*style of the background changer button*/
+.image_settings button
+{
+    width: 180px;
+    height: 50px;
+    font-size: 24px;
+    border: 2px solid #AABBBB;
+    border-radius: 5px;
+}
+
+/*If the user moves the cursor over the button*/
+.image_settings button:hover
+{
+    cursor:pointer;
+    font-weight: bold;
+    background: gold;
+}
+
+/*style of the background changer image*/
+.image_settings img
+{
+    width: 180px;
+    height: 180px;
+    border: 1px solid #DDDDDD;
+}
+
+/*style of the File Manager window*/
+#base_file_system
+{
+    color: white;
+    width: 50%;
+    height: 80%;
+    border: 1px solid #CCCCCC;
+    position: fixed;
+    top: 10%;
+    left: 20%;
+    background: rgb(32,32,32);
+    display: none;
+    z-index: 0;
+}
+
+/*This horizontal line separates icons and file presentators*/
+#base_file_system hr
+{
+    color: #CCCCCC;
+}
+
+/*style of the window's header*/
+.header_of_window
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0px;
+    height: 50px;
+    border: 1px solid #AAAAAA;
+    background: midnightblue;
+}
+
+/*header title*/
+.header_of_window h1
+{
+    margin-left: 10px;
+}
+
+/*header button's background has the same background*/
+.header_of_window button
+{
+    background: midnightblue;
+    border: 1px solid midnightblue;
+}
+
+/*style of the header button folder*/
+.header_of_window div
+{
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+/*style of the window's body*/
+.body_of_window
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*style of the settings window's body*/
+.body_of_window_settings
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*style of the Aveomachine games window's body*/
+.body_of_aveomachine_games
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+/*this ensures that the list elements are not too close to each other*/
+.file_shower_of_body
+{
+    padding: 10px;
+}
+
+/*only when clicked on the right icon will the folder content be shown*/
+.folder_content
+{
+    display: none;
+}
+
+/*only when clicked on the right icon will the folder content be shown*/
+.folder_content_2
+{
+    display: none;
+}
+
+/*style of the file presentator icons*/
+.folder_icon, .file_icon
+{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*error message pops up only if there is no file to shown or permission is not granted*/
+.error_message
+{
+    display: none;
+}
+
+/*style of the storage shower*/
+.storage_section
+{
+    margin-right: 10px;
+}
+
+/*style of the storage shower*/
+#max_size
+{
+    width: 400px;
+    height: 40px;
+    border: 1px solid #EEEEEE;
+}
+
+/*If the user moves the cursor over an icon*/
+#images_icon:hover, #videos_icon:hover, #downloads_icon:hover, #documents_icon:hover
+{
+    background: lightblue;
+}
+
+/*style of the Aveomachine games window*/
+#aveomachine_games
+{
+    color: white;
+    width: 60%;
+    height: 40%;
+    border: 1px solid #CCCCCC;
+    position: fixed;
+    top: 10%;
+    left: 15%;
+    background: rgb(32,32,32);
+    display: none;
+    z-index: 0;
+}
+
+/*style of the game shower folder, which has introductional image and button*/
+.game_introduction
+{
+    width: 20%;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*style of the game starter buttons*/
+.game_buttons
+{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/*If the user moves the cursor of the button*/
+.game_buttons:hover
+{
+    cursor:pointer;
+    font-weight: bold;
+    background: gold;
+}
+
+/*style of the game presentator images*/
+.game_images
+{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #CCCCCC;
+}
+
+/*style of the desktop's dropdown list*/
+.desktop_settings
+{
+    position: fixed;
+    font-size: 24px;
+    bottom: 5%;
+    right: 10%;
+    width: 250px;
+    height: 180px;
+    border: 1px solid #AAAAAA;
+    background: darkblue;
+    color: white;
+    display: none;
+}
+
+/*If the user moves the cursor over a dropdown list option*/
+#desktop_option_settings:hover, #desktop_option_text_file:hover, #desktop_option_table_file:hover, #desktop_option_presentation_file:hover
+{
+    background: gray;
+} 
+
+/*style of the start button's dropdown list*/
+.start_button_options
+{
+    position: fixed;
+    color: white;
+    font-size: 24px;
+    bottom: 5%;
+    width: 200px;
+    height: 150px;
+    border: 1px solid #AAAAAA;
+    background: darkblue;
+    display: none;
+    align-items: center;
+}
+
+/*additional style of the start button's dropdown list*/
+.start_button_options ul li
+{
+    padding-bottom: 10px;
+}
+
+/*If the user moves the cursor over a dropdown list option*/
+#start_option_settings:hover, #start_option_file_manager:hover, #start_option_shut_down:hover
+{
+    background: gray;
+}
+
+/*style of the taskbar*/
+.taskbar
+{
+    background: midnightblue;
+    color: white;
+    border: 1px solid #AAAAAA;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0%;
+}
+
+/*style of the helper guide link*/
+.taskbar a
+{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    left: 1%;
+    border: 2px solid #AAAAAA;
+    border-radius: 20px;
+    width: 30px;
+    text-align: center;
+}
+
+/*style of the taskbar elements*/
+.taskbar_element
+{
+    position: relative;
+    font-size: 24px;
+    left: 10%;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #BBBBBB;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    display: none;
+}
+
+/*if the user moves the cursor over a taskbar element*/
+.taskbar_element:hover
+{
+    background: gray;
+}
+
+/*the pipe border separates sections of the taskbar*/
+.taskbar #right_pipe_border
+{
+    height: 50px;
+    width: 2px;
+    background: #AAAAAA;
+    position: fixed;
+    right: 20%;
+}
+
+/*the pipe border separates sections of the taskbar*/
+.taskbar #left_pipe_border
+{
+    height: 50px;
+    width: 2px;
+    background: #AAAAAA;
+    position: fixed;
+    left: 15%;
+}
+
+/*style of the taskbar's button*/
+.taskbar button
+{
+    width: 150px;
+    height: 50px;
+    font-size: 28px;
+    border: 2px solid #AABBBB;
+    border-radius: 5px;
+}
+
+/*If the user moves the cursor over a button*/
+.taskbar button:hover
+{
+    cursor:pointer;
+    font-weight: bold;
+    background: gold;
+}
+
+/*style of the datetime shower*/
+#actual_hour_and_minute
+{
+    position: fixed;
+    right: 2%;
+}
+
+/*additional style of the datetime shower*/
+#actual_date
+{
+    position: fixed;
+    right: 7%;
+}
