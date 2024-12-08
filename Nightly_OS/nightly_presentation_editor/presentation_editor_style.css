@@ -1,0 +1,337 @@
+/*style of the body*/
+body
+{
+    background: midnightblue;
+}
+
+/*style of the window's header*/
+.header_of_window
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0px;
+    height: 50px;
+    border: 1px solid #AAAAAA;
+    background: midnightblue;
+}
+
+/*this ensures that the window title is not too close to the window border*/
+.header_of_window h1
+{
+    margin-left: 10px;
+}
+
+/*style of the window with setting a dark mode for it*/
+.presentation_editor_app
+{
+    color: white;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #CCCCCC;
+    background: rgb(32,32,32);
+}
+
+/*style of the buttons in the window's header*/
+.header_of_window button
+{
+    background: midnightblue;
+    border: 1px solid midnightblue;
+}
+
+/*if the user moves the cursor to the button*/
+.header_of_window button:hover
+{
+    cursor: pointer;
+}
+
+/*style of the header button folder*/
+.header_of_window div
+{
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+/*Font-awesome style*/
+.fa-window-minimize, .fa-window-restore, .fa-window-close
+{
+    font-size: 30px;
+    color: white;
+}
+
+/*style of the window's body*/
+.body_of_window
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*style of the editor tools section*/
+.editor_tools
+{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    border: 1px solid #CCCCCC;
+}
+
+/*style of the editor interface*/
+.editor_interface
+{
+    width: 60%;
+    border: 1px solid #CCCCCC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*style of the presentation slides*/
+.presentation_slide
+{
+    width: 80%;
+    border: 1px solid #DDDDDD;
+    margin-bottom: 5px;
+}
+
+/*The positions of the slide elements have to be relative, otherwise the animations won't work*/
+.presentation_slide h2, .presentation_slide p, .presentation_slide img
+{
+    position: relative;
+}
+
+/*The image slide element has to be resized*/
+.presentation_slide img
+{
+    width: 100%;
+}
+
+/*style of the animation buttons' folder*/
+.animation_handlers
+{
+    width: 20%;
+    border: 1px solid #CCCCCC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*style of the forementioned buttons*/
+.animation_handlers button
+{
+    height: 50px;
+    width: 90%;
+    font-size: 24px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/*if the user moves the cursor to the button*/
+.animation_handlers button:hover
+{
+    font-weight: bold;
+    cursor: pointer;
+    background: gold;
+}
+
+/*style of the folder, which has the bold, italic and underline style buttons*/
+.font_style_options
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    border: 1px solid #CCCCCC;
+}
+
+/*style of the forementioned buttons*/
+.font_style_options button
+{
+    width: 150px;
+    height: 40px;
+    font-size: 24px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/*if the user moves the cursor to the button*/
+.font_style_options button:hover
+{
+    cursor: pointer;
+    background: gold;
+}
+
+/*bold font option*/
+#bold_weight
+{
+    font-weight: bold;
+}
+
+/*italic font option*/
+#italic_font
+{
+    font-style: italic;
+}
+
+/*underline font option*/
+#underscore_line
+{
+    text-decoration: underline;
+}
+
+/*style of the font align options buttons' folder*/
+.font_align_options
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    border: 1px solid #CCCCCC;
+}
+
+/*style of the forementioned buttons*/
+.font_align_options button
+{
+    width: 150px;
+    height: 40px;
+    font-size: 24px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/*if the user moves the cursor to the button*/
+.font_align_options button:hover
+{
+    cursor: pointer;
+    background: gold;
+    font-weight: bold;
+}
+
+/*style of the font size options buttons' folder*/
+.font_size_options
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    border: 1px solid #CCCCCC;
+}
+
+/*style of the forementioned buttons*/
+.font_size_options button
+{
+    width: 50px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/*if the user moves the cursor to the button*/
+.font_size_options button:hover
+{
+    cursor: pointer;
+    background: gold;
+    font-weight: bold;
+}
+
+/*style of the font background options buttons' folder*/
+.font_background_options
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    border: 1px solid #CCCCCC;
+}
+
+/*style of the forementioned buttons*/
+.font_background_options button
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+/*if the user moves the cursor to the button*/
+.font_background_options button:hover
+{
+    cursor: pointer;
+}
+
+/*color values for either background or font color*/
+#red_background, #red_font
+{
+    background: red;
+}
+
+#green_background, #green_font
+{
+    background: green;
+}
+
+#blue_background, #blue_font
+{
+    background: blue;
+}
+
+#yellow_background, #yellow_font
+{
+    background: yellow;
+}
+
+#brown_background, #brown_font
+{
+    background: brown;
+}
+
+#orange_background, #orange_font
+{
+    background: orange;
+}
+
+#purple_background, #purple_font
+{
+    background: purple;
+}
+
+#gray_background, #gray_font
+{
+    background: gray;
+}
+
+/*style of the font color options buttons' folder*/
+.font_color_options
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    border: 1px solid #CCCCCC;
+}
+
+/*style of the forementioned buttons*/
+.font_color_options button
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+/*if the user moves the cursor to the button*/
+.font_color_options button:hover
+{
+    cursor: pointer;
+}
+
+/*style of the animation description section*/
+.animation_description
+{
+    font-size: 24px;
+    margin: 10px;
+}

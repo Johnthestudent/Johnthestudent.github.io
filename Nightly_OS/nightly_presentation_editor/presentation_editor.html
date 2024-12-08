@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nightly's Presentation Editor</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="presentation_editor_style.css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="presentation_editor_app">
+        <div class="header_of_window">
+            <h1>Nightly's Presentation Editor</h1>
+                <div>
+                    <button id="header_button1"><i class='fas fa-window-minimize'></i></button>
+                    <button id="header_button2"><i class='far fa-window-restore'></i></button>
+                    <button id="header_button3"><i class="fas fa-window-close"></i></button>
+                </div>
+        </div>
+        <div class="body_of_window">
+            <div class="editor_tools">
+                <div class="font_style_options">
+                    <h2>Font-style</h2>
+                    <button id="bold_weight" onclick="font_to_Bold()">Bold</button>
+                    <button id="italic_font" onclick="font_to_Italic()">Italic</button>
+                    <button id="underscore_line" onclick="font_to_Underscore()">Underscore</button>
+                </div>
+                <div class="font_align_options">
+                     <h2>Text-align</h2>
+                     <button id="left_align" onclick="text_align_to_Left()">Left</button>
+                     <button id="center_align" onclick="text_align_to_Center()">Center</button>
+                     <button id="right_align" onclick="text_align_to_Right()">Right</button>
+                </div>
+                <div class="font_size_options">
+                    <h2>Font-size</h2>
+                    <div>                    
+                        <button id="font_18" onclick="font_to_18px()">18px</button>
+                        <button id="font_20" onclick="font_to_20px()">20px</button>
+                        <button id="font_22" onclick="font_to_22px()">22px</button>
+                        <button id="font_24" onclick="font_to_24px()">24px</button>
+                        <button id="font_36" onclick="font_to_36px()">36px</button>
+                        <button id="font_48" onclick="font_to_48px()">48px</button>
+                    </div>
+                </div>
+                <div class="font_background_options">
+                    <h2>Font-background-color</h2>
+                    <div>
+                        <button id="red_background" onclick="font_background_to_Red()"></button>
+                        <button id="green_background" onclick="font_background_to_Green()"></button>
+                        <button id="blue_background" onclick="font_background_to_Blue()"></button>
+                        <button id="yellow_background" onclick="font_background_to_Yellow()"></button>
+                        <button id="brown_background" onclick="font_background_to_Brown()"></button>
+                        <button id="orange_background" onclick="font_background_to_Orange()"></button>
+                        <button id="purple_background" onclick="font_background_to_Purple()"></button>
+                        <button id="gray_background" onclick="font_background_to_Gray()"></button>
+                    </div>
+                </div>
+                <div class="font_color_options">
+                    <h2>Font-color</h2>
+                    <div>
+                        <button id="red_font" onclick="font_to_Red()"></button>
+                        <button id="green_font" onclick="font_to_Green()"></button>
+                        <button id="blue_font" onclick="font_to_Blue()"></button>
+                        <button id="yellow_font" onclick="font_to_Yellow()"></button>
+                        <button id="brown_font" onclick="font_to_Brown()"></button>
+                        <button id="orange_font" onclick="font_to_Orange()"></button>
+                        <button id="purple_font" onclick="font_to_Purple()"></button>
+                        <button id="gray_font" onclick="font_to_Gray()"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="editor_interface" contenteditable="true">
+                <div class="presentation_slide">
+                    <h2 id="slide1_title">Slide 1</h2>
+                    <p id="slide1_text">Example text 1</p>
+                </div>
+                <div class="presentation_slide">
+                    <h2 id="slide2_title">Slide 2</h2>
+                    <p id="slide2_text">Example text 2</p>
+                </div>
+                <div class="presentation_slide">
+                    <h2 id="slide3_title">Slide 3</h2>
+                    <img src="../nightly_main/Images/img/Dawn_forest.jpg" id="slide_image">
+                </div>
+            </div>
+            <div class="animation_handlers">
+                <button id="animation_fade_in">Fade in</button>
+                <button id="animation_swim_in">Swim in</button>
+                <button id="animation_rotate">Rotate</button>
+                <button id="animation_bounce_in">Bounce in</button>
+                <button id="animation_blinds_in">Blinds in</button>
+                <button id="animation_drops_in" >Drops in</button>
+                <button id="play_the_animation">Play animation</button>
+                <div class="animation_description"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="presentation_editor_script.js"></script>
+    <script src="localstorage_values_for_presentation_editor.js"></script>
+</body>
+</html>

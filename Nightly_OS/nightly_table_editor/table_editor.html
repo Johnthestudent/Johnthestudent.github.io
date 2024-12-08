@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nightly Table Editor</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="table_editor_style.css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="table_editor_app">
+        <div class="header_of_window">
+            <h1>Nightly's Table Editor</h1>
+            <div>
+                <button id="header_button1"><i class='fas fa-window-minimize'></i></button>
+                <button id="header_button2"><i class='far fa-window-restore'></i></button>
+                <button id="header_button3"><i class="fas fa-window-close"></i></button>
+            </div>
+        </div>
+        <div class="body_of_window">
+            <div class="new_look">
+                <div class="editor_tools">
+                    <div class="font_style_options">
+                        <h2>Font-style</h2>
+                        <button id="bold_weight" onclick="font_to_Bold()">Bold</button>
+                        <button id="italic_font" onclick="font_to_Italic()">Italic</button>
+                        <button id="underscore_line" onclick="font_to_Underscore()">Underscore</button>
+                    </div>
+                    <div class="font_align_options">
+                        <h2>Text-align</h2>
+                        <button id="left_align" onclick="text_align_to_Left()">Left</button>
+                        <button id="center_align" onclick="text_align_to_Center()">Center</button>
+                        <button id="right_align" onclick="text_align_to_Right()">Right</button>
+                    </div>
+                    <div class="font_size_options">
+                        <h2>Font-size</h2>
+                        <div>                    
+                            <button id="font_18" onclick="font_to_18px()">18px</button>
+                            <button id="font_20" onclick="font_to_20px()">20px</button>
+                            <button id="font_22" onclick="font_to_22px()">22px</button>
+                            <button id="font_24" onclick="font_to_24px()">24px</button>
+                            <button id="font_36" onclick="font_to_36px()">36px</button>
+                            <button id="font_48" onclick="font_to_48px()">48px</button>
+                        </div>
+                    </div>
+                    <div class="font_background_options">
+                        <h2>Font-background-color</h2>
+                        <div>
+                            <button id="red_background" onclick="font_background_to_Red()"></button>
+                            <button id="green_background" onclick="font_background_to_Green()"></button>
+                            <button id="blue_background" onclick="font_background_to_Blue()"></button>
+                            <button id="yellow_background" onclick="font_background_to_Yellow()"></button>
+                            <button id="brown_background" onclick="font_background_to_Brown()"></button>
+                            <button id="orange_background" onclick="font_background_to_Orange()"></button>
+                            <button id="purple_background" onclick="font_background_to_Purple()"></button>
+                            <button id="gray_background" onclick="font_background_to_Gray()"></button>
+                        </div>
+                    </div>
+                    <div class="font_color_options">
+                        <h2>Font-color</h2>
+                        <div>
+                            <button id="red_font" onclick="font_to_Red()"></button>
+                            <button id="green_font" onclick="font_to_Green()"></button>
+                            <button id="blue_font" onclick="font_to_Blue()"></button>
+                            <button id="yellow_font" onclick="font_to_Yellow()"></button>
+                            <button id="brown_font" onclick="font_to_Brown()"></button>
+                            <button id="orange_font" onclick="font_to_Orange()"></button>
+                            <button id="purple_font" onclick="font_to_Purple()"></button>
+                            <button id="gray_font" onclick="font_to_Gray()"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="editor_interface" contenteditable="true">
+                    <table>
+                        <tr>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>C</th>
+                            <th>D</th>
+                            <th>E</th>
+                            <th>F</th>
+                            <th>G</th>
+                            <th>H</th>
+                            <th>I</th>
+                            <th>J</th>
+                            <th>K</th>
+                            <th>L</th>
+                            <th>M</th>
+                            <th>N</th>
+                            <th>O</th>
+                            <th>P</th>
+                            <th>Q</th>
+                            <th>R</th>
+                            <th>S</th>
+                            <th>T</th>
+                            <th>U</th>
+                            <th>V</th>
+                            <th>W</th>
+                            <th>X</th>
+                            <th>Y</th>
+                            <th>Z</th>
+                        </tr>
+                        <tr>
+                            <td id="cell_a1"></td>
+                            <td id="cell_b1"></td>
+                            <td id="cell_c1"></td>
+                            <td id="cell_d1"></td>
+                            <td id="cell_e1"></td>
+                            <td id="cell_f1"></td>
+                            <td id="cell_g1"></td>
+                            <td id="cell_h1"></td>
+                            <td id="cell_i1"></td>
+                            <td id="cell_j1"></td>
+                            <td id="cell_k1"></td>
+                            <td id="cell_l1"></td>
+                            <td id="cell_m1"></td>
+                            <td id="cell_n1"></td>
+                            <td id="cell_o1"></td>
+                            <td id="cell_p1"></td>
+                            <td id="cell_q1"></td>
+                            <td id="cell_r1"></td>
+                            <td id="cell_s1"></td>
+                            <td id="cell_t1"></td>
+                            <td id="cell_u1"></td>
+                            <td id="cell_v1"></td>
+                            <td id="cell_w1"></td>
+                            <td id="cell_x1"></td>
+                            <td id="cell_y1"></td>
+                            <td id="cell_z1"></td>
+                        </tr>
+                        <tr>
+                            <td id="cell_a2"></td>
+                            <td id="cell_b2"></td>
+                            <td id="cell_c2"></td>
+                            <td id="cell_d2"></td>
+                            <td id="cell_e2"></td>
+                            <td id="cell_f2"></td>
+                            <td id="cell_g2"></td>
+                            <td id="cell_h2"></td>
+                            <td id="cell_i2"></td>
+                            <td id="cell_j2"></td>
+                            <td id="cell_k2"></td>
+                            <td id="cell_l2"></td>
+                            <td id="cell_m2"></td>
+                            <td id="cell_n2"></td>
+                            <td id="cell_o2"></td>
+                            <td id="cell_p2"></td>
+                            <td id="cell_q2"></td>
+                            <td id="cell_r2"></td>
+                            <td id="cell_s2"></td>
+                            <td id="cell_t2"></td>
+                            <td id="cell_u2"></td>
+                            <td id="cell_v2"></td>
+                            <td id="cell_w2"></td>
+                            <td id="cell_x2"></td>
+                            <td id="cell_y2"></td>
+                            <td id="cell_z2"></td>
+                        </tr>
+                        <tr>
+                            <td id="cell_a3"></td>
+                            <td id="cell_b3"></td>
+                            <td id="cell_c3"></td>
+                            <td id="cell_d3"></td>
+                            <td id="cell_e3"></td>
+                            <td id="cell_f3"></td>
+                            <td id="cell_g3"></td>
+                            <td id="cell_h3"></td>
+                            <td id="cell_i3"></td>
+                            <td id="cell_j3"></td>
+                            <td id="cell_k3"></td>
+                            <td id="cell_l3"></td>
+                            <td id="cell_m3"></td>
+                            <td id="cell_n3"></td>
+                            <td id="cell_o3"></td>
+                            <td id="cell_p3"></td>
+                            <td id="cell_q3"></td>
+                            <td id="cell_r3"></td>
+                            <td id="cell_s3"></td>
+                            <td id="cell_t3"></td>
+                            <td id="cell_u3"></td>
+                            <td id="cell_v3"></td>
+                            <td id="cell_w3"></td>
+                            <td id="cell_x3"></td>
+                            <td id="cell_y3"></td>
+                            <td id="cell_z3"></td>
+                        </tr>
+                        <tr>
+                            <td id="cell_a4"></td>
+                            <td id="cell_b4"></td>
+                            <td id="cell_c4"></td>
+                            <td id="cell_d4"></td>
+                            <td id="cell_e4"></td>
+                            <td id="cell_f4"></td>
+                            <td id="cell_g4"></td>
+                            <td id="cell_h4"></td>
+                            <td id="cell_i4"></td>
+                            <td id="cell_j4"></td>
+                            <td id="cell_k4"></td>
+                            <td id="cell_l4"></td>
+                            <td id="cell_m4"></td>
+                            <td id="cell_n4"></td>
+                            <td id="cell_o4"></td>
+                            <td id="cell_p4"></td>
+                            <td id="cell_q4"></td>
+                            <td id="cell_r4"></td>
+                            <td id="cell_s4"></td>
+                            <td id="cell_t4"></td>
+                            <td id="cell_u4"></td>
+                            <td id="cell_v4"></td>
+                            <td id="cell_w4"></td>
+                            <td id="cell_x4"></td>
+                            <td id="cell_y4"></td>
+                            <td id="cell_z4"></td>
+                        </tr>
+                        <tr>
+                            <td id="cell_a5"></td>
+                            <td id="cell_b5"></td>
+                            <td id="cell_c5"></td>
+                            <td id="cell_d5"></td>
+                            <td id="cell_e5"></td>
+                            <td id="cell_f5"></td>
+                            <td id="cell_g5"></td>
+                            <td id="cell_h5"></td>
+                            <td id="cell_i5"></td>
+                            <td id="cell_j5"></td>
+                            <td id="cell_k5"></td>
+                            <td id="cell_l5"></td>
+                            <td id="cell_m5"></td>
+                            <td id="cell_n5"></td>
+                            <td id="cell_o5"></td>
+                            <td id="cell_p5"></td>
+                            <td id="cell_q5"></td>
+                            <td id="cell_r5"></td>
+                            <td id="cell_s5"></td>
+                            <td id="cell_t5"></td>
+                            <td id="cell_u5"></td>
+                            <td id="cell_v5"></td>
+                            <td id="cell_w5"></td>
+                            <td id="cell_x5"></td>
+                            <td id="cell_y5"></td>
+                            <td id="cell_z5"></td>
+                        </tr>
+                        <tr>
+                            <td id="cell_a6"></td>
+                            <td id="cell_b6"></td>
+                            <td id="cell_c6"></td>
+                            <td id="cell_d6"></td>
+                            <td id="cell_e6"></td>
+                            <td id="cell_f6"></td>
+                            <td id="cell_g6"></td>
+                            <td id="cell_h6"></td>
+                            <td id="cell_i6"></td>
+                            <td id="cell_j6"></td>
+                            <td id="cell_k6"></td>
+                            <td id="cell_l6"></td>
+                            <td id="cell_m6"></td>
+                            <td id="cell_n6"></td>
+                            <td id="cell_o6"></td>
+                            <td id="cell_p6"></td>
+                            <td id="cell_q6"></td>
+                            <td id="cell_r6"></td>
+                            <td id="cell_s6"></td>
+                            <td id="cell_t6"></td>
+                            <td id="cell_u6"></td>
+                            <td id="cell_v6"></td>
+                            <td id="cell_w6"></td>
+                            <td id="cell_x6"></td>
+                            <td id="cell_y6"></td>
+                            <td id="cell_z6"></td>
+                        </tr>
+                        <tr>
+                            <td id="cell_a7"></td>
+                            <td id="cell_b7"></td>
+                            <td id="cell_c7"></td>
+                            <td id="cell_d7"></td>
+                            <td id="cell_e7"></td>
+                            <td id="cell_f7"></td>
+                            <td id="cell_g7"></td>
+                            <td id="cell_h7"></td>
+                            <td id="cell_i7"></td>
+                            <td id="cell_j7"></td>
+                            <td id="cell_k7"></td>
+                            <td id="cell_l7"></td>
+                            <td id="cell_m7"></td>
+                            <td id="cell_n7"></td>
+                            <td id="cell_o7"></td>
+                            <td id="cell_p7"></td>
+                            <td id="cell_q7"></td>
+                            <td id="cell_r7"></td>
+                            <td id="cell_s7"></td>
+                            <td id="cell_t7"></td>
+                            <td id="cell_u7"></td>
+                            <td id="cell_v7"></td>
+                            <td id="cell_w7"></td>
+                            <td id="cell_x7"></td>
+                            <td id="cell_y7"></td>
+                            <td id="cell_z7"></td>
+                        </tr>
+                        <tr>
+                            <td id="cell_a8"></td>
+                            <td id="cell_b8"></td>
+                            <td id="cell_c8"></td>
+                            <td id="cell_d8"></td>
+                            <td id="cell_e8"></td>
+                            <td id="cell_f8"></td>
+                            <td id="cell_g8"></td>
+                            <td id="cell_h8"></td>
+                            <td id="cell_i8"></td>
+                            <td id="cell_j8"></td>
+                            <td id="cell_k8"></td>
+                            <td id="cell_l8"></td>
+                            <td id="cell_m8"></td>
+                            <td id="cell_n8"></td>
+                            <td id="cell_o8"></td>
+                            <td id="cell_p8"></td>
+                            <td id="cell_q8"></td>
+                            <td id="cell_r8"></td>
+                            <td id="cell_s8"></td>
+                            <td id="cell_t8"></td>
+                            <td id="cell_u8"></td>
+                            <td id="cell_v8"></td>
+                            <td id="cell_w8"></td>
+                            <td id="cell_x8"></td>
+                            <td id="cell_y8"></td>
+                            <td id="cell_z8"></td>
+                        </tr>
+                        <tr>
+                            <td id="cell_a9"></td>
+                            <td id="cell_b9"></td>
+                            <td id="cell_c9"></td>
+                            <td id="cell_d9"></td>
+                            <td id="cell_e9"></td>
+                            <td id="cell_f9"></td>
+                            <td id="cell_g9"></td>
+                            <td id="cell_h9"></td>
+                            <td id="cell_i9"></td>
+                            <td id="cell_j9"></td>
+                            <td id="cell_k9"></td>
+                            <td id="cell_l9"></td>
+                            <td id="cell_m9"></td>
+                            <td id="cell_n9"></td>
+                            <td id="cell_o9"></td>
+                            <td id="cell_p9"></td>
+                            <td id="cell_q9"></td>
+                            <td id="cell_r9"></td>
+                            <td id="cell_s9"></td>
+                            <td id="cell_t9"></td>
+                            <td id="cell_u9"></td>
+                            <td id="cell_v9"></td>
+                            <td id="cell_w9"></td>
+                            <td id="cell_x9"></td>
+                            <td id="cell_y9"></td>
+                            <td id="cell_z9"></td>
+                        </tr>
+                            <td id="cell_a10"></td>
+                            <td id="cell_b10"></td>
+                            <td id="cell_c10"></td>
+                            <td id="cell_d10"></td>
+                            <td id="cell_e10"></td>
+                            <td id="cell_f10"></td>
+                            <td id="cell_g10"></td>
+                            <td id="cell_h10"></td>
+                            <td id="cell_i10"></td>
+                            <td id="cell_j10"></td>
+                            <td id="cell_k10"></td>
+                            <td id="cell_l10"></td>
+                            <td id="cell_m10"></td>
+                            <td id="cell_n10"></td>
+                            <td id="cell_o10"></td>
+                            <td id="cell_p10"></td>
+                            <td id="cell_q10"></td>
+                            <td id="cell_r10"></td>
+                            <td id="cell_s10"></td>
+                            <td id="cell_t10"></td>
+                            <td id="cell_u10"></td>
+                            <td id="cell_v10"></td>
+                            <td id="cell_w10"></td>
+                            <td id="cell_x10"></td>
+                            <td id="cell_y10"></td>
+                            <td id="cell_z10"></td>
+                        </tr>
+                        <tr>
+                            <td id="cell_a11"></td>
+                            <td id="cell_b11"></td>
+                            <td id="cell_c11"></td>
+                            <td id="cell_d11"></td>
+                            <td id="cell_e11"></td>
+                            <td id="cell_f11"></td>
+                            <td id="cell_g11"></td>
+                            <td id="cell_h11"></td>
+                            <td id="cell_i11"></td>
+                            <td id="cell_j11"></td>
+                            <td id="cell_k11"></td>
+                            <td id="cell_l11"></td>
+                            <td id="cell_m11"></td>
+                            <td id="cell_n11"></td>
+                            <td id="cell_o11"></td>
+                            <td id="cell_p11"></td>
+                            <td id="cell_q11"></td>
+                            <td id="cell_r11"></td>
+                            <td id="cell_s11"></td>
+                            <td id="cell_t11"></td>
+                            <td id="cell_u11"></td>
+                            <td id="cell_v11"></td>
+                            <td id="cell_w11"></td>
+                            <td id="cell_x11"></td>
+                            <td id="cell_y11"></td>
+                            <td id="cell_z11"></td>
+                        </tr>
+                        <tr>
+                            <td id="cell_a12"></td>
+                            <td id="cell_b12"></td>
+                            <td id="cell_c12"></td>
+                            <td id="cell_d12"></td>
+                            <td id="cell_e12"></td>
+                            <td id="cell_f12"></td>
+                            <td id="cell_g12"></td>
+                            <td id="cell_h12"></td>
+                            <td id="cell_i12"></td>
+                            <td id="cell_j12"></td>
+                            <td id="cell_k12"></td>
+                            <td id="cell_l12"></td>
+                            <td id="cell_m12"></td>
+                            <td id="cell_n12"></td>
+                            <td id="cell_o12"></td>
+                            <td id="cell_p12"></td>
+                            <td id="cell_q12"></td>
+                            <td id="cell_r12"></td>
+                            <td id="cell_s12"></td>
+                            <td id="cell_t12"></td>
+                            <td id="cell_u12"></td>
+                            <td id="cell_v12"></td>
+                            <td id="cell_w12"></td>
+                            <td id="cell_x12"></td>
+                            <td id="cell_y12"></td>
+                            <td id="cell_z12"></td>
+                        </tr>
+                        <tr>
+                            <td id="cell_a13"></td>
+                            <td id="cell_b13"></td>
+                            <td id="cell_c13"></td>
+                            <td id="cell_d13"></td>
+                            <td id="cell_e13"></td>
+                            <td id="cell_f13"></td>
+                            <td id="cell_g13"></td>
+                            <td id="cell_h13"></td>
+                            <td id="cell_i13"></td>
+                            <td id="cell_j13"></td>
+                            <td id="cell_k13"></td>
+                            <td id="cell_l13"></td>
+                            <td id="cell_m13"></td>
+                            <td id="cell_n13"></td>
+                            <td id="cell_o13"></td>
+                            <td id="cell_p13"></td>
+                            <td id="cell_q13"></td>
+                            <td id="cell_r13"></td>
+                            <td id="cell_s13"></td>
+                            <td id="cell_t13"></td>
+                            <td id="cell_u13"></td>
+                            <td id="cell_v13"></td>
+                            <td id="cell_w13"></td>
+                            <td id="cell_x13"></td>
+                            <td id="cell_y13"></td>
+                            <td id="cell_z13"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="functions_for_table">
+                <button id="min_function" onclick="cell_min()">MIN</button>
+                <button id="max_function" onclick="cell_max()">MAX</button>
+                <button id="avg_function" onclick="cell_avg()">AVG</button>
+                <button id="sum_function" onclick="cell_sum()">SUM</button>
+                <button id="round_function" onclick="cell_round()">ROUND</button>
+                <button id="uppercase_function" onclick="cell_uppercase()">UPPERCASE</button>
+                <button id="lowercase_function" onclick="cell_lowercase()">LOWERCASE</button>
+                <button id="index_of_function" onclick="cell_index_of()">INDEX-OF</button>
+                <button id="to_string_function" onclick="cell_to_string()">TO-STRING</button>
+                <button id="to_num_function" onclick="cell_to_num()">TO-NUM</button>
+                <div class="function_description"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="table_editor_script.js"></script>
+    <script src="switch_back.js"></script>
+</body>
+</html>

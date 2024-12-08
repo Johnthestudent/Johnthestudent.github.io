@@ -1,0 +1,88 @@
+/*Style of the body*/
+body
+{
+    background: midnightblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/**/
+.before_start
+{
+    border: 1px solid #BBBBBB;
+    width: 700px;
+    min-height: 200px;
+    font-size: 24px;
+}
+
+/*Margin ensures that the content is not too close to the border*/
+.before_start p
+{
+    margin: 10px;
+}
+
+.before_start div
+{
+    display: flex;
+    align-items: center;
+}
+
+/*Style of the button*/
+button
+{
+    width: 240px;
+    min-height: 50px;
+    font-size: 24px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/*Style of the font-awesome icons*/
+.fas, .fa-desktop
+{
+    font-size: 50px;
+    color: white;
+}
+
+/*If the user moves the cursor over a button*/
+button:hover
+{
+    cursor: pointer;
+    font-weight: bold;
+    background: gold;
+}
+
+/*Style of the list*/
+ul
+{
+    font-size: 24px;
+    width: 600px;
+}
+
+/*Style of the loader section*/
+.os_loader
+{
+    width: 100%;
+    display: none;
+    text-align: center;
+}
+
+/*Loader bar max size*/
+#load_bar
+{
+    border: 1px solid #BBBBBB;
+    width: 100%;
+    height: 40px;
+}
+
+/*Loaded section is in a different color, filling the area*/
+#load_level
+{
+    background: white;
+    width: 0px;
+    height: 40px;
+    position: relative;
+    bottom: 41px;
+}

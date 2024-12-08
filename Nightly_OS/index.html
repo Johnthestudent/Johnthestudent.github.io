@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nightly OS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="mainstyle.css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="before_start">
+        <p>
+            Disclaimer: This web application is an Operating System (OS) imitator! This means that it has a desktop, with icon figures,
+            dropdown lists, text editor, table editor, presentation editor, a game, file system, but for experimental purposes only! Therefore,
+            no copyright issues should be brought up here! Furthermore, this is just a prototype, because the final version will be written in Python!
+            Click on the Start Nightly OS button to launch the application!
+        </p>
+        <div>
+            <button id="os_starter_button">Start Nightly OS</button>
+            <i class="fas fa-desktop" id="starter_icon"></i>
+        </div>
+    </div>
+    <div class="os_description">
+        <h2>Features of Nightly</h2>
+        <ul>
+            <li>Desktop</li>
+            <li>Icons, which start the program imitators</li>
+            <li>Dynamic datetime shower</li>
+            <li>Dropdown lists, with options like creating new icon, or change settings</li>
+            <li>Text editor with basic tools and options</li>
+            <li>Table editor with basic tools and options</li>
+            <li>Presentation editor with basic tools and options</li>
+            <li>Filesystem, which shows the files related to the editors</li>
+        </ul>
+    </div>
+    <div class="os_loader">
+        <div id="load_bar"></div>
+        <div id="load_level"></div>
+        <h1 id="situation_message_load"></h1>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="mainscript.js"></script>
+</body>
+</html>
