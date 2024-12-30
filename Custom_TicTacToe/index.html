@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Tic-Tac-Toe game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game">
+        <div class="menu">
+            <div id="situation_message">Player 1, it is your turn</div>
+            <div class="options">
+                <p class="toggle_menu">Options</p>
+                <ul id="toggle_menu">
+                    <li id="reset_game">Reset</li>
+                    <li id="new_round">New round</li>
+                </ul>
+            </div>
+        </div>
+        <div class="playground">
+            <div class="square" id="square1"></div>
+            <div class="square" id="square2"></div>
+            <div class="square" id="square3"></div>
+            <div class="square" id="square4"></div>
+            <div class="square" id="square5"></div>
+            <div class="square" id="square6"></div>
+            <div class="square" id="square7"></div>
+            <div class="square" id="square8"></div>
+            <div class="square" id="square9"></div>
+        </div>
+        <div class="gamestats">
+            <div id="player_1_wins">
+                Player 1 wins: <span id="player_1_amounts"></span>
+            </div>
+            <div id="ties">
+                Ties: <span id="ties_amounts"> 0</span>
+            </div>
+            <div id="player_2_wins">
+                Player 2 wins: <span id="player_2_amounts"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="localstorage_values.js"></script>
+</body>
+</html>
