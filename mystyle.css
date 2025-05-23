@@ -54,17 +54,102 @@ body{
   cursor: pointer;  
 }
 
+a:link
+{
+  color: orangered;
+}
+
+a:hover
+{
+  color: yellow;
+}
+
+a:visited
+{
+  color: greenyellow;
+}
+
 .mottocell
 {
   display: flex;
   align-items: center;
+  flex-direction: column;
+}
+
+#elsoadat01
+{
+  display: flex;
+  justify-content: center;
+}
+
+#elsoadat02 h1
+{
+  text-align: center;
+}
+
+#firstprojectrow , #secondprojectrow
+{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 5px;
+}
+
+.projectbox
+{
+  width: 30%;
+  height: 500px;
+  border: 3px solid skyblue;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectname
+{
+  text-align: center;
+}
+
+.projectbox img
+{
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+.projectbox p, .toollist
+{
+  padding-left: 5px;
+}
+
+.tech_list
+{
+  display: flex;
+  justify-content: space-around;
+}
+
+.tech_used
+{
+  text-align: center;
+}
+
+#tech_fonts
+{
+  font-size: 50px;
+}
+
+.projectlink
+{
+  padding-left: 5px;
+  padding-bottom: 5px;
+  font-size: 20px;
 }
 
 /*mobil méret*/
 /*first size = 768px*/
 /*second size = 600px*/
 /*third size = 200px*/
-@media only screen and (max-width: 200px) and (orientation: portrait)
+@media only screen and (max-width: 600px) and (orientation: portrait)
 {
   #gombtarolo
   {
@@ -90,5 +175,44 @@ body{
   {
     height: 100%;
     width: 100%;
+  }
+
+  #portfoliosection
+  {
+    width: 100%;
+  }
+
+  #firstprojectrow, #secondprojectrow
+  {
+    width: 100%;
+  }
+
+  .projectbox
+  {
+    width: 30%;
+  }
+
+  .projectbox img
+  {
+    width: 90%;
+  }
+
+  #tech_fonts
+  {
+    font-size: 20px;
+  }
+
+  .tech_used h3
+  {
+    font-size: 10px;
+  }
+
+  .projectlink
+  {
+    padding-left: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    position: relative;
+    bottom: 2%;
   }
 }

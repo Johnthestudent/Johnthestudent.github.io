@@ -4,13 +4,13 @@ $("#magyar").on('click', function()
     $("title").html("Pogány János oldala");
 
     $("#mottotitle").html("Pogány János (John Pogany) weboldala");
-    $("#motto").html("<strong>Bármit</strong> meg tudok tanulni.");
+    $("#motto").html("Mottó: Célom, hogy IT tudásommal és professzionális szakfordítói tudásommal (IT terület) segítsek az embereknek.");
 
-    $("#schooltitle").html("Iskoláim");
-    $(".highschool").html("Vegyipari Szakközépiskola");
-    $(".university").html("Debreceni Egyetem");
-    $("#university01").html("Debreceni Egyetem - Programtervező Informatikus");
-    $("#university02").html("Debreceni Egyetem - Angol-Magyar Informatikai Szakfordító");
+    $("#schooltitle").html("Diplomáim");
+    $(".degreefirst").html("Programtervező Informatikus");
+    $(".degreesecond").html("Angol-Magyar Informatikai Szakfordító");
+    $("#university01").html("Debreceni Egyetem");
+    $("#university02").html("Debreceni Egyetem");
 
     $("#hobbi").html("Hobbiaim");
     $("#kapcsolat").html("Kapcsolat");
@@ -19,7 +19,7 @@ $("#magyar").on('click', function()
     $("#schooldate").html("Dátum");
     $("#schoolname").html("Iskola");
 
-    $("#technologia").html("Webfejlesztés");
+    $("#technologia").html("Python");
 })
 
 //Ha a felhasználó az angol nyelv gombra kattint
@@ -28,13 +28,13 @@ $("#angol").on('click', function()
     $("title").html("John Pogany's website");
 
     $("#mottotitle").html("Pogány János's (John Pogany) website");
-    $("#motto").html("I can learn <strong>anything</strong>.");
+    $("#motto").html("Motto: My motivation is to help people with my IT knowledge and my professional IT translator skills.");
 
-    $("#schooltitle").html("Schools that I have attended");
-    $(".highschool").html("Vegyipari Technical High School");
-    $(".university").html("University of Debrecen");
-    $("#university01").html("University of Debrecen - Computer Scientist");
-    $("#university02").html("University of Debrecen - English-Hungarian Special Translator in Informatics");
+    $("#schooltitle").html("Degrees");
+    $(".degreefirst").html("Computer Scientist");
+    $(".degreesecond").html("English-Hungarian Special Translator in Informatics");
+    $("#university01").html("University of Debrecen");
+    $("#university02").html("University of Debrecen");
 
     $("#hobbi").html("Hobbies");
     $("#kapcsolat").html("Contact me");
@@ -43,5 +43,5 @@ $("#angol").on('click', function()
     $("#schooldate").html("Dates");
     $("#schoolname").html("School");
 
-    $("#technologia").html("Web Development");
+    $("#technologia").html("Python");
 })

@@ -8,6 +8,8 @@
   <!--Az elérhetőség ikonjainak fontawesome-ra van szüksége-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="mystyle.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 </head>
 
 <body>
@@ -19,65 +21,46 @@
   <!--Mottó rész-->
   <div class="mottocell">
     <div id="elsoadat01">
-      <img src="Profilkep.jpg" style="width:50%"/>
+      <img src="Profilkep.jpg" style="width:20%"/>
     </div>
     <div id="elsoadat02">
       <h1 id="mottotitle">Pogány János (John Pogany) weboldala</h1>
-      <p id="motto"><strong>Bármit</strong> meg tudok tanulni.</p>
+      <h3 id="motto">Mottó: Célom, hogy IT tudásommal és professzionális szakfordítói tudásommal (IT terület) segítsek az embereknek.</h3>
     </div>
   </div>
-
   <hr />
-  <h3 id="schooltitle">Iskoláim</h3>
+  <h3 id="schooltitle">Diplomáim</h3>
   <ul>
-    <li class="highschool">Vegyipari Szakközépiskola</li>
-    <li class="university">Debreceni Egyetem</li>
+    <li class="degreefirst">Programtervező Informatikus</li>
+    <li class="degreesecond">Angol-Magyar Informatikai Szakfordító</li>
   </ul>
   <hr />
+  <h3 id="minitablename">Iskolai évek</h3> 
+  <table border=0 cellspacing="10" class="schoolcell">
+    <tr>
+      <th id="schooldate">Dátum</th>
+      <th id="schoolname">Iskola</th>
+    </tr>
+    <tr>
+      <td>2009-2014</td>
+      <td class="highschool">Vegyipari Szakközépiskola (két tannyelvű)</td>
+    </tr>
+    <tr>
+      <td>2014-2018</td>
+      <td id="university01">Debreceni Egyetem</td>
+    </tr>
+    <tr>
+      <td>2018-2020</td>
+      <td id="university02">Debreceni Egyetem</td>
+    </tr>
+</table>
+<hr />
   <a href="hobbymagyar.html" id="hobbi">Hobbiaim</a><br />
   <a href="contactmagyar.html" id="kapcsolat">Kapcsolat</a>
-  <hr />
-  <h3 id="minitablename">Iskolai évek</h3>
-
-  <table border=0 cellspacing="10" class="schoolcell">
-      <tr>
-        <th id="schooldate">Dátum</th>
-        <th id="schoolname">Iskola</th>
-      </tr>
-      <tr>
-        <td>2009-2014</td>
-        <td class="highschool">Vegyipari Szakközépiskola</td>
-      </tr>
-      <tr>
-        <td>2014-2018</td>
-        <td id="university01">Debreceni Egyetem - Programtervező Informatikus</td>
-      </tr>
-      <tr>
-        <td>2018-2020</td>
-        <td id="university02">Debreceni Egyetem - Angol-Magyar Informatikai Szakfordító</td>
-      </tr>
-  </table>
-
   <hr />
 <div style="overflow: auto">
   <table class="skillcell">
     <tr>
-      <td>
-        <table>
-          <tr>
-            <td id="technologia">Webfejlesztés</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Gimp</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Javascript</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-        </table>
-      </td>
       <td>
         <table>
           <tr>
@@ -98,7 +81,7 @@
         <table>
           <tr>
             <td>PHP</td>
-            <td>⭐⭐⭐</td>
+            <td>⭐⭐⭐⭐</td>
           </tr>
           <tr>
             <td>SQL</td>
@@ -110,15 +93,145 @@
           </tr>
         </table>
       </td>
+      <td>
+        <table>
+          <tr>
+            <td id="technologia">Python</td>
+            <td>⭐⭐</td>
+          </tr>
+          <tr>
+            <td>Gimp</td>
+            <td>⭐⭐⭐</td>
+          </tr>
+          <tr>
+            <td>Javascript</td>
+            <td>⭐⭐⭐</td>
+          </tr>
+        </table>
+      </td>
     </tr>
   </table>
+</div>
+<hr>
+<div>
+  <h3 id="projecttitle">Projektek</h3>
+  <div id="firstprojectrow">
+    <div class="projectbox">
+      <h3 class="projectname">TETRIS</h3>
+      <img src="tetrisproject.jpg">
+      <p><b>Cél: </b>Egy TETRIS játék megvalósítása Java nyelven. Sajátos alakzatgenerálás és pontértékek táblázata tartozik hozzá.</p>
+      <h3 class="toollist">Alkalmazott nyelv(ek): </h3>
+      <div class="tech_list">
+        <div class="tech_used">
+          <i id="tech_fonts" class="fa-brands fa-java" style="color: #f89917"></i>
+          <h3>Java</h3>
+        </div>
+      </div>
+      <a class="projectlink" href="https://github.com/Johnthestudent/TETRIS">Link</a>
+    </div>
+    <div class="projectbox">
+      <h3 class="projectname">Singlung</h3>
+      <img src="singlungproject.jpg">
+      <p><b>Cél: </b>Egy non-profit szervezet számára bemutatkozó oldal készítése. Munkásságuk leírása és kapcsolati fül tartozik hozzá.</p>
+      <h3 class="toollist">Alkalmazott nyelv(ek): </h3>
+      <div class="tech_list">
+        <div class="tech_used">
+          <i id="tech_fonts" class="fa-brands fa-html5" style="color: #e96228"></i>
+          <h3>HTML</h3>
+        </div>
+        <div class="tech_used">
+          <i id="tech_fonts" class="fa-brands fa-css3-alt" style="color: #32a3d4"></i>
+          <h3>CSS</h3>
+        </div>
+        <div class="tech_used">
+          <i id="tech_fonts" class="fa-brands fa-js" style="color: #efd81d"></i>
+          <h3>Javascript</h3>
+        </div>
+      </div>
+      <a class="projectlink" href="https://johnthestudent.github.io/singlung_magyar_2/">Link</a>
+    </div>
+    <div class="projectbox">
+      <h3 class="projectname">Package-shop imitator</h3>
+      <img src="webshopproject.jpg">
+      <p><b>Cél: </b>Egy mobil csomagos webáruház imitálása. A vásárlás és visszatérítés eseményeket az Eclipse terminálban lehet megvalósítani.</p>
+      <h3 class="toollist">Alkalmazott nyelv(ek): </h3>
+      <div class="tech_list">
+        <div class="tech_used">
+          <i id="tech_fonts" class="fa-brands fa-java" style="color: #f89917"></i>
+          <h3>Java</h3>
+        </div>
+      </div>
+      <a class="projectlink" href="https://github.com/Johnthestudent/Package_shop_imitator">Link</a>
+    </div>
+  </div>
+  <div id="secondprojectrow">
+    <div class="projectbox">
+      <h3 class="projectname">Nightly OS</h3>
+      <img src="nightlyosproject.jpg">
+      <p><b>Cél: </b>Operációs rendszer részek imitálása weboldal környezetben. Asztal, szövegszerkesztő, táblázatszerkesztő, prezentációszerkesztő, ablakok vannak benne.</p>
+      <h3 class="toollist">Alkalmazott nyelv(ek): </h3>
+      <div class="tech_list">
+        <div class="tech_used">
+          <i id="tech_fonts" class="fa-brands fa-html5" style="color: #e96228"></i>
+          <h3>HTML</h3>
+        </div>
+        <div class="tech_used">
+          <i id="tech_fonts" class="fa-brands fa-css3-alt" style="color: #32a3d4"></i>
+          <h3>CSS</h3>
+        </div>
+        <div class="tech_used">
+          <i id="tech_fonts" class="fa-brands fa-js" style="color: #efd81d"></i>
+          <h3>Javascript</h3>
+        </div>
+      </div>
+      <a class="projectlink" href="https://johnthestudent.github.io/Nightly_OS/">Link</a>
+    </div>
+    <div class="projectbox">
+      <h3 class="projectname">OpenAPI</h3>
+      <img src="apiproject.jpg">
+      <p><b>Cél: </b>API alkalmazás, mely nézettel, API (JSON) fájllal és két szerverrel rendelkezik. XML és JSON kimenetet is képes generálni API adat részből.</p>
+      <h3 class="toollist">Alkalmazott nyelv(ek): </h3>
+      <div class="tech_list">
+        <div class="tech_used">
+          <i id="tech_fonts" class="fa-brands fa-html5" style="color: #e96228"></i>
+          <h3>HTML</h3>
+        </div>
+        <div class="tech_used">
+          <i id="tech_fonts" class="fa-brands fa-css3-alt" style="color: #32a3d4"></i>
+          <h3>CSS</h3>
+        </div>
+        <div class="tech_used">
+          <i id="tech_fonts" class="fa-brands fa-js" style="color: #efd81d"></i>
+          <h3>Javascript</h3>
+        </div>
+        <div class="tech_used">
+          <i id="tech_fonts" class="fa-brands fa-php" style="color: #6b7db0"></i>
+          <h3>PHP</h3>
+        </div>
+      </div>
+      <a class="projectlink" href="https://github.com/Johnthestudent/OpenAPI_project">Link</a>
+    </div>
+    <div class="projectbox">
+      <h3 class="projectname">SCRUM könyv fordítás</h3>
+      <img src="scrumproject.jpg">
+      <p><b>Cél: </b>A Scrum 2.0 Agilis módszertanról szóló könyv fordítása angolról magyarra.</p>
+      <h3 class="toollist">Alkalmazott program: </h3>
+      <div class="tech_list">
+        <div class="tech_used">
+          <i id="tech_fonts" class="fas fa-file-word" style="color: #0e3c90"></i>
+          <h3>Word</h3>
+        </div>
+      </div>
+      <a class="projectlink" href="https://drive.google.com/file/d/1qB3XSMF06xV_KBgilDEmNtn7I4c7CkZZ/view">Link</a>
+    </div>
+  </div>
 </div>
   <div id="footer">
     <div id="elerhetoseg">
     <!--Linkedin elérhetőség-->
       <div id="linkedin">
           <a href="https://www.linkedin.com/in/janospogany/">Linkedin</a>
-          <i class="fa fa-brands fa-linkedin"></i>
+          <i class="fa fa-brands fa-linkedin" style="color: #007ab5"></i>
       </div>
     </div>
   </div>
