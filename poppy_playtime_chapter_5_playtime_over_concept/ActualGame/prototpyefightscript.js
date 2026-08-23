@@ -110,7 +110,7 @@ function RpgBattleHealthChecker()
 {
     if(rpgbattlehealth < 540)
     {
-        $("#introimage").prop('src', "../Background/Act03Battle/Prototypefight02.png");
+        $("#introimage").prop('src', "https://johnthestudent.github.io/poppy_playtime_chapter_5_playtime_over_concept/Background/Act03Battle/Prototypefight02.png");
     }
     if(rpgbattlehealth == 520)
     {
