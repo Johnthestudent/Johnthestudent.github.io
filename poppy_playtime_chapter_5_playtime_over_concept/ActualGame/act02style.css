@@ -1,0 +1,813 @@
+/*Base image size is 700 x 500, instead of including this background image size css property into a factory css, I use it in all css files for technical reasons.*/
+#introimage
+{
+    width: 1000px;
+    height: 800px;
+}
+
+/*This class style stands for some buttons, because they have common properties. See the html file for further info!*/
+.eventstartersetA
+{
+    width: 130px;
+    height: 50px;
+    font-size: 20px;
+    position: fixed;
+}
+
+/*Style of the button, which starts the first scene of act02.*/
+#bluehand_check
+{
+    bottom: 170px;
+    left: 450px;
+}
+
+/*Universal button interaction style for the buttons of act02.*/
+.act02buttons:hover
+{
+    color: gold;
+    background-color: midnightblue;
+    cursor: pointer;
+}
+
+/*Style of the button, which ends the first scene of act02.*/
+#goingfurther
+{
+    bottom: 700px;
+    left: 450px;
+    display: none;
+}
+
+/*Dialogbox stands for character speech, dialog, and VHS scenes.*/
+#dialogbox
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    width: 500px;
+    height: 150px;
+    position: fixed;
+    bottom: 150px;
+    left: 250px;
+    display: none;
+}
+
+/*Helperbox stands for the message box, which gives instructions for walkthrough.*/
+#helperbox
+{
+    background-color: aliceblue;
+    width: 300px;
+    height: 100px;
+    position: fixed;
+    top: 600px;
+    left: 350px;
+    opacity: 0.8;
+    color: black;
+    font-size: 20px;
+    display: none;
+}
+
+/*Style of the message box, which indicates a collectable trophy.*/
+.trophybox
+{
+    background-color: aliceblue;
+    width: 100px;
+    height: 50px;
+    position: fixed;
+    top: 680px;
+    left: 450px;
+    opacity: 0.8;
+    font-size: 25px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+/*This style stands for the collectable vhs tapes objects and the oil capsule objects.*/
+.vhscollectable, #oilcapsule
+{
+    width: 100px;
+    height: 100px;
+}
+
+#mommyvhs
+{
+    position: fixed;
+    top: 50px;
+    left: 780px;
+    display: none;
+}
+
+#bobbyvhs
+{
+    position: fixed;
+    top: 550px;
+    left: 780px;
+    display: none;
+}
+
+#occupationalphysicianvhs
+{
+    position: fixed;
+    top: 120px;
+    left: 780px;
+    display: none;
+}
+
+/*Universal style of the message boxes, which start the vhs play scenes.*/
+.vcropener
+{
+    background-color: aliceblue;
+    width: 200px;
+    height: 50px;
+    position: fixed;
+    opacity: 0.8;
+    color: black;
+    font-size: 20px;
+}
+
+.vcropener:hover
+{
+    cursor: pointer;
+}
+
+#vhs_scene02
+{
+    top: 20px;
+    left: 350px;
+    display: none;
+}
+
+.vhscollectable:hover
+{
+    cursor: grab;
+}
+
+/*Style of the buttons, which end the vhs play scenes.*/
+#backfromvhs02, #backfromvhs03, #backfromvhs04
+{
+    bottom: 300px;
+    left: 450px;
+    display: none;
+}
+
+#vhs_scene03
+{
+    top: 400px;
+    left: 770px;
+    display: none;
+}
+
+#vhs_scene04
+{
+    top: 400px;
+    left: 770px;
+    display: none;
+}
+
+/*The following 5 doorto styles are for the black-rectangles, which stand for room entering scenes.*/
+#doortopass
+{
+    background-color: black;
+    width: 50px;
+    height: 230px;
+    position: fixed;
+    left: 35px;
+    top: 270px;
+    display: none;
+}
+
+#doortolaba2
+{
+    background-color: black;
+    width: 50px;
+    height: 230px;
+    position: fixed;
+    left: 570px;
+    top: 300px;
+    display: none;
+}
+
+#doortolaba3
+{
+    background-color: black;
+    width: 200px;
+    height: 50px;
+    position: fixed;
+    left: 460px;
+    top: 300px;
+    display: none;
+}
+
+#doortostaffrooms
+{
+    background-color: black;
+    width: 50px;
+    height: 230px;
+    position: fixed;
+    left: 60px;
+    top: 330px;
+    display: none;
+}
+
+#doortosecondbossfight
+{
+    background-color: black;
+    width: 30px;
+    height: 230px;
+    position: fixed;
+    left: 80px;
+    top: 450px;
+    display: none;
+}
+
+/*Universal class of the square (purplepad id), which imitates the launch pad, it can be used with the purple-hand.*/
+.jumppad
+{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    opacity: 0.2;
+    position: fixed;
+}
+
+#purplepad
+{
+    bottom: 120px;
+    left: 805px;
+    display: none;
+}
+
+#purplepad2
+{
+    bottom: 410px;
+    left: 550px;
+    display: none;
+}
+
+#purplepad3
+{
+    bottom: 700px;
+    left: 260px;
+    display: none;
+}
+
+#purplepad4
+{
+    bottom: 420px;
+    left: 480px;
+    display: none;
+}
+
+.jumppad:hover
+{
+    cursor:grab;
+}
+
+/*Universal style for the doorto id black-rectangle door imitating objects.*/
+.clickabledoor:hover
+{
+    cursor:zoom-in;
+}
+
+.trophybox:hover, .goldentrophy:hover
+{
+    cursor: grab;
+}
+
+#brontrophy
+{
+    position: fixed;
+    top: 200px;
+    left: 400px;
+    display: none;
+}
+
+#pianosaurustrophy
+{
+    position: fixed;
+    top: 170px;
+    left: 70px;
+    display: none;
+}
+
+#doeytrophy
+{
+    position: fixed;
+    top: 50px;
+    left: 150px;
+    display: none;
+}
+
+/*Universal style for the collectable note objects.*/
+.notemiscallenious
+{
+    width: 80px;
+    height: 80px;
+    position: fixed;
+}
+
+.notemiscallenious:hover
+{
+    cursor: grab;
+}
+
+#occupationalphysiciannote
+{
+    left: 30px;
+    top: 300px;
+    display: none;
+}
+
+#engineernote
+{
+    left: 800px;
+    top: 130px;
+    display: none;
+}
+
+/*While the style for the note texts are the same for both cases, the id-s are needed in the Javascript file.*/
+#occupationalphysiciannotetext, #yellowhandnotetext
+{
+    position: fixed;
+    top: 100px;
+    left: 200px;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    display:none;
+}
+
+#occupationalphysiciannotetext button, #yellowhandnotetext button
+{
+    height: 50px;
+    font-size: 20px;
+}
+
+#powercellfordoor
+{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 780px;
+    bottom: 500px;
+    display: none;
+}
+
+#powercellfordoor:hover
+{
+    cursor: grab;
+}
+
+#secondbossfight
+{
+    bottom: 450px;
+    left: 250px;
+    display: none;
+}
+
+#oilcapsule
+{
+    position: fixed;
+    left: 50px;
+    bottom: 150px;
+    display: none;
+}
+
+#oilcapsule:hover
+{
+    cursor: grab;
+}
+
+#aftersecondbossbattle
+{
+    bottom: 170px;
+    left: 150px;
+    display: none;
+}
+
+#totherooms
+{
+    bottom: 170px;
+    left: 450px;
+    display: none;
+}
+
+#playercharacter
+{
+    width: 10%;
+    position: fixed;
+    bottom: 300px;
+    left: 770px;
+    display: none;
+}
+
+#bosscharacter
+{
+    height: 750px;
+    position: fixed;
+    left: 600px;
+    bottom: 200px;
+    display: none;
+}
+
+/*This div shows the actual HP of the boss and the boss name for the rpg fight.*/
+#bosshealthbar
+{
+    width: 600px;
+    height: 120px;
+    border: 1px solid black;
+    position: fixed;
+    bottom: 130px;
+    left: 200px;
+    text-align: center;
+    color: red;
+    display: none;
+}
+
+#totalbosshealth
+{
+    width: 550px;
+    height: 52px;
+    position: relative;
+    left: 25px;
+    background-color: black;
+    bottom: 50px;
+    z-index: -1;
+}
+
+#actualbosshealth
+{
+    width: 550px;
+    height: 50px;
+    position: relative;
+    left: 25px;
+    background-color: purple;
+    border: 1px solid black;
+}
+
+#yellowhandcollectable
+{
+    width: 42px;
+    position: fixed;
+    left: 700px;
+    top: 140px;
+    display: none;
+}
+
+#yellowhandcollectable:hover
+{
+    cursor: grab;
+}
+
+#levercollectable
+{
+    width: 150px;
+    position: fixed;
+    left: 600px;
+    top: 300px;
+    display: none;
+}
+
+#levercollectable:hover
+{
+    cursor: grab;
+}
+
+/*This class style stands for some buttons, because they have common properties. See the html file for further info!*/
+.eventstartersetB
+{
+    width: 170px;
+    height: 50px;
+    font-size: 20px;
+    position: fixed;
+}
+
+#returnofbluehand
+{
+    top: 170px;
+    left: 450px;
+    display: none;
+}
+
+#kissymissynewmessage
+{
+    top: 370px;
+    left: 450px;
+    display: none;
+}
+
+#imagesign
+{
+    top: 600px;
+    left: 450px;
+    display: none;
+}
+
+/*Style of the button, which ends act02 and starts act03.*/
+#toact03
+{
+    width: 150px;
+    height: 80px;
+    font-size: 20px;
+    position: fixed;
+    top: 400px;
+    left: 450px;
+    display: none;
+}
+
+/*This div stores the mini-surface, where the player can choose hands for the grabpack.*/
+#hands_to_use
+{
+    width: 1000px;
+    justify-content: space-between;
+    border: 1px solid black;
+    display: none;
+}
+
+#left_hands img, #right_hands img
+{
+    width: 80px;
+}
+
+#left_hands img:hover, #right_hands img:hover
+{
+    cursor: grabbing;
+}
+
+/*Opacity value 0.5 means that the given grabpack hand is not available (until a point during gameplay).*/
+#yellowhand, #bluehand
+{
+    opacity: 0.5;
+}
+
+/*Responsivity section, mainly for defining the size of game objects for laptop view.*/
+@media only screen and (max-width: 1280px) and (max-height: 764px)
+{
+    #introimage
+    {
+        width: 800px;
+        height: 600px;
+    }
+
+    #dialogbox
+    {
+        bottom: 180px;
+        left: 150px;
+    }
+
+    #helperbox
+    {
+        top: 430px;
+        left: 270px;
+    }
+
+    #hands_to_use
+    {
+        width: 800px;
+    }
+
+    #left_hands img, #right_hands img
+    {
+        width: 70px;
+    }
+
+    #playercharacter
+    {
+        left: 640px;
+    }
+
+    #bluehand_check
+    {
+        left: 330px;
+    }
+
+    #goingfurther
+    {
+        bottom: 600px;
+        left: 330px;
+    }
+
+    .trophybox
+    {
+        top: 500px;
+        left: 350px;
+    }
+
+    #doortopass
+    {
+        width: 50px;
+        height: 180px;
+        position: fixed;
+        left: 30px;
+        top: 200px;
+    }
+
+    .vhscollectable
+    {
+        width: 70px;
+        height: 70px;
+    }
+
+    #mommyvhs
+    {
+        top: 50px;
+        left: 640px;
+    }
+
+    #vhs_scene02
+    {
+        left: 300px;
+    }
+
+    #backfromvhs02, #backfromvhs03, #backfromvhs04
+    {
+        bottom: 280px;
+        left: 350px;
+    }
+
+    #doortolaba2
+    {
+        width: 40px;
+        height: 200px;
+        left: 460px;
+        top: 220px;
+    }
+
+    #doortolaba3
+    {
+        width: 170px;
+        height: 50px;
+        left: 370px;
+        top: 220px;
+    }
+
+    #bobbyvhs
+    {
+        top: 400px;
+        left: 640px;
+    }
+
+    .jumppad
+    {
+        width: 80px;
+        height: 80px;
+    }
+
+    #purplepad
+    {
+        bottom: 155px;
+        left: 645px;
+    }
+
+    #purplepad2
+    {
+        bottom: 370px;
+        left: 440px;
+    }
+
+    #purplepad3
+    {
+        bottom: 590px;
+        left: 210px;
+    }
+
+    #doortostaffrooms
+    {
+        width: 40px;
+        height: 200px;
+        left: 50px;
+        top: 240px;
+    }
+
+    #pianosaurustrophy
+    {
+        top: 90px;
+        left: 40px;
+    }
+
+    #occupationalphysiciannote
+    {
+        top: 250px;
+    }
+
+    .notemiscallenious
+    {
+        width: 60px;
+        height: 60px;
+    } 
+
+    #powercellfordoor
+    {
+        width: 80px;
+        height: 80px;
+        left: 640px;
+        bottom: 450px;
+    }
+
+    #vhs_scene03
+    {
+        top: 300px;
+        left: 570px;
+    }
+
+    #occupationalphysiciannotetext
+    {
+        z-index: 1;
+    }
+
+    #doortosecondbossfight
+    {
+        width: 30px;
+        height: 180px;
+        left: 55px;
+        top: 340px;
+    }
+
+    #bosscharacter
+    {
+        height: 600px;
+        left: 600px;
+        bottom: 200px;
+    }
+
+    #bosshealthbar
+    {
+        bottom: 170px;
+        left: 100px;
+        height: 110px;
+    }
+
+    #actualbosshealth
+    {
+        height: 30px;
+    }
+
+    #totalbosshealth
+    {
+        height: 32px;
+        position: relative;
+        bottom: 32px;
+    }
+
+    #aftersecondbossbattle
+    {
+        bottom: 200px;
+        left: 100px;
+    }
+
+    #totherooms
+    {
+        bottom: 200px;
+        left: 350px;
+    }
+
+    #occupationalphysicianvhs
+    {
+        left: 680px;
+    }
+
+    #vhs_scene04
+    {
+        top: 300px;
+        left: 600px;
+    }
+
+    #purplepad4
+    {
+        bottom: 380px;
+        left: 390px;
+    }
+
+    #engineernote
+    {
+        left: 640px;
+        top: 100px;
+    }
+
+    #yellowhandcollectable
+    {
+        width: 32px;
+        position: fixed;
+        left: 550px;
+        top: 110px;
+    }
+
+    #yellowhandnotetext
+    {
+        z-index: 1;
+    }
+
+    #levercollectable
+    {
+        width: 100px;
+    }
+
+    #imagesign
+    {
+        top: 500px;
+    }
+}

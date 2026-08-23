@@ -1,0 +1,8 @@
+All the image files of the Grabpack hands folder are used in the code.
+In the Miscallenious folder, the collectable named files are used in the code.
+The white backgrounded images were drawn first and are meant to be for designers and artists.
+Note item didn't get a white background image, but it's okay.
+Posters folder has images, which are merged into background images in the Background folder. Feel free to create more posters!
+In the Trophies folder, exactly the same case like for the files in the Miscallenious folder.
+VCR and VHS folder has similar images (VHS tape image files), which the TV image files were merged into the background images in the Background folder.
+Feel free to create more VHS tapes and VCR-s for the story!

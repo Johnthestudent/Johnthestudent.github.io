@@ -1,0 +1,4 @@
+The files having _usable at the end of their names are the ones, which are used in the code (they have transparent background).
+The white backgrounded images were drawn first and are meant to be for designers and artists.
+The files having _other in their names were drawn later on, because mirroring one image didn't look accurate for the grabpack hands.
+Therefore, sprites for looking at the other side were drawn with white background and from them were _usable edits made.

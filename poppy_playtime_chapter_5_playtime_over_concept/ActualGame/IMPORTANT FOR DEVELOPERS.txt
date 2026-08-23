@@ -1,0 +1,6 @@
+The html files are not filled with comments, the id-s and classes of the tags are obvious.
+As for the css files, there are comment highlights and many refactored code segments.
+Kinda the same for comments in the javascript files, the names are easy to understand and the logic is prescribed well.
+The events are not automatic, but have to be triggered by the user via clicking the given buttons.
+Unless you know a better storage method than localstorage, don't put the files in the ActualGame folder into several other folders!
+However, if there is a storage method, which handles the value changes well, even if there are folders for each act (1-rpg1-2-3A-finalfight-3B), go ahead with it!

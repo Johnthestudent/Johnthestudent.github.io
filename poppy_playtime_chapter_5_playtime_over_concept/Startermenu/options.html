@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poppy Playtime Chapter 5 - Playtime Over (concept)</title>
+    <link rel="stylesheet" href="optionsstyle.css">
+</head>
+<body>
+    <img id="menuimage" src="../Background/Introimage.png" alt="dark_lab">
+    <div id="entirechoice">
+        <div id="trophiessection">
+            <button class="optionbuttons" id="trophiesallowed">Allow trophies to collect</button>
+            <div class="greenindicator" id="trophiesindicator"></div>
+        </div>
+        <h2>When clicked, the player can collect golden trophies.</h2>
+        <div id="optionssection">
+            <button class="optionbuttons" id="additionalhelp">Allow additional helper</button>
+            <div class="greenindicator" id="optionsindicator"></div>
+        </div>
+        <h2>Additional helper messages will pop up during gameplay.</h2>
+        <div id="healthbarsection">
+            <button class="optionbuttons" id="healthbar">Show boss healthbar</button>
+            <div class="greenindicator" id="healthbarindicator"></div>
+        </div>
+        <h2>Player will see the boss healthbar at battles.</h2>
+        <h2 id="errormessage">Sorry, but due to localstorage behavior, these 3 options are not working!</h2>
+        <div>
+            <button class="optionbuttons" id="tomainmenu">Going back to main menu</button>
+            <button class="optionbuttons" id="helpaboutcontrols">Info about controls</button>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="optionsscript.js"></script>
+    <script src="../helperlocalstoragevalues.js"></script>
+</body>
+</html>

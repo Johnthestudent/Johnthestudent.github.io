@@ -1,0 +1,183 @@
+/*Base image size is 700 x 500, instead of including this background image size css property into a factory css, I use it in all css files for technical reasons.*/
+#introimage
+{
+    width: 1000px;
+    height: 800px;
+}
+
+/*Dialogbox stands for character speech, dialog, and VHS scenes.*/
+#dialogbox
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    width: 500px;
+    height: 150px;
+    position: fixed;
+    bottom: 150px;
+    left: 250px;
+    display: none;
+}
+
+/*Style of the button, which stops the final rpg battle.*/
+#finalrpghit
+{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    position: fixed;
+    left: 500px;
+    bottom: 200px;
+}
+
+/*Universal button interaction style for the buttons of act03.*/
+.act03buttons:hover
+{
+    color: gold;
+    background-color: midnightblue;
+    cursor: pointer;  
+}
+
+/*This div stores the segments of the switches on the case.*/
+#caseswitches
+{
+    width: 270px;
+    height: 100px;
+    position: fixed;
+    top: 570px;
+    left: 395px;
+    justify-content: space-between;
+    display: none;
+}
+
+.switchofcase
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: green;
+}
+
+/*Style of the first two values of switch 1. on the case.*/
+.firstpair1
+{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 95px;
+    justify-content: space-between;
+    position: fixed;
+    left: 440px;
+}
+
+/*Style of the second two values of switch 1. on the case.*/
+.secondpair1
+{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 90px;
+    justify-content: space-between;
+    position: fixed;
+    left: 400px;
+    top: 605px;
+}
+
+/*Style of the first two values of switch 2. on the case.*/
+.firstpair2
+{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 95px;
+    justify-content: space-between;
+    position: fixed;
+    left: 607px;
+}
+
+/*Style of the second two values of switch 2. on the case.*/
+.secondpair2
+{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 90px;
+    justify-content: space-between;
+    position: fixed;
+    left: 570px;
+    top: 605px;
+}
+
+.firstpair1 div:hover, .secondpair1 div:hover, .firstpair2 div:hover, .secondpair2 div:hover
+{
+    cursor: pointer;
+}
+
+/*Style of the button, which starts the Poppy speech.*/
+#caseopened
+{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    position: fixed;
+    left: 470px;
+    top: 350px;
+    display: none;
+}
+
+/*Responsivity section, mainly for defining the size of game objects for laptop view.*/
+@media only screen and (max-width: 1280px) and (max-height: 764px)
+{
+    #introimage
+    {
+        width: 800px;
+        height: 600px;
+    }
+
+    #finalrpghit
+    {
+        left: 400px;
+    }
+
+    #dialogbox
+    {
+        bottom: 180px;
+        left: 150px;
+    }
+
+    #caseswitches
+    {
+        top: 410px;
+        left: 300px;
+        width: 250px;
+    }
+
+    .firstpair1
+    {
+        left: 345px;
+    }
+
+    .secondpair1
+    {
+        left: 305px;
+        top: 445px;
+    }
+
+    .firstpair2
+    {
+        left: 493px;
+    }
+
+    .secondpair2
+    {
+        left: 455px;
+        top: 445px;    
+    }
+
+    #caseopened
+    {
+        left: 365px;
+        top: 250px;
+    }
+}

@@ -1,0 +1,192 @@
+/*Base image size is 700 x 500, instead of including this background image size css property into a factory css, I use it in all css files for technical reasons.*/
+/*Brightness filter property is for imitating blackout in the room of the rpg battle scenario.*/
+#introimage
+{
+    width: 1000px;
+    height: 800px;
+    filter: brightness(50%);
+}
+
+#bossfigure
+{
+    position: fixed;
+    left: 200px;
+}
+
+#bossfigure:hover
+{
+    cursor:grab;
+}
+
+/*Style of the message, which states that boss fight start is not automatic.*/
+#musicstarter
+{
+    color: red;
+    background-color: aliceblue;
+    opacity: 0.8;
+    width: 440px;
+    height: 70px;
+    position: fixed;
+    bottom: 400px;
+    left: 300px;
+    padding-left: 10px;
+}
+
+/*This div shows the actual HP of the boss and the boss name for the rpg fight.*/
+#bosshealthbar
+{
+    width: 600px;
+    height: 120px;
+    border: 1px solid black;
+    position: fixed;
+    bottom: 130px;
+    left: 200px;
+    color: white;
+    text-align: center;
+}
+
+#totalbosshealth
+{
+    width: 550px;
+    height: 52px;
+    position: relative;
+    left: 25px;
+    background-color: black;
+    bottom: 50px;
+    z-index: -1;
+}
+
+#actualbosshealth
+{
+    width: 550px;
+    height: 50px;
+    position: relative;
+    left: 25px;
+    background-color: purple;
+    border: 1px solid black;
+}
+
+/*This div stores the mini-surface, where the player can choose hands for the grabpack.*/
+#hands_to_use
+{
+    width: 1000px;
+    justify-content: space-around;
+    border: 1px solid black;
+    display: flex;
+}
+
+#left_hands img, #right_hands img
+{
+    width: 80px;
+}
+
+#left_hands img:hover, #right_hands img:hover
+{
+    cursor: grabbing;
+}
+
+/*Opacity value 0.5 means that the given grabpack hand is not available (until a point during gameplay).*/
+#yellowhand
+{
+    opacity: 0.5;
+}
+
+/*This buttons takes player from act01 and its bossfight to act02 of the game.*/
+#toact02
+{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    position: fixed;
+    bottom: 400px;
+    left: 450px;
+    display:none;
+}
+
+#toact02:hover
+{
+    color: gold;
+    background-color: midnightblue;
+    cursor: pointer;
+}
+
+/*Style of the message, which indicates that the player has 60 seconds to win the bossfight.*/
+#timeforfight
+{
+    background-color: red;
+    width: 240px;
+    height: 60px;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    left: 30px;
+}
+
+/*The timebar of the bossfight*/
+#fulltimeforfight
+{
+    border: 2px solid black;
+    color: limegreen;
+    width: 240px;
+    height: 60px;
+    border-radius: 5px;
+    position: fixed;
+    top: 18px;
+    left: 28px;
+    z-index: 1;
+}
+
+/*Responsivity section, mainly for defining the size of game objects for laptop view.*/
+@media only screen and (max-width: 1280px) and (max-height: 764px)
+{
+    #introimage
+    {
+        width: 800px;
+        height: 600px;
+    }
+
+    #bossfigure
+    {
+        left: 100px;
+        width: 46%;
+    }
+
+    #musicstarter
+    {
+        left: 200px;
+    }
+
+    #bosshealthbar
+    {
+        bottom: 170px;
+        left: 100px;
+        height: 110px;
+    }
+
+    #actualbosshealth
+    {
+        height: 30px;
+    }
+
+    #totalbosshealth
+    {
+        height: 32px;
+        position: relative;
+        bottom: 32px;
+    }
+
+    #hands_to_use
+    {
+        width: 800px;
+    }
+
+    #left_hands img, #right_hands img
+    {
+        width: 70px;
+    }
+
+    #toact02
+    {
+        left: 350px;
+    }
+}

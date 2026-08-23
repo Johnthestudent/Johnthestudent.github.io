@@ -1,0 +1,57 @@
+/*Base image size is 700 x 500, instead of including this background image size css property into a factory css, I use it in all css files for technical reasons.*/
+#menuimage
+{
+    width: 1000px;
+    height: 800px;
+}
+
+#introtext
+{
+    width: 500px;
+    position: fixed;
+    top: 0px;
+    color: white;
+    padding-left: 10px;
+}
+
+#menubuttons
+{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 25%;
+    left: 2%;
+    height: 200px;
+    justify-content: space-between;
+}
+
+.optiontochoose
+{
+    width: 130px;
+    height: 50px;
+    font-size: 20px;
+}
+
+/*Button interaction style for the main menu.*/
+.optiontochoose:hover
+{
+    cursor: pointer;
+    background: midnightblue;
+    color: gold;
+    border-radius: 10px;
+}
+
+/*Responsivity section, mainly for defining the size of game objects for laptop view.*/
+@media only screen and (max-width: 1280px) and (max-height: 764px)
+{
+    #menuimage
+    {
+        width: 800px;
+        height: 600px;
+    }
+
+    #menubuttons
+    {
+        top: 30%;
+    }
+}
