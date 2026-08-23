@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poppy Playtime Chapter 5 - Playtime Over (concept)</title>
+    <link rel="stylesheet" href="prototypefightstyle.css">
+</head>
+<body>
+    <img id="introimage" src="../Background/Act03Battle/PrototypeFight01.png" alt="passedthedoor">
+    <img id="playercharacter" src="../Sprites/Player/Player_basic_omnihand_bluehand_usable.png" alt="playerfigure">
+    <img id="bosscharacter" src="../Sprites/Bosses/Prototype_basic_usable.png" alt="bossfigure">
+
+    <div id="musicstarter">
+        <h3>Click on the Start button once to start rpg battle and its music!</h3>
+    </div>
+    
+    <button id="startthebattle" class="rpgbuttons">Start</button>
+
+    <button id="specialbossattack" class="rpgbuttons"></button>
+
+    <div id="bosshealthbar">
+        <h2>Prototype</h2>
+        <div id="actualbosshealth"></div>
+        <div id="totalbosshealth"></div>
+    </div>
+
+    <div id="hands_to_use">
+        <div id="left_hands">
+            <img id="bluehand" src="../Tools/Grabpack hands/Blue hand.png" alt="blue_hand">
+            <img id="yellowhand" src="../Tools/Grabpack hands/Yellow hand.png" alt="yellow_hand">
+        </div>
+        <div>
+            <h3>Click on the hands to change hand of the grabpack!</h3>
+            <h3>Use Q key for left hand and E key for right hand!</h3>
+        </div>
+        <div id="right_hands">
+            <img id="omnihand" src="../Tools/Grabpack hands/Omni hand.png" alt="omni_hand">
+            <img id="purplehand" src="../Tools/Grabpack hands/Purple hand.png" alt="purple_hand">
+            <img id="flarehand" src="../Tools/Grabpack hands/Flare hand.png" alt="flare_hand">
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="prototpyefightscript.js"></script>
+    <script src="../helperlocalstoragevalues.js"></script>
+</body>
+</html>

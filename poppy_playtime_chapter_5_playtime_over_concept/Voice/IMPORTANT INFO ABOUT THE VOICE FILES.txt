@@ -1,0 +1,4 @@
+These audio files are used in the code.
+The files here are categorized into folders.
+Intro scene has its own folder, even if intro scene is categorized as part of act01 in the code.
+VHSTapes folder has the VHS scene audio files.

@@ -1,0 +1,2 @@
+These files are presenting controls tutorial, dislaimer info, credits and an options window.
+Due to localstorage behavior, the settings don't work, so feel free to create options on your own.

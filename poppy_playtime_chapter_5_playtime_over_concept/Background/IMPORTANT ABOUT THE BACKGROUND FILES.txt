@@ -1,0 +1,4 @@
+These image files are used in the code.
+They are either map segment or scene frame.
+The images were drawn with Gimp 2.6.10. .
+Feel free to draw more, if you wish to expand the map of the game.

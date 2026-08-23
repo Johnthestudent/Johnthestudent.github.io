@@ -1,0 +1,201 @@
+/*Base image size is 700 x 500, instead of including this background image size css property into a factory css, I use it in all css files for technical reasons.*/
+#introimage
+{
+    width: 1000px;
+    height: 800px;
+}
+
+/*Style of the message box, which starts the vhs play scene.*/
+#vhs_scene01
+{
+    background-color: aliceblue;
+    width: 200px;
+    height: 50px;
+    position: fixed;
+    top: 550px;
+    left: 450px;
+    opacity: 0.8;
+    color: red;
+    font-size: 20px;
+}
+
+#vhs_scene01:hover
+{
+    cursor: pointer;
+}
+
+/*Dialogbox stands for character speech, dialog, and VHS scenes.*/
+#dialogbox
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    width: 500px;
+    height: 150px;
+    position: fixed;
+    bottom: 150px;
+    left: 300px;
+    display: none;
+}
+
+/*This class style stands for some buttons, because they have common properties. See the html file for further info!*/
+.eventstartersetA
+{
+    width: 130px;
+    height: 50px;
+    font-size: 20px;
+    position: fixed;
+}
+
+/*Style of the button, which starts the first scene of the game after the intro scene and image.*/
+#startitalready
+{
+    bottom: 170px;
+    left: 450px;
+    display: none;
+}
+
+/*Universal button interaction style for the buttons of act01.*/
+.act01buttons:hover
+{
+    color: gold;
+    background-color: midnightblue;
+    cursor: pointer;
+}
+
+/*Style of the button, which ends the dialog scene after the intro scene.*/
+#getoutoflabsection
+{
+    bottom: 170px;
+    left: 50px;
+    display: none;
+}
+
+/*This class style stands for some buttons, because they have common properties. See the html file for further info!*/
+.eventstartersetB
+{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    position: fixed;
+}
+
+/*Style of the button, which starts the prelude scene before the rpg battle.*/
+#startrpgbattle
+{
+    bottom: 220px;
+    left: 50px;
+    display: none;
+}
+
+/*Style of the button, which starts the rpg battle.*/
+#boxyfight
+{
+    bottom: 220px;
+    left: 850px;
+    display: none;
+}
+
+#playercharacter
+{
+    width: 10%;
+    position: fixed;
+    bottom: 300px;
+    left: 770px;
+    display: none;
+}
+
+/*Helperbox stands for the message box, which gives instructions for walkthrough.*/
+#helperbox
+{
+    background-color: aliceblue;
+    width: 200px;
+    height: 50px;
+    position: fixed;
+    top: 730px;
+    left: 450px;
+    opacity: 0.8;
+    color: black;
+    font-size: 20px;
+    display: none;
+}
+
+/*This div stores the mini-surface, where the player can choose hands for the grabpack.*/
+#hands_to_use
+{
+    width: 1000px;
+    justify-content: space-between;
+    border: 1px solid black;
+    display: none;
+}
+
+#left_hands img, #right_hands img
+{
+    width: 80px;
+}
+
+/*Opacity value 0.5 means that the given grabpack hand is not available (until a point during gameplay).*/
+#yellowhand
+{
+    opacity: 0.5;
+}
+
+/*Responsivity section, mainly for defining the size of game objects for laptop view.*/
+@media only screen and (max-width: 1280px) and (max-height: 764px)
+{
+    #introimage
+    {
+        width: 800px;
+        height: 600px;
+    }
+
+    #vhs_scene01
+    {
+        top: 410px;
+        left: 350px;
+    }
+
+    #dialogbox
+    {
+        bottom: 180px;
+        left: 150px;
+    }
+
+    #startitalready
+    {
+        bottom: 200px;
+        left: 350px;
+    }
+
+    #getoutoflabsection
+    {
+        bottom: 190px;
+    }
+
+    #helperbox
+    {
+        top: 530px;
+        left: 350px;
+    }
+
+    #boxyfight
+    {
+        left: 630px;
+    }
+
+    #hands_to_use
+    {
+        width: 800px;
+    }
+
+    #left_hands img, #right_hands img
+    {
+        width: 70px;
+    }
+
+    #playercharacter
+    {
+        left: 640px;
+    }
+}
