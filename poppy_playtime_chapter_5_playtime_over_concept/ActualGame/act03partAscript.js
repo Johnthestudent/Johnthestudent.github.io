@@ -446,7 +446,7 @@ $("#sayingno").on("click", function()
 //Clicking on this button ends act03partA and starts the final fight.
 $("#toprototypefight").on("click", function()
 {
-    window.location = "prototpyefight.html";
+    window.location = "prototypefight.html";
 });
 
 //The following two helper variables are standing for responsivity based game object positioning
