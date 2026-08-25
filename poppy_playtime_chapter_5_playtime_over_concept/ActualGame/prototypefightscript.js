@@ -110,7 +110,7 @@ function RpgBattleHealthChecker()
 {
     if(rpgbattlehealth < 540)
     {
-        $("#introimage").prop('src', "../Background/Act03Battle/Prototypefight02.png");
+        $("#introimage").prop('src', "../Background/Act03Battle/PrototypeFight02.png");
     }
     if(rpgbattlehealth == 520)
     {
@@ -132,11 +132,11 @@ function RpgBattleHealthChecker()
     }
     if(rpgbattlehealth < 510)
     {
-        $("#introimage").prop('src', "../Background/Act03Battle/Prototypefight03.png");
+        $("#introimage").prop('src', "../Background/Act03Battle/PrototypeFight03.png");
     }
     if(rpgbattlehealth < 480)
     {
-        $("#introimage").prop('src', "../Background/Act03Battle/Prototypefight04.png");
+        $("#introimage").prop('src', "../Background/Act03Battle/PrototypeFight04.png");
         $("#bosscharacter").css("bottom", "150px");
     }
     if(rpgbattlehealth == 460)
@@ -159,22 +159,22 @@ function RpgBattleHealthChecker()
     }
     if(rpgbattlehealth < 450)
     {
-        $("#introimage").prop('src', "../Background/Act03Battle/Prototypefight05.png");
+        $("#introimage").prop('src', "../Background/Act03Battle/PrototypeFight05.png");
         $("#bosscharacter").css("bottom", "150px");
     }
     if(rpgbattlehealth < 420)
     {
-        $("#introimage").prop('src', "../Background/Act03Battle/Prototypefight06.png");
+        $("#introimage").prop('src', "../Background/Act03Battle/PrototypeFight06.png");
         $("#bosscharacter").css("bottom", "150px");
     }
     if(rpgbattlehealth < 390)
     {
-        $("#introimage").prop('src', "../Background/Act03Battle/Prototypefight07.png");
+        $("#introimage").prop('src', "../Background/Act03Battle/PrototypeFight07.png");
         $("#bosscharacter").css("bottom", "150px");
     }
     if(rpgbattlehealth < 360)
     {
-        $("#introimage").prop('src', "../Background/Act03Battle/Prototypefight08.png");
+        $("#introimage").prop('src', "../Background/Act03Battle/PrototypeFight08.png");
         $("#bosscharacter").css("bottom", "150px");
     }
     if(rpgbattlehealth == 340)
@@ -197,14 +197,14 @@ function RpgBattleHealthChecker()
     }
     if(rpgbattlehealth < 330)
     {
-        $("#introimage").prop('src', "../Background/Act03Battle/Prototypefight09.png");
+        $("#introimage").prop('src', "../Background/Act03Battle/PrototypeFight09.png");
         $("#bosscharacter").css("bottom", "280px");
         $("#bosscharacter").css("left", "500px");
         $("#playercharacter").css("bottom", "300px");
     }
     if(rpgbattlehealth < 300)
     {
-        $("#introimage").prop('src', "../Background/Act03Battle/Prototypefight10.png");
+        $("#introimage").prop('src', "../Background/Act03Battle/PrototypeFight10.png");
         $("#bosscharacter").css("bottom", "200px");
         $("#bosscharacter").css("left", "400px");
         $("#playercharacter").css("bottom", "200px");
@@ -222,7 +222,7 @@ function RpgBattleHealthChecker()
     }
     if(rpgbattlehealth < 270)
     {
-        $("#introimage").prop('src', "../Background/Act03Battle/Prototypefight11.png");
+        $("#introimage").prop('src', "../Background/Act03Battle/PrototypeFight11.png");
     }
     if(rpgbattlehealth == 260)
     {
@@ -237,11 +237,11 @@ function RpgBattleHealthChecker()
     }
     if(rpgbattlehealth < 240)
     {
-        $("#introimage").prop('src', "../Background/Act03Battle/Prototypefight12.png");
+        $("#introimage").prop('src', "../Background/Act03Battle/PrototypeFight12.png");
     }
     if(rpgbattlehealth < 230)
     {
-        $("#introimage").prop('src', "../Background/Act03Battle/Prototypefight13.png");
+        $("#introimage").prop('src', "../Background/Act03Battle/PrototypeFight13.png");
     }
     if(rpgbattlehealth == 220)
     {
@@ -256,7 +256,7 @@ function RpgBattleHealthChecker()
     }
     if(rpgbattlehealth < 210)
     {
-        $("#introimage").prop('src', "../Background/Act03Battle/Prototypefight14.png");
+        $("#introimage").prop('src', "../Background/Act03Battle/PrototypeFight14.png");
         $("#playercharacter").css("left", "160px");
     }
     if(rpgbattlehealth == 200)
@@ -272,12 +272,12 @@ function RpgBattleHealthChecker()
     }
     if(rpgbattlehealth < 180)
     {
-        $("#introimage").prop('src', "../Background/Act03Battle/Prototypefight15.png");
+        $("#introimage").prop('src', "../Background/Act03Battle/PrototypeFight15.png");
         $("#bosscharacter").css("left", "500px");
     }
     if(rpgbattlehealth < 150)
     {
-        $("#introimage").prop('src', "../Background/Act03Battle/Prototypefight16.png");
+        $("#introimage").prop('src', "../Background/Act03Battle/PrototypeFight16.png");
     }
     if(rpgbattlehealth == 140)
     {
@@ -292,11 +292,11 @@ function RpgBattleHealthChecker()
     }
     if(rpgbattlehealth < 120)
     {
-        $("#introimage").prop('src', "../Background/Act03Battle/Prototypefight17.png");
+        $("#introimage").prop('src', "../Background/Act03Battle/PrototypeFight17.png");
     }
     if(rpgbattlehealth < 90)
     {
-        $("#introimage").prop('src', "../Background/Act03Battle/Prototypefight18.png");
+        $("#introimage").prop('src', "../Background/Act03Battle/PrototypeFight18.png");
     }
     if(rpgbattlehealth == 70)
     {
@@ -311,7 +311,7 @@ function RpgBattleHealthChecker()
     }
     if(rpgbattlehealth < 60)
     {
-        $("#introimage").prop('src', "../Background/Act03Battle/Prototypefight19.png");
+        $("#introimage").prop('src', "../Background/Act03Battle/PrototypeFight19.png");
     }
     if(rpgbattlehealth == 50)
     {
@@ -326,7 +326,7 @@ function RpgBattleHealthChecker()
     }
     if(rpgbattlehealth < 30)
     {
-        $("#introimage").prop('src', "../Background/Act03Battle/Prototypefight20.png");
+        $("#introimage").prop('src', "../Background/Act03Battle/PrototypeFight20.png");
     }
     if(rpgbattlehealth == 10)
     {
