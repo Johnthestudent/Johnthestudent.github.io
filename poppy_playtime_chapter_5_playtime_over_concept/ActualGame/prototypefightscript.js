@@ -96,7 +96,7 @@ function GameOverSituation()
     $("#introimage").prop("src", "../Background/GameOverMessages/Gameoverscreen06.png");
     setTimeout(function()
     {
-        window.location = "prototpyefight.html";
+        window.location = "prototypefight.html";
     }, 5000);
 }
 
